@@ -1,0 +1,34 @@
+@media (max-width: 1600px) {
+
+    /*chande .create company in .col-md-8 in all resolution*/
+    .log-status{
+        font-size: 1.6em;
+    }
+
+    .right-status-head a {
+        font-size: 1.6em;
+        margin-right: 20px;
+    }
+    .type-blog-gallery img {
+    min-height: 112px;
+    }
+
+    .head-wrapper {  /*change for all*/
+        padding-bottom: 8px;
+    }
+
+
+    .country-gallery {
+        width: 106%;
+    }
+
+    .label-audience {
+        height: 22px;
+        width: 22px;
+    }
+
+    .business-seo-wrap, .campaign-container {   
+        font-size: 0.85em;
+    }
+
+}/*END MEDIA*/
