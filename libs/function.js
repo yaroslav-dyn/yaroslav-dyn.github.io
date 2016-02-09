@@ -81,11 +81,16 @@ $(document).ready( function(){
             $(".youtube").toggleClass("youtube-active");
         }
     });
-
-
-
-
-
+    /*active button special class*/
+    $("#check-business-1 + label").click(function(){
+        $(".seo-comp-1").toggleClass("seo-comp-1-active");
+    });
+    $("#check-business-2 + label").click(function(){
+        $(".seo-comp-2").toggleClass("seo-comp-2-active");
+    });
+    $("#check-business-3 + label").click(function(){
+        $(".seo-comp-3").toggleClass("seo-comp-3-active");
+    });
 
 
     /*Slider JS*/

@@ -7,6 +7,7 @@ body{
     background: #f2f2f2;
     font-family: MuseoSansRegular, sans-serif;
     font-size: 16px;
+    min-width: 320px;
 }
 ul{
     list-style: none;
@@ -29,7 +30,7 @@ a:hover{
 /*Header*/
 header{
     background: #3bb6d9;
-    padding: 30px 0;
+    padding: 15px 0;
     color: rgba(233,241,251,0.9);
     font-size: 0.6em;
 }
@@ -234,6 +235,12 @@ header a{
                 margin-top: 6%;
                 background: url(../img/dotted-underline.png) repeat-x bottom center;
             }
+            .pad-bottom{
+                padding-bottom: 74px;
+            }
+            .border-left{
+                border-right: 1px solid #cdcdcd;
+            }
         .types-create{
             margin: 40px 0 0 40px;
         }
@@ -280,7 +287,6 @@ header a{
 
     /*CheckBox in item*/
     .type-blog-gallery input[type=checkbox]{
-        display: none;
         position: absolute;
     }
     .type-blog-gallery label{
@@ -313,25 +319,19 @@ header a{
             color: #fff;
             text-decoration: none;
         }
-.current-cat h6{
-     padding-bottom: 38px;
+.create-comp .current-cat h6{
+    padding-bottom: 38px;
 }
-    .current-cat h6 span{
-       color: #2bafd4;
-    }
-
-/*More information for create*/
-/*.create-more,.countries{*/
-    /*width: 50%;*/
-    /*display: inline-block;*/
-    /*float: left;*/
-/*}*/
+    .create-comp .current-cat h6 span{
+             color: #2bafd4;
+         }
 .create-comp h6{
     margin-bottom: 20px;
 }
      .create-comp h6 span{
          color: #3bc26e;
          padding-bottom: 12px;
+        font-family: MuseoSansBold, sans-serif;
      }
         /*customize slider-range*/
     .create-more .ui-slider{
@@ -384,13 +384,7 @@ header a{
         display: inline-block;
         padding-left: 15px;
     }
-    /*customize checkbox*/
-    .checkbox-audience{
-        display: none;
-
-    }
        .label-audience{
-            display: inline-block;
             height: 24px;
             width: 24px;
             border:1px solid #d1d1d1;
@@ -490,15 +484,19 @@ header a{
     padding-top: 4%;
 }
     .country-gallery {
-        margin-top: 40px;
+        margin-top: 8%;
+        position: relative;
+        left: 8%;
+        width: 98%;
     }
-        .country-gallery .container-fluid{
+        .country-gallery .container-fluid, .business-seo-wrap .container-fluid {
             padding: 0;
             margin: 0;
         }
         .country-wrap{
             position: relative;
-            margin: 0 25px 35px 0;
+            max-width: 90%;
+            margin: 0 18% 35% 0;
         }
         .country-wrap:nth-last-of-type(3n){
             padding-right: 0;
@@ -508,12 +506,9 @@ header a{
             display: inline-block;
         }
         .country-wrap span{
-            font-size: 0.8em;
+            font-size: 0.85em;
+            float: left;
         }
-        .country-wrap input{
-            display: none;
-        }
-
     .country-gallery .label-audience{
         box-shadow: none;
         float: right;
@@ -521,14 +516,117 @@ header a{
     .country-gallery input:checked + .label-audience{
         background: #64BC85;
     }
-    .country-gallery i{
+/*icon Countries flags*/
+    .country-wrap i{
         width: 24px;
-        height: 24px;;
-        background: #2b542c;
+        height: 24px;
         position: absolute;
-        top: 0;
+        top: -2px;
         left: -30px;
+        background-image: url(../img/flags-sprite.png);
+        background-repeat: no-repeat;
     }
+        .sprite-flag-1 {
+
+            background-position: 0 0;
+        }
+        .sprite-flag-2 {
+
+            background-position: -58px 0;
+        }
+        .sprite-flag-3 {
+            background-position: -116px 0;
+        }
+        .sprite-flag-4 {
+
+            background-position: -27px 0;
+        }
+        .sprite-flag-5 {
+            background-position: -88px 0;
+        }
+        .sprite-flag-6 {
+            background-position: -145px 0;
+        }
+.countries-selected-wrap{
+    margin-top: 81%;
+}
+    .countries-selected-text h6 span{
+        font-family: MuseoSansRegular, sans-serif;
+    }
+
+/*Select business category*/
+.business-seo-wrap{
+    padding-bottom: 64px;
+}
+
+    .business-seo-wrap input[type=checkbox]:checked + .label-business{
+        background-color: #3bb6d9;
+        color: #fff;
+    }
+
+        .label-business  {
+            display: block;
+            border: 1px solid #d1d1d1;
+            border-radius: 8px;
+            box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.16);
+            font-weight: 300;
+            text-align: center;
+            line-height: 5em;
+            color: #787878;
+            cursor: pointer;
+        }
+            .label-business:hover{
+                background-color: #ebf1f2;
+            }
+            .label-business span{
+                display: inline-block;
+            }
+            .label-business i{
+                background: url(../img/bus-seo-sprite.png)no-repeat;
+                display: inline-block;
+            }
+            .icon-bd{
+                position: relative;
+                top: 20px;
+            }
+            .label-business .seo-comp-1 {
+                width: 77px;
+                height: 46px;
+                background-position: -3px -6px;
+                left: -23px;
+            }
+            .label-business .seo-comp-2 {
+                width: 100px;
+                height: 44px;
+                background-position: -86px 0;
+                left: -4px;
+            }
+            .label-business .seo-comp-3 {
+                width: 63px;
+                height: 63px;
+                background-position: -191px 3px;
+                position: absolute;
+                top: 10px;
+                left: 25px;
+            }
+                .seo-comp-3 + span{
+                  padding-left: 25px;
+                }
+                /*active button special class*/
+                .seo-comp-1-active{
+                     background-position: -3px -56px !important;
+                }
+                .seo-comp-2-active{
+                    background-position: -86px -55px !important;
+                }
+                .seo-comp-3-active{
+                    background-position: -191px -50px !important;
+                }
+/**/
+/*Check campaing*/
+.campaign-container{}
+.check-camp{}
+
 
 
 
