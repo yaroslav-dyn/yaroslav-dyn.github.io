@@ -1,4 +1,4 @@
-@media (max-width: 1600px) {
+@media (max-width: 1440px) {
 
     /*chande .create company in .col-md-8 in all resolution*/
     .log-status{
@@ -29,6 +29,12 @@
 
     .business-seo-wrap, .campaign-container {   
         font-size: 0.85em;
+    }
+
+
+    .privilege-inner {
+
+        font-size: 0.8em;
     }
 
 }/*END MEDIA*/

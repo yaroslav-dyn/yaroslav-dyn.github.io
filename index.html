@@ -1,13 +1,15 @@
-<html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Campaign</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="libs/bootstrap-3.3.6-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="libs/jquery-ui-1.11.4.custom/jquery-ui.min.css">
-    <link rel="stylesheet" href="css/main.css">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Create Campaign</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="libs/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="libs/jquery-ui-1.11.4.custom/jquery-ui.min.css">
+        <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/1440.css">
-</head>
+    </head>
 <body>
 <div class="wrapper">
     <header>
@@ -199,14 +201,14 @@
                                     </div>
                                 </div>
                                 <div class="container-fluid dote-border pad-bottom">
-                                    <div class="col-md-6  border-left">
+                                    <div class="col-md-6 ">
                                         <div class="create-more dote-border">
                                             <div class="audience">
                                                 <h6>Please select <span>age</span> for your target audience.</h6>
                                             </div>
                                             <div class="create-more-ui">
                                                 <div id="slider-range"></div>
-                                                <div class="in-age-wr">
+                                                <div class="in-age-wr range-modal">
                                                     <div class="triangle"></div>
                                                     <input type="text" id="amount" readonly><label></label>
                                                 </div>
@@ -313,7 +315,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 border-left">
                                         <div class="countries">
                                             <div class="audience">
                                                 <h6>Please select <span>countries</span>  for your target audience.</h6>
@@ -405,18 +407,100 @@
                                     <div class="container-fluid">
                                         <div class="row">
                                             <div class="col-md-3 col-lg-3 col-xs-6">
-                                                <input type="checkbox" id="check-camp-1" class="check-camp hidden"><label for="check-camp-1" class="label-business"><span>Product Review</span></label>
+                                                <input type="checkbox" id="check-camp-1" class="check-camp hidden"><label for="check-camp-1" class="label-business campaign"><span>Product Review</span></label>
                                             </div>
                                             <div class="col-md-3 col-lg-3 col-xs-6">
-                                                <input type="checkbox" id="check-camp-2" class="check-camp hidden"><label for="check-camp-2" class="label-business"><span>Product/Brand story</span></label>
+                                                <input type="checkbox" id="check-camp-2" class="check-camp hidden"><label for="check-camp-2" class="label-business campaign"><span>Product/Brand story</span></label>
                                             </div>
 
                                             <div class="col-md-3 col-lg-3 col-xs-6">
-                                                <input type="checkbox" id="check-camp-3" class="check-camp hidden"><label for="check-camp-3" class="label-business"><span>Product Review</span></label>
+                                                <input type="checkbox" id="check-camp-3" class="check-camp hidden"><label for="check-camp-3" class="label-business campaign"><span>Product Review</span></label>
                                             </div>
                                             <div class="col-md-3 col-lg-3 col-xs-6">
-                                                <input type="checkbox" id="check-camp-4" class="check-camp hidden"><label for="check-camp-4" class="label-business"><span>Product/Brand story</span></label>
+                                                <input type="checkbox" id="check-camp-4" class="check-camp hidden"><label for="check-camp-4" class="label-business campaign"><span>Product/Brand story</span></label>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div><!--End campaign-->
+                                <div class="current-cat">
+                                    <h6>Your monthly <span>Budget</span></h6>
+                                </div>
+                                <div class="budget-slider-wrap">
+                                    <div class="in-budget-wr range-modal">
+                                        <input type="text" id="amount-budget" readonly value="25.000"><label></label>
+                                        <div class="triangle"></div>
+                                    </div>
+                                    <div class="slider-budget-ui">
+                                        <div class="ranges">5000</div>
+                                        <div id="slider-budget"></div>
+                                        <div class="ranges">100,000</div>
+                                    </div>
+                                    <div class="ranges-text">
+                                        <div class="ranges-text-val breakpoint-1">SOME POSTS</div>
+                                        <div class="ranges-text-val breakpoint-2">SOCIAL BUZZ</div>
+                                        <div class="ranges-text-val breakpoint-3">BIG EXPOSURE</div>
+                                        <div class="ranges-text-val breakpoint-4"> SOCIAL MEDIA DOMINATION</div>
+                                    </div>
+                                </div>
+                                <div class="privilege dote-border">
+                                    <div class="privilege-inner">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <span class="glyphicon glyphicon-ok"></span>&nbsp<span>Decent amount of visitor</span>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <span class="glyphicon glyphicon-ok"></span>&nbsp<span>High amount of shares/retweets</span>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <span class="glyphicon glyphicon-ok"></span>&nbsp<span>Decent amount of visitors</span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <span class="glyphicon glyphicon-ok"></span>&nbsp<span>Increase in revenue</span>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <span class="glyphicon glyphicon-ok"></span>&nbsp<span>Another feature of Social Buzz</span>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <span class="glyphicon glyphicon-ok"></span>&nbsp<span>Increase in revenue</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--End privilege-->
+                                <div class="preferable">
+                                    <div class="container-fluid">
+                                        <div class="col-md-6">
+                                            <div class="current-cat">
+                                                <h6>Please select your preferable <span>approach.</span></h6>
+                                            </div>
+                                            <div class="approach-wrap">
+                                                <div class="approach-item">
+                                                    <input type="radio" name="approach-r" id="check-approach-1" class="check-camp hidden">
+                                                    <label for="check-approach-1" class="label-business approach-label">
+                                                        <span class="rounded-icon"></span>
+                                                    <span>
+                                                       <strong> Hands off approach (recommended)</strong><br>
+                                                        Tell us what you want and we do everything.
+                                                    </span>
+                                                    </label>
+                                                </div>
+                                                <div class="approach-item">
+                                                    <input type="radio" id="check-approach-2" name="approach-r" class="check-camp hidden">
+                                                    <label for="check-approach-2" class="label-business approach-label">
+                                                        <span class="rounded-icon"></span>
+                                                        <span>
+                                                            <strong> Hands on approach (time-consuming)</strong><br>
+                                                            Dig into the details with us.
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+
                                         </div>
                                     </div>
                                 </div>

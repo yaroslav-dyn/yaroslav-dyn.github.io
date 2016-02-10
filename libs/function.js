@@ -93,7 +93,7 @@ $(document).ready( function(){
     });
 
 
-    /*Slider JS*/
+    /*Slider age  audience JS*/
     $(function() {
         $( "#slider-range" ).slider({
             range: true,
@@ -106,6 +106,24 @@ $(document).ready( function(){
         });
         $( "#amount" ).val(  $( "#slider-range" ).slider( "values", 0 ) + " - " +$( "#slider-range" ).slider( "values", 1 ) );
     });
+
+    /*Slider budget JS*/
+    $(function() {
+        $( "#slider-budget" ).slider({
+            value : 25000,
+            min : 5000,
+            max : 100000,
+            create: function( event, ui ) {
+                val = $( "#slider-budget" ).slider("value");
+                $( "#amount-budget" ).html( val );
+            },
+            slide: function( event, ui ) {
+                $( "#amount-budget" ).val( ui.value );
+            }
+        });
+    });
+
+
 
 
 });//END READY

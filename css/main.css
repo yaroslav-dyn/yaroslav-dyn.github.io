@@ -39,7 +39,7 @@ header a{
     color: #fff;
 }
 .head-wrapper{
-
+    padding-bottom: 14px;
 }
 .header-left, .header-middle, .header-right, .right-status-head div{
     display: inline-block;
@@ -93,7 +93,7 @@ header a{
             padding-bottom: 0;
             margin:  0 0 0 12px ;
         }
-        .text-status .name-acc{
+        .text-status .name-acc, .ranges{
             font-family: MuseoSansBold, sans-serif;
         }
             .name-acc span{
@@ -239,7 +239,7 @@ header a{
                 padding-bottom: 74px;
             }
             .border-left{
-                border-right: 1px solid #cdcdcd;
+                border-left: 1px solid #cdcdcd;
             }
         .types-create{
             margin: 40px 0 0 40px;
@@ -268,7 +268,7 @@ header a{
         padding: 0;
     }
     .type-blog-gallery  img{
-        min-height: 144px;
+        min-height: 150px;
         border-radius: 4px 4px 0 0;
     }
     .type-blog-gallery .cat-name{
@@ -339,13 +339,13 @@ header a{
         height: 8px;
         margin: 22px 0;
     }
-    .create-more .ui-corner-all{
+    .create-more .ui-corner-all, .budget-slider-wrap .ui-corner-all{
       background: #ebebeb;
      }
     .create-more .ui-slider-range{
        background: #aae6c0;
     }
-    .create-more .ui-slider-handle{
+    .create-more .ui-slider-handle, .budget-slider-wrap .ui-slider-handle{
         background: #54c37e;
         border-radius: 50%;
         width: 1.8em;
@@ -354,11 +354,14 @@ header a{
         margin-left: -.5em;
     }
     .in-age-wr{
-        position: relative;
         margin-left: 20%;
         padding-bottom: 40px;
     }
-    .in-age-wr input{
+    /*Class Range modal for ui sliders*/
+    .range-modal{
+        position: relative;
+    }
+    .range-modal input{
         border:none;
         background: #54c37e;
         border-radius: 8px;
@@ -369,7 +372,7 @@ header a{
         padding: 10px;
 
     }
-    .in-age-wr .triangle {
+    .range-modal .triangle {
         border-color: transparent transparent #54c37e transparent;
         top: -9px;
         left: 32px;
@@ -413,7 +416,10 @@ header a{
     margin-bottom: 27px;
 }
 .social-inner{
-    margin-left: -6%;
+    margin-left: 3%;
+    padding-right: 3%;
+    position: relative;
+    left: -8%;
 }
   .item-social .label-audience{
       position: absolute;
@@ -489,7 +495,7 @@ header a{
         left: 8%;
         width: 98%;
     }
-        .country-gallery .container-fluid, .business-seo-wrap .container-fluid {
+        .country-gallery .container-fluid, .business-seo-wrap .container-fluid, .privilege .container-fluid {
             padding: 0;
             margin: 0;
         }
@@ -555,11 +561,11 @@ header a{
     }
 
 /*Select business category*/
-.business-seo-wrap{
+.business-seo-wrap, .campaign-container{
     padding-bottom: 64px;
 }
 
-    .business-seo-wrap input[type=checkbox]:checked + .label-business{
+    .business-seo-wrap input[type=checkbox]:checked + .label-business, .campaign-container input[type=checkbox]:checked + .label-business, .approach-wrap input[type=checkbox]:checked + .label-business  {
         background-color: #3bb6d9;
         color: #fff;
     }
@@ -622,10 +628,126 @@ header a{
                 .seo-comp-3-active{
                     background-position: -191px -50px !important;
                 }
-/**/
+
 /*Check campaing*/
-.campaign-container{}
-.check-camp{}
+.campaign-container{
+    position: relative;
+    left: -15px;
+}
+    .check-camp{}
+        .campaign{
+            line-height: 3em;
+        }
+/*customize slider budget*/
+.budget-slider-wrap{
+
+}
+    .budget-slider-wrap:after{
+        content: "";
+        border-bottom: 1px solid #cecece;
+        display: block;
+        width: 89%;
+        height: 1px;
+        padding-bottom: 11%;
+        margin-left: 6%;
+    }
+    .budget-slider-wrap .ui-slider-handle{
+        background-color: rgb(59, 182, 217);
+    }
+    .in-budget-wr{
+        padding-bottom: 24px;
+        margin-left: 40%;
+    }
+    #slider-budget{
+        width: 80%;
+    }
+        .in-budget-wr input{
+            background: #fa8d2c;
+        }
+        .in-budget-wr .triangle{
+            border-color:  #fa8d2c transparent transparent transparent;
+           border-width: 12px 9px 0 9px;
+            top: 39px;
+            left: 32px;
+        }
+        .slider-budget-ui > div{
+            display: inline-block;
+        }
+        .ranges{
+            padding: 0 2%;
+        }
+    .ranges-text{
+        position: relative;
+        margin-top: -10px;
+    }
+        .ranges-text-val{
+            display: inline-block;
+            font-size: 0.9em;
+            color: #c1c1c1;
+            position: absolute;
+            text-transform: uppercase;
+        }
+
+        .ranges-text-val:before{
+            content: "|";
+            display: block;
+            font-size: 1.2em;
+            color: #b7b7b7;
+            margin: 0 48%;
+        }
+            .breakpoint-1{
+                left: 6.78%;
+            }
+            .breakpoint-2{
+                left: 33%;
+            }
+            .breakpoint-3{
+                left: 60%;
+            }
+            .breakpoint-4{
+                left: 76%;
+            }
+/* privilege usage*/
+    .privilege-inner{
+        color: #626262;
+        margin-left: 6%;
+        padding-bottom: 5%;
+    }
+    .privilege  .glyphicon-ok{
+        color: #fa8d2c;
+    }
+    .privilege span{
+        padding-bottom: 30px;
+    }
+/*approach*/
+.rounded-wrap{
+    width: 98%;
+}
+.approach-label {
+    background-color: #ebf1f2;
+}
+.approach-label span {
+    line-height: 1.2em;
+    text-align: left;
+    padding: 4% 0 0 3%;
+}
+
+    .approach-label:after{
+        content: "";
+        width: 30px;
+        height: 30px;
+        background: #ddd;
+        border-radius: 50%;
+        position: absolute;
+        top: 64%;
+        left: 7%;
+    }
+    .check-camp:checked + .approach-label:after{
+        content: "";
+        background: transparent;
+        border: 9px solid #fff;
+    }
+
 
 
 
