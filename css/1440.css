@@ -37,4 +37,9 @@
         font-size: 0.8em;
     }
 
+    .approach-label .approach-text {
+        font-size: 0.8em;
+        padding: 3% 0 1% 1%;
+    }
+
 }/*END MEDIA*/

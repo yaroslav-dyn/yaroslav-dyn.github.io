@@ -202,18 +202,22 @@ header a{
             width: 28px;
             background-position: -72px 0;
         }
-/*Section create company*/
-.create-comp{
+/*global style for section exterior*/
+.section-ext{
     background: #fff;
-    margin-top: 30px;
     border-radius: 6px;
     -webkit-box-shadow: inset 0 0 1px #cbcbcb, 0 0 10px rgba(0,1,1,0.1);
     -moz-box-shadow: inset 0 0 1px #cbcbcb, 0 0 10px rgba(0,1,1,0.1);
     box-shadow: inset 0 0 1px #cbcbcb, 0 0 10px rgba(0,1,1,0.1);
-    margin-left: 10%;
+}
+/*Section create company*/
+
+.create-comp{
+    margin: 4% 0 0 10%;
 }
     .create-comp-inner{
         padding: 0 5% 0 4%;
+
     }
     .slogan-page {
         border-bottom: 1px solid #eeefef;
@@ -276,8 +280,7 @@ header a{
         padding: 15px 0;
         border-top: 1px solid #ddd;
     }
-    .type-blog-gallery a.thumbnail:hover, a.thumbnail:active, a.thumbnail:active:focus {
-
+    .type-blog-gallery a.thumbnail:hover, a.thumbnail:active, a.thumbnail:focus {
         text-decoration: none;
     }
     .cat-name-hover{
@@ -395,7 +398,7 @@ header a{
            cursor: pointer;
         }
             .label-audience span{
-                color: transparent;
+                color: #fff;
                 padding: 2px;
             }
         input.checkbox-audience:checked + .label-audience{
@@ -565,7 +568,7 @@ header a{
     padding-bottom: 64px;
 }
 
-    .business-seo-wrap input[type=checkbox]:checked + .label-business, .campaign-container input[type=checkbox]:checked + .label-business, .approach-wrap input[type=checkbox]:checked + .label-business  {
+    .business-seo-wrap input[type=checkbox]:checked + .label-business, .campaign-container input[type=checkbox]:checked + .label-business, .approach-wrap input[type=radio]:checked + .approach-label  {
         background-color: #3bb6d9;
         color: #fff;
     }
@@ -719,39 +722,174 @@ header a{
     .privilege span{
         padding-bottom: 30px;
     }
-/*approach*/
+/*approach radio button*/
+.preferable{
+    padding-top: 5%;
+}
 .rounded-wrap{
-    width: 98%;
+    width: 94%;
+}
+.approach-item{
+    margin-bottom: 20px;
 }
 .approach-label {
     background-color: #ebf1f2;
-}
-.approach-label span {
-    line-height: 1.2em;
+    display: block;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.16);
+    cursor: pointer;
     text-align: left;
-    padding: 4% 0 0 3%;
+    color: #777;
 }
+    .approach-label .approach-text {
+        font-weight: 300;
+        font-size: 1em;
+        line-height: 1.4em;
+        text-align: left;
+        padding: 3% 0 3% 3%;
+        display: inline-block;
+    }
 
-    .approach-label:after{
-        content: "";
+    .rounded-icon{
         width: 30px;
         height: 30px;
         background: #ddd;
         border-radius: 50%;
-        position: absolute;
-        top: 64%;
-        left: 7%;
+        display: inline-block;
+        margin-left: 28px;
+
     }
-    .check-camp:checked + .approach-label:after{
-        content: "";
+    .rounded-icon-active {
         background: transparent;
         border: 9px solid #fff;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+/*Date start a company*/
+.date-start-comp{
+    margin-left: 8%;
+}
+    .date-start-comp .current-cat h6{
+        padding-bottom: 0;
+        margin-bottom: 2%;
+    }
+    .date-start-comp p{
+        color: #a1a1a1;
+    }
+    .ui-datepicker .ui-datepicker-title {
+        color: #797979;
+        font-weight: 300;
+    }
+    /*Datepicker customize*/
+    .date-start-comp .ui-datepicker-inline{
+        border: none;
+        width:50%;
+    }
+    .date-start-comp .ui-datepicker-header{
+        background: transparent;
+        border: none;
+    }
+    .ui-datepicker th{
+        color: #3bb6d9;
+    }
+    .date-start-comp .ui-state-default{
+        border: none;
+        background: transparent;
+        text-align: center;
+        color: #686868;
+    }
+     .date-start-comp .ui-widget-content .ui-state-highlight {
+        background: #3bb6d9;
+        border-radius: 50%;
+        border: none;
+        color: #fff;
+    }
+    .date-start-comp .ui-state-active{
+        background: #e0e0e0;
+        border-radius: 50%;
     }
 
+    .date-start-comp .ui-state-hover {
+        background: #e0e0e0;
+        border-radius: 50%;
 
-
-
-
+    }
+    .ui-icon-circle-triangle-e {
+        background-position: -28px -33px !important;
+    }
+    .ui-icon-circle-triangle-w {
+        background-position: -99px -33px !important;
+     }
+   /*End datepicker*/
+    .check-start-wrap{
+        margin-top: 18px;
+    }
+    .check-start-wrap>span{
+        padding-left: 8px;
+    }
+/*797979*/
+/*describe form*/
+.describe-wrap{
+    margin-top: 8%;
+}
+    .describe-area {
+        border: 1px solid #d0d0d0;
+        border-radius: 6px;
+        background-color: #f2f2f2;
+        width:65%;
+        height: 138px;
+        outline: none;
+        color: #a1a1a1;
+        font-size: 0.9em;
+        padding: 10px;
+        margin-top: 8px;
+    }
+/*submit*/
+.main-submit-wrap{
+    margin: 18px 0 68px 0;
+}
+    .main-submit{
+        border-radius: 6px;
+        background-color: #6fc690;
+        width: 65%;
+        height: 75px;
+        outline: none;
+        border:  none;
+        color: #fff;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-family: MuseoSansBold, sans-serif;
+    }
+    .main-submit:hover{
+        background-color: #3bb6d9;
+    }
+/*FAQ & invoices*/
+.faq-wrapper {
+    margin: 2% 0 0 6.4%;
+}
+    .faq-wrapper h4{
+        font-size: 1.3em;
+        color: #32474d;
+        display: inline-block;
+    }
+   .faq-wrapper .faq{
+        padding: 15px;
+    }
+    .faq .dote-border{
+        width: 50%;
+        height: 5px;
+        display: inline-block;
+        position: relative;
+        top: -3px;
+        left: 25px;
+        margin-top: 0;
+    }
+    .faq .glyphicon-search{
+        font-size: 1.2em;
+        color: #32474d;
+    }
 
 /*Media quires*/
 @media (min-width: 1200px){

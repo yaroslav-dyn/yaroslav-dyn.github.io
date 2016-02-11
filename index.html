@@ -70,7 +70,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-8">
-                    <article class="create-comp">
+                    <article class="create-comp section-ext">
                         <div class="create-comp-inner">
                             <div class="slogan-page">
                                 <h2>Create Campaign</h2>
@@ -470,7 +470,7 @@
                                         </div>
                                     </div>
                                 </div><!--End privilege-->
-                                <div class="preferable">
+                                <div class="preferable hidden-xs">
                                     <div class="container-fluid">
                                         <div class="col-md-6">
                                             <div class="current-cat">
@@ -478,33 +478,55 @@
                                             </div>
                                             <div class="approach-wrap">
                                                 <div class="approach-item">
-                                                    <input type="radio" name="approach-r" id="check-approach-1" class="check-camp hidden">
-                                                    <label for="check-approach-1" class="label-business approach-label">
-                                                        <span class="rounded-icon"></span>
-                                                    <span>
-                                                       <strong> Hands off approach (recommended)</strong><br>
-                                                        Tell us what you want and we do everything.
-                                                    </span>
+                                                    <input type="radio" name="approach-radio" id="check-approach-1" class="check-camp hidden" checked>
+                                                    <label for="check-approach-1" class="approach-label">
+                                                        <i class="rounded-icon rounded-icon-active"></i>
+                                                        <span class="approach-text">
+                                                           <b> Hands off approach (recommended)</b><br>
+                                                            Tell us what you want and we do everything.
+                                                        </span>
                                                     </label>
                                                 </div>
                                                 <div class="approach-item">
-                                                    <input type="radio" id="check-approach-2" name="approach-r" class="check-camp hidden">
-                                                    <label for="check-approach-2" class="label-business approach-label">
-                                                        <span class="rounded-icon"></span>
-                                                        <span>
-                                                            <strong> Hands on approach (time-consuming)</strong><br>
+                                                    <input type="radio" id="check-approach-2" name="approach-radio" class="check-camp hidden">
+                                                    <label for="check-approach-2" class="approach-label">
+                                                        <i class="rounded-icon "></i>
+                                                        <span class="approach-text">
+                                                            <b> Hands on approach (time-consuming)</b><br>
                                                             Dig into the details with us.
                                                         </span>
                                                     </label>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
-
+                                        <div class="col-md-6 border-left">
+                                            <div class="date-start-comp">
+                                                <div class="current-cat">
+                                                    <h6>Please select start <span> date.</span></h6>
+                                                    <p>A campaign lasts about two months.</p>
+                                                </div>
+                                                <div id="datepicker-StartDate">
+                                                </div>
+                                                <div class="check-start-wrap">
+                                                    <input type="checkbox" id="not-start-date" class="hidden">
+                                                    <label for="not-start-date" class="label-audience">
+                                                        <span class="glyphicon glyphicon-ok"></span>
+                                                    </label>
+                                                    <span class="check-discription">I don’t know start date.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-lg-12 text-center">
+                                            <div class="describe-wrap">
+                                                <p>Please describe what you want to achieve with the campaign</p>
+                                                <textarea name="describe" id="describe" class="describe-area"></textarea>
+                                            </div>
+                                            <div class="main-submit-wrap">
+                                                <input type="submit" class="main-submit" value="SEND CAMPAIGN REQUEST">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-
+                                </div><!--ENd preferable-->
                             </form>
                         </div><!--Create-comp-inner-->
                     </article>
@@ -515,7 +537,36 @@
             </div><!--End row-->
         </div><!---End container -->
     </section>
-</div>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="faq-wrapper">
+                    <div class="col-md-3">
+                        <div class="faq section-ext">
+                            <h4>Invoices</h4>
+                            <div class="dote-border"></div>
+                            <div class="invoices-wrap">
+                                <div class="approach-label">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet architecto consequatur debitis, eaque, est excepturi in laborum maxime minus, molestiae optio qui quia quisquam reiciendis soluta veritatis vero voluptas.
+                                </div>
+                                <div class="approach-label">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, magni, velit. Ad amet beatae earum eum inventore iste, itaque labore neque obcaecati officiis quibusdam reprehenderit tenetur totam veniam vitae voluptatum?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="faq section-ext">
+                            <h4>FAQs</h4>
+                            <div class="dote-border"></div>
+                            <span class="glyphicon glyphicon-search"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div><!--End wrapper-->
 
 <script src="libs/jquery-1.12.0.min.js"></script>
 <script src="libs/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>

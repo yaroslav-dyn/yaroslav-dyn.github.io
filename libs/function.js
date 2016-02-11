@@ -1,7 +1,7 @@
 $(document).ready( function(){
     //Drop block profilers on header
         $(".name-acc span").click(function(){
-            $(".prof-slide-fun").toggleClass("hidden");
+            $(".prof-slide-fun").toggleClass("hidden").fadeIn(1000);
         });
 
     ////Checked category in create company
@@ -81,7 +81,7 @@ $(document).ready( function(){
             $(".youtube").toggleClass("youtube-active");
         }
     });
-    /*active button special class*/
+    /*active button in business & seo special class*/
     $("#check-business-1 + label").click(function(){
         $(".seo-comp-1").toggleClass("seo-comp-1-active");
     });
@@ -91,6 +91,22 @@ $(document).ready( function(){
     $("#check-business-3 + label").click(function(){
         $(".seo-comp-3").toggleClass("seo-comp-3-active");
     });
+
+    $(".approach-label").click(function(){
+
+        if($(this).find(".rounded-icon").hasClass("rounded-icon-active")){
+            $(this).remove("rounded-icon-active");
+        }
+        else{
+            $(this).find(".rounded-icon").toggleClass("rounded-icon-active");
+        }
+
+    });
+    /*jquery Calendar*/
+    $( "#datepicker-StartDate" ).datepicker({
+
+    });
+
 
 
     /*Slider age  audience JS*/

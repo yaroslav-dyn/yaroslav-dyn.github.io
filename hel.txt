@@ -1,8 +1,0 @@
-.business-seo-wrap input[type=checkbox]:checked + .label-business, 
-
-.campaign-container input[type=checkbox]:checked + .label-business, 
-
-.approach-wrap input[type=checkbox]:checked + .label-business {
-    background-color: #3bb6d9;
-    color: #fff;
-}
