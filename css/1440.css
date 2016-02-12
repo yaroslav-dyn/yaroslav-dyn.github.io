@@ -1,6 +1,17 @@
+
+/*Media quires*/
+@media (min-width:960px) {
+    .type-blog-gallery .col-lg-3 {
+        width: 20%;
+    }
+    .faq-wrapper .col-md-5 {
+        width: 39.5%;
+    }
+}
+
 @media (max-width: 1440px) {
 
-    /*chande .create company in .col-md-8 in all resolution*/
+    /*change .create company in .col-md-8 in all resolution*/
     .log-status{
         font-size: 1.6em;
     }

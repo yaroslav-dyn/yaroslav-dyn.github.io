@@ -1,7 +1,7 @@
 $(document).ready( function(){
     //Drop block profilers on header
         $(".name-acc span").click(function(){
-            $(".prof-slide-fun").toggleClass("hidden").fadeIn(1000);
+            $(".prof-slide-fun").fadeIn(300).toggleClass("hidden");
         });
 
     ////Checked category in create company
@@ -102,11 +102,15 @@ $(document).ready( function(){
         }
 
     });
-    /*jquery Calendar*/
-    $( "#datepicker-StartDate" ).datepicker({
-
+    $(".answer-item").click(function(){
+        $(this).find(".answer-hidden").fadeIn(300).toggleClass("hidden");
+        $(this).find(".glyphicon-plus").toggleClass("glyphicon-minus  faq-icon-minus");
+        $(this).find(".answer-par").css("fontWeight","500");
     });
 
+
+    /*jquery Calendar*/
+    $( "#datepicker-StartDate" ).datepicker({});
 
 
     /*Slider age  audience JS*/

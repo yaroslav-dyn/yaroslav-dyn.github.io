@@ -11,10 +11,13 @@ body{
 }
 ul{
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 .clear{
     clear:both;
 }
+
 a{
     font-family: MuseoSansRegular, sans-serif;
     color: #2bafd4;
@@ -113,6 +116,9 @@ header a{
             border-radius: 6px;
             z-index: 1;
         }
+        .prof-slide-fun ul{
+            margin-left: 20px;
+        }
         /*triangle*/
         .triangle{
             width: 0;
@@ -203,7 +209,7 @@ header a{
             background-position: -72px 0;
         }
 /*global style for section exterior*/
-.section-ext{
+.section-exterior{
     background: #fff;
     border-radius: 6px;
     -webkit-box-shadow: inset 0 0 1px #cbcbcb, 0 0 10px rgba(0,1,1,0.1);
@@ -875,27 +881,234 @@ header a{
         display: inline-block;
     }
    .faq-wrapper .faq{
-        padding: 15px;
+       padding: 15px 30px;
     }
-    .faq .dote-border{
-        width: 50%;
-        height: 5px;
-        display: inline-block;
-        position: relative;
-        top: -3px;
-        left: 25px;
-        margin-top: 0;
-    }
-    .faq .glyphicon-search{
-        font-size: 1.2em;
-        color: #32474d;
+    .faq .invoices-tab{
+        padding: 25px;
+        margin-top: 5%;
     }
 
-/*Media quires*/
-@media (min-width: 1200px){
-    .type-blog-gallery .col-lg-3 {
-        width: 20%;
+    .faq .glyphicon-search{
+        font-size: 1.4em;
+        color: #32474d;
+        position: relative;
+        right: -38px;
     }
+    /*invoices*/
+    .section-exterior a{
+        font: 0.9em MuseoSansRegular, sans-serif;
+        color: #626262;
+    }
+    .section-exterior a:hover, .section-exterior a:hover b {
+        text-decoration: none;
+        color:#3bb6d9;
+    }
+    .faq ul{
+        padding: 0;
+        margin: 0;
+    }
+    ul.mark-invoices{
+        position: relative;
+    }
+    ul.mark-invoices>li{
+        display: inline-block;
+    }
+    .mark-invoices>li:nth-of-type(2){
+       margin-left: 6%;
+    }
+    .mark-invoices>li:nth-of-type(3){
+        position: absolute;
+        right: 0;
+        top: 7px;
+    }
+    ul.mark-invoices b{
+        font: 1.1em MuseoSansBold, sans-serif;
+    }
+    .faq .glyphicon-remove, .faq .glyphicon-ok {
+        color: #d51d1d;
+        font-size: 1.8em;
+        font-weight: 100;
+    }
+        .faq .glyphicon-ok{
+            color: #48c276;
+        }
+    .faq .dote-border{
+          width: 81%;
+          height: 5px;
+          display: inline-block;
+          position: relative;
+          top: -3px;
+          left: 25px;
+          margin-top: 0;
+      }
+/*PDF icon*/
+    .pdf-icon{
+        background: url(../img/pdf-sprite.png) no-repeat;
+        width: 32px;
+        height: 36px;
+        display: block;
+        padding-top: 2px;
+    }
+        .pdf-icon-remove{
+            background-position: 0 0;
+        }
+        .pdf-icon-add{
+            background-position: -36px 0;
+        }
+    /*>More*/
+    .more-inv{
+        border-top: 1px solid #e3e3e3;
+        box-shadow: 0 -1px 0 #e7e7e7;
+        text-align: center;
+        margin-top: 6%;
+        padding: 20px 0;
+    }
+        .more-inv b{
+            font-family: MuseoSansBold, sans-serif;
+            text-transform: uppercase;
+            color: #6c6b6b;
+        }
+        .more-inv span .answer-item{
+            font-weight: normal;
+            padding-right: 8px;
+            font-size: 0.8em;
+        }
+/*faq answer*/
+.faq-head{
+    padding-bottom: 3%;
 }
+ .faq-answer .dote-border{
+    width: 100%;
+     height: 2px;
+     position: static;
+ }
+ .answer-item{
+     padding-bottom: 4%;
+ }
+ .answer-item > p{
+     color: #747474;
+     font-size: 0.95em;
+ }
+ .faq-icon-plus{
+     border-radius: 50%;
+     border: 1px solid #c0c0c0;
+     text-align: center;
+     padding: 5px 5px 5px 7px;
+     color: #c0c0c0;
+     margin-right: 18px;
+     cursor: pointer;
+ }
+ .faq-icon-minus{
+     background: #353535;
+     color: #fff;
+     padding: 6px;
+ }
+    .answer-item:hover .faq-icon-plus{
+        color: #2ab151;
+        border-color:#2ab151;
+    }
+    .answer-item:hover .faq-icon-minus{
+        color: #fff;
+        border-color:#000
+    }
+    .answer-item:hover .answer-par{
+        color: #2ab151;
+        font-weight: 500;
+    }
+    .answer-item .answer-hidden{
+        padding: 1% 0 0 6%;
+        text-align: justify;
+        color: #a1a1a1;
+    }
+
+
+/*Mini-chat*/
+.chat{
+    margin-top: 11%;
+}
+.chat .section-exterior{
+    border-radius: 0 0 6px 6px;
+}
+.chat-wrapper{
+
+}
+    .chat-header{
+        background: #64bc85;
+        border-radius: 6px 6px 0 0;
+        padding: 0 35px;
+
+    }
+        .chat-header ul{
+            margin: 0;
+            padding: 0;
+        }
+        .chat-header ul li{
+            display: inline-block;
+
+        }
+        .chat-header ul li a{
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            line-height: 4em;
+        }
+        .chat-header ul li:nth-of-type(1):after{
+            content: "";
+            position: relative;
+            left: 20px;
+            top: 8px;
+            border: 1px solid rgba(255,255,255,.6);
+            height: 28px;
+            display: inline-block;
+
+        }
+        .chat-header ul li:nth-of-type(2){
+            float: right;
+        }
+        .chat-header ul li:nth-of-type(2) a{
+            font-family: MuseoSansBold, sans-serif;
+        }
+        .triangle-round{
+            font-size: 6px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            padding: 1px;
+            position: relative;
+            top: -2px;
+            right: -4px;
+        }
+.chat-body{
+    max-height: 244px;
+    overflow-y: scroll;
+}
+    ul.chat-chatroom{
+        padding-top: 40px;
+    }
+    .chat-chatroom li{
+        padding: 0 30px 36px 45px;
+        border-bottom: 1px solid #dddddd;
+        cursor: pointer;
+    }
+    .chat-chatroom i,.chat-chatroom span {
+        display: inline-block;
+    }
+    .chat-chatroom span{
+        margin-left: 28px;
+    }
+   .chat-chatroom .rounded-icon{
+       margin: 0;
+       position: relative;
+       top: 9px;
+       left: 0;
+    }
+    .chat-chatroom .badge{
+        border-radius: 6px;
+        background: #fa8d2c;
+        color: #fff;
+        position: relative;
+        right: 0;
+    }
+
+
 
 
