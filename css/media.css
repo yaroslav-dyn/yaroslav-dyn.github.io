@@ -1,0 +1,107 @@
+
+/*Media quires*/
+@media (min-width:960px) {
+    .type-blog-gallery .col-lg-3 {
+        width: 20%;
+    }
+    .faq-wrapper .col-md-5 {
+        width: 39.5%;
+    }
+}
+
+@media (max-width: 1680px) {
+
+    /*change .create company in .col-md-8 in all resolution*/
+    .text-status {
+    top: 18px;
+    padding-right: 24px;
+}
+    .text-status p {
+        margin: 0 0 0 8px;
+    }
+    .log-status{
+        font-size: 1.6em;
+    }
+
+    .right-status-head a {
+        font-size: 1.6em;
+        margin-right: 20px;
+    }
+    .type-blog-gallery img {
+        min-height: 112px;
+    }
+
+    .head-wrapper {  /*change for all*/
+        padding-bottom: 8px;
+    }
+    .prof-slide-fun {
+        top: 54px;
+    }
+    .country-wrap {
+        position: relative;
+        max-width: 95%;
+        margin: 0 7% 33% 0;
+    }
+
+    .country-gallery {
+        width: 106%;
+    }
+
+    .label-audience {
+        height: 22px;
+        width: 22px;
+    }
+    .ranges {
+        padding: 0 1%;
+        font-size: 0.8em
+    }
+    .ranges-text {
+        margin-top: -9px;
+        z-index: 1;
+    } 
+    .slider-budget-ui{
+        position: relative;
+        z-index: 2;
+    } 
+    .ranges-text-val {
+        font-size: 0.78em;
+    }
+
+    .business-seo-wrap, .campaign-container {   
+        font-size: 0.78em;
+    }
+
+
+    .privilege-inner {
+
+        font-size: 0.8em;
+    }
+
+    /*customize datepicker*/
+    .date-start-comp .ui-datepicker-inline {
+        width: 60%;
+    }
+
+    .approach-label .approach-text {
+        font-size: 0.8em;
+        padding: 3% 0 1% 1%;
+    }
+    .mark-invoices>li:nth-of-type(3) {
+        right: -14px;
+    }
+    
+    .chat-header ul li a {
+        font-size: 0.8em;
+        line-height: 4em;
+    }
+    .chat-header ul li:nth-of-type(1):after {
+        left: 13px;
+    }
+
+    .faq-wrapper h4 {
+        font-size: 1.2em;
+    }
+    .faq .glyphicon-search {
+        right: -22px;
+    }
+}/*END MEDIA*/
