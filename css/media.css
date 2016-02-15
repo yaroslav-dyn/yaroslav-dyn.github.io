@@ -1,6 +1,10 @@
 
 /*Media quires*/
+.navbar-toggle .icon-bar {
+    background: #fff;
+}
 @media (min-width:960px) {
+    /*change .create company in .col-md-8 in all resolution*/
     .type-blog-gallery .col-lg-3 {
         width: 20%;
     }
@@ -11,10 +15,9 @@
 
 @media (max-width: 1680px) {
 
-    /*change .create company in .col-md-8 in all resolution*/
     .text-status {
-    top: 18px;
-    padding-right: 24px;
+        top: 18px;
+        padding-right: 24px;
 }
     .text-status p {
         margin: 0 0 0 8px;
@@ -51,6 +54,9 @@
         height: 22px;
         width: 22px;
     }
+    .label-business .seo-comp-3 {
+        top: 2px;
+    }
     .ranges {
         padding: 0 1%;
         font-size: 0.8em
@@ -58,16 +64,16 @@
     .ranges-text {
         margin-top: -9px;
         z-index: 1;
-    } 
+    }
     .slider-budget-ui{
         position: relative;
         z-index: 2;
-    } 
+    }
     .ranges-text-val {
         font-size: 0.78em;
     }
 
-    .business-seo-wrap, .campaign-container {   
+    .business-seo-wrap, .campaign-container {
         font-size: 0.78em;
     }
 
@@ -89,7 +95,7 @@
     .mark-invoices>li:nth-of-type(3) {
         right: -14px;
     }
-    
+
     .chat-header ul li a {
         font-size: 0.8em;
         line-height: 4em;
@@ -104,4 +110,200 @@
     .faq .glyphicon-search {
         right: -22px;
     }
+
+/*all smartphone*/
+    @media (min-width: 360px)and (max-width: 1120px){
+        /*modify status in respond*/
+
+        .log-status-xs{
+            text-align: center;
+            padding: 6% 0;
+            position: relative;
+        }
+        .log-status-xs:after{
+            content: "";
+            background: url(../img/profile-icon-xs.png) no-repeat;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 44%;
+            right: 3%;
+        }
+        .log-status p{
+            text-align: left;
+        }
+        .photo-wrap{
+            border: none;
+            width: 60px;
+            height: 60px;
+        }
+        .text-status{
+            font-size: 0.9em;
+            color: #4e4e4e;
+            font-weight: 100;
+
+        }
+        .type-acc-xs{
+            font-size: 0.6em;
+        }
+        .navbar-toggle .icon-bar {
+            background: rgba(255,255,255,0.39);
+            width: 50px;
+            height: 5px;
+            margin-bottom: 13px;
+        }
+        .logo{
+            padding-top: 9%;
+        }
+        .create-comp {
+            margin: 1% 0;
+        }
+        /*NAV*/
+        .header-right {
+            float: none;
+        }
+        .slogan-page h2 {
+            border: none;
+        }
+        .countries-selected-wrap {
+         margin-top: 2%;
+        }
+        .border-left {
+            border: none;
+        }
+        .right-status-head a {
+            font-size: 2.4em;
+            margin-right: 20px;
+            display: block;
+            margin-bottom: 4%;
+        }
+            .right-status-head a i {
+               display: none;
+            }
+        .type-blog-gallery img {
+            min-height: 114px;
+        }
+        nav{
+            text-align: center;
+            width: 100%;
+        }
+        .bord-h{
+            display: none;
+        }
+        .navbar-toggle:before{
+            content: "";
+            display: inline-block;
+            border-left: 1px solid rgba(0,0,0 ,0.1);
+            width: 1px;
+            height: 114px;
+            position: absolute;
+            top: -28px;
+            right: 97px;
+
+        }
+        .bell-respon{
+            display: inline-block!important;
+            background: #fa8d2c;
+            padding: 8px;
+            border-radius: 50%;
+            font-size: 18px;
+            position: absolute;
+            top: 23px;
+            right: 112px;
+            z-index: 1;
+        }
+        .types-create {
+            margin: 38px 0 0 0;
+        }
+        .type-blog-gallery .cat-name {
+            font-size: 0.85em;
+        }
+        .label-business{
+            margin-bottom: 6%;
+        }
+         .create-more .container-fluid{
+            padding-left: 0!important;
+            padding-right: 0!important;
+        }
+        .pad-bottom {
+            padding-bottom: 30px;
+        }
+         /*social sprite xs*/
+        .item-social {
+            min-height: 34px;
+            max-width: 82px;
+            position: relative;
+            background: url(../img/social-sprite-grid-xs.jpg);
+            margin-bottom: 27px;
+
+        }
+
+        .facebook {
+            background-position: 0 -35px;
+        }
+            .facebook-active{
+                background-position: 0 0;
+            }
+        .google-plus {
+            background-position: -371px -36px;
+        }
+            .google-plus-active{
+                background-position: -371px -1px;
+            }
+        .instagram{
+            background-position: -561px -38px
+        }
+            .instagram-active{
+                background-position: -561px 0;
+            }
+        .pinterest {
+            background-position: -283px -37px;
+        }
+            .pinterest-active{
+                background-position: -286px 2px;
+
+            }
+        .linkid{
+            background-position: -742px 48px;
+        }
+            .linkid-active{
+                background-position: -741px 6px;
+            }
+        .tumblr{
+            background-position: -658px -31px;
+        }
+            .tumblr-active{
+                background-position: -658px 0;
+            }
+        .twitter{
+            background-position: 353px -34px;
+        }
+            .twitter-active{
+                background-position: 352px -5px;
+            }
+        .vine{
+            background-position: -87px -39px;
+        }
+            .vine-active{
+                background-position: -88px -5px;
+            }
+        .youtube{
+            background-position: -189px -41px;
+        }
+            .youtube-active{
+                background-position: -189px -6px;
+            }
+
+        .business-seo-wrap, .campaign-container {
+            padding-bottom: 0;
+        }
+        .create-comp .current-cat h6 {
+            padding-bottom: 28px;
+        }
+        .create-comp-inner {
+            padding: 0 15% 0 5%;
+        }
+    }/*End 360  */
 }/*END MEDIA*/
+
+

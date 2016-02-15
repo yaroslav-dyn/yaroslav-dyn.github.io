@@ -133,6 +133,7 @@ $(document).ready( function(){
             value : 25000,
             min : 5000,
             max : 100000,
+            step: 10,
             create: function( event, ui ) {
                 val = $( "#slider-budget" ).slider("value");
                 $( "#amount-budget" ).html( val );

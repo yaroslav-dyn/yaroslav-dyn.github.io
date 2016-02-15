@@ -17,55 +17,70 @@
             <div class="row">
             <div class="col-md-12 ">
                 <div class="head-wrapper">
-                    <!--Collapse button-->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
                     <div class="header-left">
                         <div class="logo">
                             <a href="index.html"><img src="img/logo.png" alt="grow social"></a>
                         </div>
                     </div>
-                    <div class="header-middle">
-                        <div class="log-status">
-                            <div class="photo-wrap">
-                                <img src="img/photo-profile.png" alt="photo profile">
-                            </div>
-                            <div class="text-status">
-                                <p class="name-acc">Teresa <span class="glyphicon glyphicon-triangle-bottom"></span></p>
-                                <p class="type-acc">Glossybox</p>
-                                <div class='prof-slide-fun hidden'>
-                                    <div class="triangle"></div>
-                                    <ul>
-                                        <li><a href="#"><span class="glyphicon glyphicon-briefcase"></span>Invoices</a></li>
-                                        <li><a href="#"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span>Statistics</a></li>
-                                        <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Profile</a></li>
-                                    </ul>
+                    <!--Collapse button-->
+                        <span class="bell-respon glyphicon glyphicon-bell" style="display: none"></span>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    <nav class="collapse navbar-collapse" id="myNavbar">
+                        <div class="header-middle">
+                            <div class="log-status hidden-xs">
+                                <div class="photo-wrap">
+                                    <img src="img/photo-profile.png" alt="photo profile">
+                                </div>
+                                <div class="text-status">
+                                    <p class="name-acc">Teresa <span class="glyphicon glyphicon-triangle-bottom"></span></p>
+                                    <p class="type-acc">Glossybox</p>
+                                    <div class='prof-slide-fun hidden'>
+                                        <div class="triangle"></div>
+                                        <ul>
+                                            <li><a href="#"><span class="glyphicon glyphicon-briefcase"></span>Invoices</a></li>
+                                            <li><a href="#"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span>Statistics</a></li>
+                                            <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Profile</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="text-status activity-status">
+                                    <p class="type-acc">Spent September: <b>$14,400</b></p>
+                                    <p class="type-acc">Active Campaigns: <b>7</b></p>
                                 </div>
                             </div>
-                            <div class="text-status activity-status">
-                                <p class="type-acc">Spent September: <b>$14,400</b></p>
-                                <p class="type-acc">Active Campaigns: <b>7</b></p>
+                        </div>
+                        <div class="header-right">
+                            <div class="right-status-head">
+                                <a href="#"><i class="icon speaker-plus"></i>Create New Campaign</a>
+                                <a href="#"><i class="icon speaker"></i>Campaigns</a>
+                                <a href="#"><i class="icon new-action"></i>New Actions <span>3</span></a>
+                                <a href="#" class="bord-h"><div class="border hidden-xs"></div><i class="icon search"></i></a>
+                                <a href="#" class="bord-h"><div class="border hidden-xs"></div><i class="icon shut"></i></a>
                             </div>
                         </div>
-                    </div>
-                    <div class="header-right">
-                        <div class="right-status-head">
-                            <a href="#"><i class="icon speaker-plus"></i>Create New Campaign</a>
-                            <a href="#"><i class="icon speaker"></i>Campaigns</a>
-                            <a href="#"><i class="icon new-action"></i>New Actions <span>3</span></a>
-                            <a href="#" class="bord-h"><div class="border"></div><i class="icon search"></i></a>
-                            <a href="#" class="bord-h"><div class="border"></div><i class="icon shut"></i></a>
-                        </div>
-                    </div>
-                    <div class="clear"></div>
+                        <div class="clear"></div>
+                    </nav>
+
                 </div><!--head-wrapper-->
             </div>
         </div><!--End row-->
      </div><!---End container -->
     </header>
+    <div class="log-status-xs hidden-md hidden-lg">
+        <div class="log-status">
+            <div class="photo-wrap">
+                <img src="img/photo-profile.png" alt="photo profile">
+            </div>
+            <div class="text-status">
+                <p class="name-acc-xs">Welcome, <b>Carolina</b></p>
+                <p class="type-acc-xs">Active Campaigns: <b>7</b></p>
+            </div>
+        </div>
+    </div>
     <section>
         <div class="container-fluid">
             <div class="row">
@@ -131,7 +146,7 @@
                                                 </a>
                                             </div>
                                             <!--Item gallery-->
-                                            <div class="col-lg-3 col-md-3 col-xs-4">
+                                            <div class="col-lg-3 col-md-3 col-xs-4 hidden-xs">
                                                 <a class="thumbnail" >
                                                     <input type="checkbox" id="check-6" class="hidden"><label for="check-6"><span class="glyphicon glyphicon-ok"></span></label>
                                                     <img class="img-responsive" src="img/cat-gallery-5.jpg" alt="Category blog">
@@ -199,10 +214,72 @@
                                     <div class="current-cat dote-border">
                                         <h6>You have selected: <span>* scripts </span></h6>
                                     </div>
-                                </div>
+                                </div><!--end type blog gallery-->
                                 <div class="container-fluid dote-border pad-bottom">
-                                    <div class="col-md-6 ">
-                                        <div class="create-more dote-border">
+                                    <div class="col-md-6 border-left col-md-push-6">
+                                        <div class="countries">
+                                            <div class="audience">
+                                                <h6>Please select <span>countries</span>  for your target audience.</h6>
+                                            </div>
+                                            <div class="country-gallery">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-xs-4">
+                                                            <div class="country-wrap">
+                                                                <i class = "sprite-flag-1"></i><span>Sweden</span><input type="checkbox" id="country-1" class="checkbox-audience hidden">
+                                                                <label for="country-1" class="label-audience"><span class="glyphicon glyphicon-ok"></span></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-xs-4">
+                                                            <div class="country-wrap" >
+                                                                <i class = "sprite-flag-2"></i><span>Norway</span><input type="checkbox" id="country-2" class="checkbox-audience hidden">
+                                                                <label for="country-2" class="label-audience"><span class="glyphicon glyphicon-ok"></span></label>
+                                                                <div class="claer"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-xs-4">
+                                                            <div class="country-wrap" >
+                                                                <i class = "sprite-flag-3"></i><span>Finland</span><input type="checkbox" id="country-3" class="checkbox-audience hidden">
+                                                                <label for="country-3" class="label-audience"><span class="glyphicon glyphicon-ok"></span></label>
+                                                                <div class="claer"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-xs-4">
+                                                            <div class="country-wrap" >
+                                                                <i class = "sprite-flag-4"></i><span>Denmark</span><input type="checkbox" id="country-4" class="checkbox-audience hidden">
+                                                                <label for="country-4" class="label-audience"><span class="glyphicon glyphicon-ok"></span></label>
+                                                                <div class="claer"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-xs-4">
+                                                            <div class="country-wrap" >
+                                                                <i class = "sprite-flag-5"></i><span>Uk</span><input type="checkbox" id="country-5" class="checkbox-audience hidden">
+                                                                <label for="country-5" class="label-audience"><span class="glyphicon glyphicon-ok"></span></label>
+                                                                <div class="claer"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-xs-4">
+                                                            <div class="country-wrap" >
+                                                                <i class = "sprite-flag-6"></i><span>Holland</span><input type="checkbox" id="country-6" class="checkbox-audience hidden">
+                                                                <label for="country-6" class="label-audience"><span class="glyphicon glyphicon-ok"></span></label>
+                                                                <div class="claer"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="countries-selected-wrap">
+                                                            <div class="countries-selected-text">
+                                                                <h6>Countries selected: <span>*scripts Sweeden</span></h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div><!--End Countries-->
+                                    </div><!--countries-->
+                                    <div class="col-md-6 col-md-pull-6">
+                                        <div class="create-more dote-border"><!--Age slider-->
                                             <div class="audience">
                                                 <h6>Please select <span>age</span> for your target audience.</h6>
                                             </div>
@@ -213,7 +290,7 @@
                                                     <input type="text" id="amount" readonly><label></label>
                                                 </div>
                                             </div><!--END create more Ui-->
-                                        </div>
+                                        </div><!--end age slider-->
                                         <div class="social-wrap">
                                             <div class="audience">
                                                 <h6> Please select: <span>channels</span> for your campaign.</h6>
@@ -227,7 +304,7 @@
                                             <div class="container-fluid">
                                                 <div class="social-inner">
                                                     <div class="row">
-                                                        <div class="col-md-4 col-xs-4">
+                                                        <div class="col-md-4 col-xs-4 ">
                                                             <div class="item-social facebook">
                                                                 <input type="checkbox" class="checkbox-audience hidden" id="check-social-item-1">
                                                                 <label class="label-audience" for="check-social-item-1">
@@ -315,68 +392,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 border-left">
-                                        <div class="countries">
-                                            <div class="audience">
-                                                <h6>Please select <span>countries</span>  for your target audience.</h6>
-                                            </div>
-                                            <div class="country-gallery">
-                                                <div class="container-fluid">
-                                                    <div class="row">
-                                                        <div class="col-md-4 col-xs-4">
-                                                            <div class="country-wrap">
-                                                                <i class = "sprite-flag-1"></i><span>Sweden</span><input type="checkbox" id="country-1" class="checkbox-audience hidden">
-                                                                <label for="country-1" class="label-audience"><span class="glyphicon glyphicon-ok"></span></label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4 col-xs-4">
-                                                            <div class="country-wrap" >
-                                                                <i class = "sprite-flag-2"></i><span>Norway</span><input type="checkbox" id="country-2" class="checkbox-audience hidden">
-                                                                <label for="country-2" class="label-audience"><span class="glyphicon glyphicon-ok"></span></label>
-                                                                <div class="claer"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4 col-xs-4">
-                                                            <div class="country-wrap" >
-                                                                <i class = "sprite-flag-3"></i><span>Finland</span><input type="checkbox" id="country-3" class="checkbox-audience hidden">
-                                                                <label for="country-3" class="label-audience"><span class="glyphicon glyphicon-ok"></span></label>
-                                                                <div class="claer"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-md-4 col-xs-4">
-                                                            <div class="country-wrap" >
-                                                                <i class = "sprite-flag-4"></i><span>Denmark</span><input type="checkbox" id="country-4" class="checkbox-audience hidden">
-                                                                <label for="country-4" class="label-audience"><span class="glyphicon glyphicon-ok"></span></label>
-                                                                <div class="claer"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4 col-xs-4">
-                                                            <div class="country-wrap" >
-                                                                <i class = "sprite-flag-5"></i><span>Uk</span><input type="checkbox" id="country-5" class="checkbox-audience hidden">
-                                                                <label for="country-5" class="label-audience"><span class="glyphicon glyphicon-ok"></span></label>
-                                                                <div class="claer"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4 col-xs-4">
-                                                            <div class="country-wrap" >
-                                                                <i class = "sprite-flag-6"></i><span>Holland</span><input type="checkbox" id="country-6" class="checkbox-audience hidden">
-                                                                <label for="country-6" class="label-audience"><span class="glyphicon glyphicon-ok"></span></label>
-                                                                <div class="claer"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="countries-selected-wrap">
-                                                            <div class="countries-selected-text">
-                                                                <h6>Countries selected: <span>*scripts Sweeden</span></h6>
-                                                            </div>
-                                                        </div>
-                                                    </div>
 
-                                                </div>
-                                            </div>
-                                        </div><!--End Countries-->
-                                    </div>
                                 </div>
                                 <div class="dote-border"></div>
                                 <div class="current-cat">
@@ -446,24 +462,22 @@
                                     <div class="privilege-inner">
                                         <div class="container-fluid">
                                             <div class="row">
-                                                <div class="col-md-4">
+                                                <div class="col-md-4 col-xs-6">
                                                     <span class="glyphicon glyphicon-ok"></span>&nbsp<span>Decent amount of visitor</span>
                                                 </div>
-                                                <div class="col-md-4">
+                                                <div class="col-md-4 col-xs-6">
                                                     <span class="glyphicon glyphicon-ok"></span>&nbsp<span>High amount of shares/retweets</span>
                                                 </div>
-                                                <div class="col-md-4">
-                                                    <span class="glyphicon glyphicon-ok"></span>&nbsp<span>Decent amount of visitors</span>
+                                                <div class="col-md-4 col-xs-6 hidden-xs">
+                                                    <span class="glyphicon glyphicon-ok "></span>&nbsp<span>Decent amount of visitors</span>
                                                 </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-4">
+                                                <div class="col-md-4 col-xs-6">
                                                     <span class="glyphicon glyphicon-ok"></span>&nbsp<span>Increase in revenue</span>
                                                 </div>
-                                                <div class="col-md-4">
+                                                <div class="col-md-4 hidden-xs">
                                                     <span class="glyphicon glyphicon-ok"></span>&nbsp<span>Another feature of Social Buzz</span>
                                                 </div>
-                                                <div class="col-md-4">
+                                                <div class="col-md-4 ">
                                                     <span class="glyphicon glyphicon-ok"></span>&nbsp<span>Increase in revenue</span>
                                                 </div>
                                             </div>
@@ -564,7 +578,7 @@
         </div><!---End container -->
     </section>
     <section>
-        <div class="container-fluid">
+        <div class="container-fluid hidden-xs">
             <div class="row">
                 <div class="faq-wrapper">
                     <div class="col-md-3">
