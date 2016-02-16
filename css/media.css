@@ -14,27 +14,24 @@
 }
 
 @media (max-width: 1680px) {
-
     .text-status {
         top: 18px;
         padding-right: 24px;
-}
+    }
     .text-status p {
         margin: 0 0 0 8px;
     }
-    .log-status{
+    .log-status {
         font-size: 1.6em;
     }
-
     .right-status-head a {
         font-size: 1.6em;
         margin-right: 20px;
     }
     .type-blog-gallery img {
-        min-height: 112px;
+        min-height: 138px;
     }
-
-    .head-wrapper {  /*change for all*/
+    .head-wrapper { /*change for all*/
         padding-bottom: 8px;
     }
     .prof-slide-fun {
@@ -45,11 +42,9 @@
         max-width: 95%;
         margin: 0 7% 33% 0;
     }
-
     .country-gallery {
         width: 106%;
     }
-
     .label-audience {
         height: 22px;
         width: 22px;
@@ -65,21 +60,20 @@
         margin-top: -9px;
         z-index: 1;
     }
-    .slider-budget-ui{
+    .slider-budget-ui {
         position: relative;
         z-index: 2;
     }
     .ranges-text-val {
         font-size: 0.78em;
     }
-
     .business-seo-wrap, .campaign-container {
         font-size: 0.78em;
     }
-
-
+    .privilege{
+        background: none;
+    }
     .privilege-inner {
-
         font-size: 0.8em;
     }
 
@@ -87,29 +81,220 @@
     .date-start-comp .ui-datepicker-inline {
         width: 60%;
     }
-
     .approach-label .approach-text {
         font-size: 0.8em;
         padding: 3% 0 1% 1%;
     }
-    .mark-invoices>li:nth-of-type(3) {
+    .mark-invoices > li:nth-of-type(3) {
         right: -14px;
     }
-
     .chat-header ul li a {
         font-size: 0.8em;
         line-height: 4em;
     }
-    .chat-header ul li:nth-of-type(1):after {
+   .chat-header ul li:nth-of-type(1):after {
         left: 13px;
     }
-
     .faq-wrapper h4 {
         font-size: 1.2em;
     }
     .faq .glyphicon-search {
         right: -22px;
     }
+    /*social sprite xs*/
+    .item-social {
+        min-height: 34px;
+        max-width: 82px;
+        position: relative;
+        background: url(../img/social-sprite-grid-xs.jpg);
+        margin-bottom: 27px;
+    }
+    .facebook {
+        background-position: 0 -35px;
+    }
+    .facebook-active{
+        background-position: 0 0;
+    }
+    .google-plus {
+        background-position: -371px -36px;
+    }
+    .google-plus-active{
+        background-position: -371px -1px;
+    }
+    .instagram{
+        background-position: -561px -38px
+    }
+    .instagram-active{
+        background-position: -561px 0;
+    }
+    .pinterest {
+        background-position: -283px -37px;
+    }
+    .pinterest-active{
+        background-position: -286px 2px;
+
+    }
+    .linkid{
+        background-position: -742px 48px;
+    }
+    .linkid-active{
+        background-position: -741px 6px;
+    }
+    .tumblr{
+        background-position: -658px -31px;
+    }
+    .tumblr-active{
+        background-position: -658px 0;
+    }
+    .twitter{
+        background-position: 353px -34px;
+    }
+    .twitter-active{
+        background-position: 352px -5px;
+    }
+    .vine{
+        background-position: -87px -39px;
+    }
+    .vine-active{
+        background-position: -88px -5px;
+    }
+    .youtube{
+        background-position: -189px -41px;
+    }
+    .youtube-active{
+        background-position: -189px -6px;
+    }
+    ./*social sprite xs*/
+    .item-social {
+        min-height: 34px;
+        max-width: 82px;
+        position: relative;
+        background: url(../img/social-sprite-grid-xs.jpg);
+        margin-bottom: 27px;
+
+    }
+
+    .facebook {
+        background-position: 0 -35px;
+    }
+    .facebook-active{
+        background-position: 0 0;
+    }
+    .google-plus {
+        background-position: -371px -36px;
+    }
+    .google-plus-active{
+        background-position: -371px -1px;
+    }
+    .instagram{
+        background-position: -561px -38px
+    }
+    .instagram-active{
+        background-position: -561px 0;
+    }
+    .pinterest {
+        background-position: -283px -37px;
+    }
+    .pinterest-active{
+        background-position: -286px 2px;
+
+    }
+    .linkid{
+        background-position: -742px 48px;
+    }
+    .linkid-active{
+        background-position: -741px 6px;
+    }
+    .tumblr{
+        background-position: -658px -31px;
+    }
+    .tumblr-active{
+        background-position: -658px 0;
+    }
+    .twitter{
+        background-position: 353px -34px;
+    }
+    .twitter-active{
+        background-position: 352px -5px;
+    }
+    .vine{
+        background-position: -87px -39px;
+    }
+    .vine-active{
+        background-position: -88px -5px;
+    }
+    .youtube{
+        background-position: -189px -41px;
+    }
+    .youtube-active{
+        background-position: -189px -6px;
+    }
+    /*social sprite xs*/
+    .item-social {
+        min-height: 34px;
+        max-width: 82px;
+        position: relative;
+        background: url(../img/social-sprite-grid-xs.jpg);
+        margin-bottom: 27px;
+    }
+    .facebook {
+        background-position: 0 -35px;
+    }
+    .facebook-active{
+        background-position: 0 0;
+    }
+    .google-plus {
+        background-position: -371px -36px;
+    }
+    .google-plus-active{
+        background-position: -371px -1px;
+    }
+    .instagram{
+        background-position: -561px -38px
+    }
+    .instagram-active{
+        background-position: -561px 0;
+    }
+    .pinterest {
+        background-position: -283px -37px;
+    }
+    .pinterest-active{
+        background-position: -286px 2px;
+    }
+    .linkid{
+        background-position: -742px 48px;
+    }
+    .linkid-active{
+        background-position: -741px 6px;
+    }
+    .tumblr{
+        background-position: -658px -31px;
+    }
+    .tumblr-active{
+        background-position: -658px 0;
+    }
+    .twitter{
+        background-position: 353px -34px;
+    }
+    .twitter-active{
+        background-position: 352px -5px;
+    }
+    .vine{
+        background-position: -87px -39px;
+    }
+    .vine-active{
+        background-position: -88px -5px;
+    }
+    .youtube{
+        background-position: -189px -41px;
+    }
+    .youtube-active{
+        background-position: -189px -6px;
+    }
+    .chat-chatroom .badge{
+        left: 48%;
+    }
+}/*End 1680px*/
 
 /*all smartphone*/
     @media (min-width: 360px)and (max-width: 1120px){
@@ -170,6 +355,7 @@
         }
         .border-left {
             border: none;
+            background: url(../img/dotted-underline.png) repeat-x bottom center;
         }
         .right-status-head a {
             font-size: 2.4em;
@@ -181,7 +367,7 @@
                display: none;
             }
         .type-blog-gallery img {
-            min-height: 114px;
+            min-height: 143px;
         }
         nav{
             text-align: center;
@@ -216,7 +402,7 @@
             margin: 38px 0 0 0;
         }
         .type-blog-gallery .cat-name {
-            font-size: 0.85em;
+            font-size: 0.7em;
         }
         .label-business{
             margin-bottom: 6%;
@@ -237,7 +423,6 @@
             margin-bottom: 27px;
 
         }
-
         .facebook {
             background-position: 0 -35px;
         }
@@ -293,7 +478,6 @@
             .youtube-active{
                 background-position: -189px -6px;
             }
-
         .business-seo-wrap, .campaign-container {
             padding-bottom: 0;
         }
@@ -301,9 +485,30 @@
             padding-bottom: 28px;
         }
         .create-comp-inner {
-            padding: 0 15% 0 5%;
+            padding: 0 4% 0 4%;
         }
+        .ranges {
+            font-size: 0.7em;
+        }
+        .ranges:last-of-type{
+            position: absolute;
+            top: 5px;
+            right: 0;
+        }
+        .ranges-text-val {
+            font-size: 0.6em;
+        }
+        /*push & pull blocks*/
+        .create-more{
+            position: static;
+        }
+        .social-wrap{
+            margin-top: 0;
+        }
+        .social-inner{
+            left: 4%;
+        }
+
     }/*End 360  */
-}/*END MEDIA*/
 
 

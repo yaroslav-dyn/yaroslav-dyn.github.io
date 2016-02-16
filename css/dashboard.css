@@ -1,0 +1,92 @@
+/*Client Dashboard*/
+.button-alternate-wrapper{
+    float: right;
+}
+.button-alternate{
+    display: inline-block;
+    background: rgba(255,255,255,0.4);
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    font: 0.84em "MuseoSansBold", sans-serif;
+    text-transform: uppercase;
+    padding: 13px 20px;
+    margin-left: 25px;
+}
+    .button-alternate .more{
+        padding-right: 8px;
+    }
+/*more alternative button*/
+    .client-dash-main .prof-slide-fun{
+        left: 147px;
+        z-index: 10;
+    }
+ /*full Calendar customize*/
+    .fc-toolbar{
+        background: #64bc85;
+        border-radius: 6px 6px 0 0;
+        padding: 15px 0;
+        color: #fff;
+        border-top: 1px solid #cbcbcb;
+        border-bottom: 1px solid rgba(255,255,255,0.6);
+    }
+        .fc-toolbar h2{
+            font-size: 1.4em;
+        }
+    .fc-corner-left, .fc-corner-right{
+        background: none;
+        border: none;
+        box-shadow: none;
+        color: #fff;
+    }
+    .fc-unthemed th{
+        color: #bbbbbb;
+        font-size: 1.1em;
+        text-align: left;
+        font-weight: 300;
+    }
+    .fc-unthemed td{
+        color:#303030!important;
+    }
+    .fc-state-highlight{
+       background:  #ececec !important;
+    }
+    .fc-head .fc-head-container{
+        border: none;
+    }
+   .fc-ltr .fc-basic-view .fc-day-number{
+       text-align: left;
+       color: #303030;
+       font-size: 0.9em;
+   }
+   .fc-day-header{
+       border-right-color: transparent !important;
+       border-bottom: 1px dotted #838383 !important;
+   }
+   .fc-content{
+       padding: 12px 12px 12px 7px;
+   }
+   .fc-title{
+       color: #fff;
+       font-size: 0.8em;
+       /*border-right: 1px solid rgba(0,0,0,0.5);*/
+   }
+    .fc-basic-view .fc-day-number {
+        padding: 12px;
+    }
+    .fc-unthemed th {
+        padding-left: 12px;
+    }
+   /*style for social Influencer event*/
+    .event-youtube{
+        background: #d61818;
+    }
+        .event-youtube:after{
+            content: "*";
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: #fff;
+        }
+
+/*End customize calendar*/

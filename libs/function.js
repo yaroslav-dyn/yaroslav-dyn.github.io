@@ -1,40 +1,9 @@
 $(document).ready( function(){
     //Drop block profilers on header
-        $(".name-acc span").click(function(){
+        $("#button-drop").click(function(){
             $(".prof-slide-fun").fadeIn(300).toggleClass("hidden");
         });
 
-    ////Checked category in create company
-    // $(".thumbnail ").on('click', function(event){
-    //    //var ChInp =  $(this).find($("input:checkbox:checked"));
-    //     var ChCategory = $(this).find(".cat-name").text();
-    //     console.log(ChCategory);
-    //     //console.log(ChInp);
-    //     event.preventDefault();
-    //
-    //     $(this).find("div").toggleClass("cat-name-hover");
-    //     console.log($(this).find("input").is(':checked'));
-    //     if($(this).find("input:not(:checked)")){
-    //         $(this).find("input").attr('checked', true)
-    //     }
-    //     else if ($(this).find("input:checked")){
-    //         $(this).attr('checked', 'false');
-    //     }
-    // });
-    //$(".item-social").on('click',function() {
-    //    if ($(this).hasClass("facebook")){
-    //        $(this).removeClass( "facebook");
-    //        $(this).addClass( "facebook-active");
-    //        $(this).find(".checkbox-audience").attr("checked",true);
-    //        $(this).find(".label-audience").addClass("label-audience");
-    //
-    //    }
-    //    else if($(this).hasClass("facebook-active")){
-    //        $(this).removeClass( "facebook-active");
-    //        $(this).addClass("facebook");
-    //        $(this).find("input").attr("checked",false);
-    //    }
-    //});
 
     $("#check-social-item-1").click(function(){
        if ( $("#check-social-item-1:checked")) {
@@ -108,7 +77,6 @@ $(document).ready( function(){
         $(this).find(".answer-par").css("fontWeight","500");
     });
 
-
     /*jquery Calendar*/
     $( "#datepicker-StartDate" ).datepicker({});
 
@@ -143,7 +111,30 @@ $(document).ready( function(){
             }
         });
     });
-
+    /*Full calender*/
+    $('#calender-full').fullCalendar({
+        header: {
+            left: 'prev',
+            center: 'title',
+            right: 'next',
+        },
+        firstDay:1,
+        events:[
+                    {
+                        title: 'Influencer Surname',
+                        start: '2016-02-16',
+                        className: "event-youtube"
+                    },
+                    {
+                        title: 'Influencer Surname',
+                        start: '2016-02-16'
+                    },
+                    {
+                        title: 'Influencer Surname',
+                        start: '2016-02-16'
+                    },
+        ]
+    })
 
 
 

@@ -1,4 +1,5 @@
 @import "fonts.css";
+@import "dashboard.css";
 /*Main style*/
 html{
     overflow-x: auto;
@@ -347,6 +348,11 @@ header a{
         font-family: MuseoSansBold, sans-serif;
      }
         /*customize slider-range*/
+    .create-more{
+        position: absolute;
+        left: -100%;
+        top: -2%;
+    }
     .create-more .ui-slider{
         width: 98%;
         height: 8px;
@@ -421,6 +427,7 @@ header a{
 /*iteam social choose*/
 .social-wrap{
    padding-top: 30px;
+    margin-top: 48%;
 }
 .item-social{
     min-height: 38px;
@@ -509,6 +516,7 @@ header a{
 /*Country choose*/
 .countries{
     padding-top: 4%;
+    padding-right: 4%;
 }
     .country-gallery {
         margin-top: 8%;
@@ -516,7 +524,7 @@ header a{
         left: 8%;
         width: 98%;
     }
-        .country-gallery .container-fluid, .business-seo-wrap .container-fluid, .privilege .container-fluid {
+         .business-seo-wrap .container-fluid, .privilege .container-fluid, .create-comp-inner .container-fluid {
             padding: 0;
             margin: 0;
         }
@@ -730,6 +738,10 @@ header a{
                 left: 76%;
             }
 /* privilege usage*/
+    .privilege{
+        margin-top: 6%;
+        background: url(../img/dotted-underline.png) repeat-x bottom center;
+    }
     .privilege-inner{
         color: #626262;
         margin-left: 6%;
@@ -937,6 +949,10 @@ header a{
     ul.mark-invoices b{
         font: 1.1em MuseoSansBold, sans-serif;
     }
+        ul.sub-invoices{
+            position: relative;
+            top: -7px;
+        }
     .faq .glyphicon-remove, .faq .glyphicon-ok {
         color: #d51d1d;
         font-size: 1.8em;
@@ -958,7 +974,7 @@ header a{
     .pdf-icon{
         background: url(../img/pdf-sprite.png) no-repeat;
         width: 32px;
-        height: 36px;
+        height: 44px;
         display: block;
         padding-top: 2px;
     }

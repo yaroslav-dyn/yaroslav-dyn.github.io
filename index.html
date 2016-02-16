@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/media.css">
     </head>
-<body>
+<body class="create-comp-main">
 <div class="wrapper">
     <header>
         <div class="container-fluid">
@@ -36,9 +36,9 @@
                                     <img src="img/photo-profile.png" alt="photo profile">
                                 </div>
                                 <div class="text-status">
-                                    <p class="name-acc">Teresa <span class="glyphicon glyphicon-triangle-bottom"></span></p>
+                                    <p class="name-acc">Teresa <span id="button-drop" class="glyphicon glyphicon-triangle-bottom"></span></p>
                                     <p class="type-acc">Glossybox</p>
-                                    <div class='prof-slide-fun hidden'>
+                                    <div class="prof-slide-fun hidden">
                                         <div class="triangle"></div>
                                         <ul>
                                             <li><a href="#"><span class="glyphicon glyphicon-briefcase"></span>Invoices</a></li>
@@ -70,7 +70,7 @@
         </div><!--End row-->
      </div><!---End container -->
     </header>
-    <div class="log-status-xs hidden-md hidden-lg">
+    <div class="log-status-xs hidden-md hidden-sm hidden-lg">
         <div class="log-status">
             <div class="photo-wrap">
                 <img src="img/photo-profile.png" alt="photo profile">
@@ -216,7 +216,24 @@
                                     </div>
                                 </div><!--end type blog gallery-->
                                 <div class="container-fluid dote-border pad-bottom">
+
+
+
                                     <div class="col-md-6 border-left col-md-push-6">
+
+                                        <div class="create-more dote-border"><!--Age slider-->
+                                            <div class="audience">
+                                                <h6>Please select <span>age</span> for your target audience.</h6>
+                                            </div>
+                                            <div class="create-more-ui">
+                                                <div id="slider-range"></div>
+                                                <div class="in-age-wr range-modal">
+                                                    <div class="triangle"></div>
+                                                    <input type="text" id="amount" readonly><label></label>
+                                                </div>
+                                            </div><!--END create more Ui-->
+                                        </div><!--end age slider-->
+
                                         <div class="countries">
                                             <div class="audience">
                                                 <h6>Please select <span>countries</span>  for your target audience.</h6>
@@ -277,20 +294,9 @@
                                                 </div>
                                             </div>
                                         </div><!--End Countries-->
+
                                     </div><!--countries-->
                                     <div class="col-md-6 col-md-pull-6">
-                                        <div class="create-more dote-border"><!--Age slider-->
-                                            <div class="audience">
-                                                <h6>Please select <span>age</span> for your target audience.</h6>
-                                            </div>
-                                            <div class="create-more-ui">
-                                                <div id="slider-range"></div>
-                                                <div class="in-age-wr range-modal">
-                                                    <div class="triangle"></div>
-                                                    <input type="text" id="amount" readonly><label></label>
-                                                </div>
-                                            </div><!--END create more Ui-->
-                                        </div><!--end age slider-->
                                         <div class="social-wrap">
                                             <div class="audience">
                                                 <h6> Please select: <span>channels</span> for your campaign.</h6>
@@ -378,10 +384,9 @@
                                                                 </label>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-4 col-xs-4">
+                                                        <div class="col-md-4 col-xs-4 ">
                                                             <div class="item-social youtube">
-                                                                <input type="checkbox" class="checkbox-audience hidden"
-                                                                       id="check-social-item-9">
+                                                                <input type="checkbox" class="checkbox-audience hidden" id="check-social-item-9">
                                                                 <label class="label-audience" for="check-social-item-9">
                                                                     <span class="glyphicon glyphicon-ok"></span>
                                                                 </label>
@@ -477,7 +482,7 @@
                                                 <div class="col-md-4 hidden-xs">
                                                     <span class="glyphicon glyphicon-ok"></span>&nbsp<span>Another feature of Social Buzz</span>
                                                 </div>
-                                                <div class="col-md-4 ">
+                                                <div class="col-md-4 col-xs-6">
                                                     <span class="glyphicon glyphicon-ok"></span>&nbsp<span>Increase in revenue</span>
                                                 </div>
                                             </div>
@@ -594,7 +599,7 @@
                                                     <span class="pdf-icon pdf-icon-remove"></span>
                                                 </li>
                                                 <li>
-                                                    <ul>
+                                                    <ul class="sub-invoices">
                                                         <li><span>September 2015</span></li>
                                                         <li><b>$15,466.00</b></li>
                                                     </ul>

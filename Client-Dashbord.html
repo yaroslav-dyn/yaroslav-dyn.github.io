@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashbord</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="libs/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="libs/jquery-ui-1.11.4.custom/jquery-ui.min.css">
+        <link rel="stylesheet" href="libs/fullcalendar-2.6.0/fullcalendar.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/media.css">
+    </head>
+<body class="client-dash-main">
+<div class="wrapper">
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-md-12 ">
+                <div class="head-wrapper">
+                    <div class="header-left">
+                        <div class="logo">
+                            <a href="index.html"><img src="img/logo.png" alt="grow social"></a>
+                        </div>
+                    </div>
+                    <!--Collapse button-->
+                        <span class="bell-respon glyphicon glyphicon-bell" style="display: none"></span>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    <nav class="collapse navbar-collapse" id="myNavbar">
+                        <div class="header-middle">
+                            <div class="log-status hidden-xs">
+                                <div class="photo-wrap">
+                                    <img src="img/photo-profile.png" alt="photo profile">
+                                </div>
+                                <div class="text-status">
+                                     <div>
+                                         <p class="name-acc">Teresa </p>
+                                         <p class="type-acc">Glossybox</p>
+                                     </div>
+                                    <div class="button-alternate-wrapper clearfix">
+                                        <div class="button-alternate">
+                                            <span class="more">More</span><span id="button-drop" class="status-but glyphicon glyphicon-triangle-bottom"></span>
+                                        </div>
+                                    </div>
+
+                                    <!--drop menu-->
+                                    <div class='prof-slide-fun hidden'>
+                                        <div class="triangle"></div>
+                                        <ul>
+                                            <li><a href="#"><span class="glyphicon glyphicon-briefcase"></span>Invoices</a></li>
+                                            <li><a href="#"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span>Statistics</a></li>
+                                            <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Profile</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <div class="text-status activity-status">
+                                    <p class="type-acc">Spent September: <b>$14,400</b></p>
+                                    <p class="type-acc">Active Campaigns: <b>7</b></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-right">
+                            <div class="right-status-head">
+                                <a href="#"><i class="icon speaker-plus"></i>Create New Campaign</a>
+                                <a href="#"><i class="icon speaker"></i>Campaigns</a>
+                                <a href="#"><i class="icon new-action"></i>New Actions <span>3</span></a>
+                                <a href="#" class="bord-h"><div class="border hidden-xs"></div><i class="icon search"></i></a>
+                                <a href="#" class="bord-h"><div class="border hidden-xs"></div><i class="icon shut"></i></a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </nav>
+
+                </div><!--head-wrapper-->
+            </div>
+        </div><!--End row-->
+     </div><!---End container -->
+    </header>
+    <div class="log-status-xs hidden-md hidden-sm hidden-lg">
+        <div class="log-status">
+            <div class="photo-wrap">
+                <img src="img/photo-profile.png" alt="photo profile">
+            </div>
+            <div class="text-status">
+                <p class="name-acc-xs">Welcome, <b>Carolina</b></p>
+                <p class="type-acc-xs">Active Campaigns: <b>7</b></p>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <article class="create-comp section-exterior">
+                      <div id="calender-full"></div>
+                    </article>
+                </div>
+                <div class="col-md-3 hidden-xs">
+                    <div class="chat">
+                        <div class="chat-wrapper">
+                            <div class="chat-header">
+                                <ul>
+                                    <li><a href="#">Chat</a></li>
+                                    <li><a href="#">Select a campaign chatroom <span class="triangle-round glyphicon glyphicon-triangle-bottom"></span></a></li>
+                                </ul>
+                            </div>
+                            <div class="select-more"></div>
+                            <div class="chat-body section-exterior">
+                                <ul class="chat-chatroom">
+                                    <li>
+                                        <i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC50lEQVRYR8VXQVYTQRCt6kyeS+MJxBMIJzA8g1vDCQgS18SlRh/JM3FLWAs6nICwlfDAExBvMNwgLn2ZdPt7khl7ZhoyCjPOhke6u/6vql9V3Ux/8TUuOpXSzHnJzCvBMaWqwV/my/m/ypuV/FN3vTPJapaXbdSgjizvkqQ6Ma0u2z8nRmMSNPTF9GAZmRsJhMDwqsXElUzAiU2K1ATRGtxGxErg9bf+qhR0gsV5qO/6ISKsaPvzi/Y4aSpF4NV5vyEUfb0rpu28ZNr+8rztmmsxAnmCh6BJEhGB5tnHKrG4yMPzlE0l1w83PgSVExHYGfU8iO1xEQQUkXdUaz+JCDTP+h1Q2SsCPMJQ1D3caHeCCIDABAQeFklAl+hR7f0j3hl9qjOpkyLBQyxFvAkCPRe530oLhbq+I9zyVFYU0wARembugQfHQvJA/yZF0KziNhR9R+23pmUxcXzZsKVY22CE/9JmHOFphIBBV/TLXpgmHPyB9VhbhiNjkHiqz2D9GjNh1WzDVkc1SWv+FwIxPY4Rta//ETIMQ2DVxPmU0INW3Rz1URXxT4cmGYHSrHwVtWa0VgCsmafiESBMxena0gjoPnBT/YNVC0aOiR5gBMt9gNfjGiB3VhJd/RvW97AepWyeBhpi/Q3RrwnIb2E90EtCR9dWDRRWEVoDO6P+AOx2CwM1gBClA9ajVwm6+h8EWNJa0AmLnAOho7pUIfSVgEARYzgtQN48qr0bGuM43ZByS4vRJyICgRaYdFfMdygp+okWjy751tMOxm5EuZMAOOZD1bwbpu6EeZWlFh2GVz15MU1HII+SVOrUd/yG7Y0QEZi/eox+fx8KhNgwrDvh/c9m0rwTRuP0Ltg61JDWkJUc3gYcYoSNyH4puYlJ4BkqZvEpZjw8ZhPfcbxQ3Vmd4KxNKPRMSHJtL5ysgMl9mIa9Fl63+1YDC09ROsP7BDWxFinARFRqBbkb403oCSm9LPn7V6/Nc78BLJRs8RPvDWgAAAAASUVORK5CYII="/></i>
+                                        <span>General chat</span>
+                                    </li>
+                                    <li><i class="rounded-icon"></i><span>Name Sername</span></li>
+                                    <li><i class="rounded-icon"></i><span>Jon Doi</span><span class="badge">3</span></li>
+                                    <li><i class="rounded-icon"></i><span>FirstName LastName</span></li>
+                                    <li>
+                                        <div class="chat-item-info">                                   
+                                           NO MORE CHATOOMS TO SHOW RIGHT NOW
+                                         </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!--End chat-->
+                </div>
+            </div><!--End row-->
+        </div><!---End container -->
+    </section><!--End section calendar-->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <article class="create-comp section-exterior">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolores ea enim et eveniet natus nesciunt numquam quia voluptatibus! Amet animi aut dolor iusto laboriosam laborum magnam quos reprehenderit saepe?
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section><!-- End section-->
+</div><!--End wrapper-->
+
+<script src="libs/jquery-1.12.0.min.js"></script>
+<script src="libs/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+<script src="libs/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+<script src="libs/fullcalendar-2.6.0/lib/moment.min.js"></script>
+<script src="libs/fullcalendar-2.6.0/fullcalendar.min.js"></script>
+<script src="libs/function.js"></script>
+
+</body>
+</html>
