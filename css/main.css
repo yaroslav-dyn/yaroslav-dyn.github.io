@@ -464,7 +464,7 @@ header a{
         }
 
     .google-plus{
-        background-position: -543px -46px;
+        background-position: -533px -46px;
     }
         .google-plus-active{
             background-position: -543px 4px;
@@ -768,7 +768,6 @@ header a{
     display: block;
     border: 1px solid #d1d1d1;
     border-radius: 4px;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.16);
     cursor: pointer;
     text-align: left;
     color: #777;
@@ -983,6 +982,9 @@ header a{
         }
         .pdf-icon-add{
             background-position: -36px 0;
+        }
+        .pdf-icon-white{
+            background-position: -73px 0;
         }
     /*>More*/
     .more-inv{

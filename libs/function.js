@@ -111,30 +111,6 @@ $(document).ready( function(){
             }
         });
     });
-    /*Full calender*/
-    $('#calender-full').fullCalendar({
-        header: {
-            left: 'prev',
-            center: 'title',
-            right: 'next',
-        },
-        firstDay:1,
-        events:[
-                    {
-                        title: 'Influencer Surname',
-                        start: '2016-02-16',
-                        className: "event-youtube"
-                    },
-                    {
-                        title: 'Influencer Surname',
-                        start: '2016-02-16'
-                    },
-                    {
-                        title: 'Influencer Surname',
-                        start: '2016-02-16'
-                    },
-        ]
-    })
 
 
 
