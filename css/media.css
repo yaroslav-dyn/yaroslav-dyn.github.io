@@ -164,14 +164,13 @@
     .youtube-active{
         background-position: -189px -6px;
     }
-    ./*social sprite xs*/
+    /*social sprite xs*/
     .item-social {
         min-height: 34px;
         max-width: 82px;
         position: relative;
         background: url(../img/social-sprite-grid-xs.jpg);
         margin-bottom: 27px;
-
     }
 
     .facebook {
@@ -508,7 +507,11 @@
         .social-inner{
             left: 4%;
         }
-
+/*page client dashboard*/
+    .wrap-button {
+        border-top: 1px solid #c8c8c8;
+        width: 100%;
+    }
     }/*End 360  */
 
 

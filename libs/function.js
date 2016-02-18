@@ -74,7 +74,7 @@ $(document).ready( function(){
     $(".answer-item").click(function(){
         $(this).find(".answer-hidden").fadeIn(300).toggleClass("hidden");
         $(this).find(".glyphicon-plus").toggleClass("glyphicon-minus  faq-icon-minus");
-        $(this).find(".answer-par").css("fontWeight","500");
+        $(this).find(".answer-par").css("fontWeight","600");
     });
 
     /*jquery Calendar*/

@@ -75,7 +75,7 @@ header a{
         .photo-wrap{
             width: 58px;
             height: 58px;
-            border: 5px solid #f5fbfd;
+            border: 4px solid #f5fbfd;
             border-radius: 50%;
         }
         .photo-wrap img{
@@ -90,6 +90,7 @@ header a{
     }
     .text-status span.glyphicon-triangle-bottom{
         font-size: 12px;
+        cursor: pointer;
     }
     .activity-status{
         border: none;
@@ -556,7 +557,7 @@ header a{
         background: #64BC85;
     }
 /*icon Countries flags*/
-    .country-wrap i{
+    i.icon-country{
         width: 24px;
         height: 24px;
         position: absolute;
@@ -884,17 +885,20 @@ header a{
 .main-submit-wrap{
     margin: 18px 0 68px 0;
 }
-    .main-submit{
+    .main-button{
         border-radius: 6px;
-        background-color: #6fc690;
-        width: 65%;
-        height: 75px;
         outline: none;
         border:  none;
         color: #fff;
         cursor: pointer;
         text-transform: uppercase;
         font-family: MuseoSansBold, sans-serif;
+       line-height: 4em;
+    }
+    .main-submit{
+        width: 65%;
+        height: 75px;
+        background-color: #6fc690;
     }
     .main-submit:hover{
         background-color: #3bb6d9;
@@ -1022,9 +1026,10 @@ header a{
  .answer-item{
      padding-bottom: 4%;
  }
- .answer-item > p{
-     color: #747474;
+ .answer-item .answer-par{
+     color: #4c4d4d;
      font-size: 0.95em;
+
  }
  .faq-icon-plus{
      border-radius: 50%;
@@ -1041,21 +1046,23 @@ header a{
      padding: 6px;
  }
     .answer-item:hover .faq-icon-plus{
-        color: #2ab151;
-        border-color:#2ab151;
+        color: #FFF;
+        border-color: transparent;
+        background: #2ab151;
     }
     .answer-item:hover .faq-icon-minus{
         color: #fff;
-        border-color:#000
+        border-color: transparent;
     }
     .answer-item:hover .answer-par{
         color: #2ab151;
         font-weight: 500;
     }
     .answer-item .answer-hidden{
-        padding: 1% 0 0 6%;
+        padding: 1% 0 1% 1%;
         text-align: justify;
-        color: #a1a1a1;
+        color: #252525;
+        font-weight: 100;
     }
 
 
@@ -1073,7 +1080,7 @@ header a{
     .chat-header{
         background: #64bc85;
         border-radius: 6px 6px 0 0;
-        padding: 0 35px;
+        padding: 15px 35px;
 
     }
         .chat-header ul li{
@@ -1084,7 +1091,6 @@ header a{
             display: inline-block;
             color: #fff;
             text-decoration: none;
-            line-height: 4em;
         }
         .chat-header ul li:nth-of-type(1):after{
             content: "";

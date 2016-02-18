@@ -150,13 +150,13 @@
                 background-position: -68px 0;
             }
 
-
 /*Article client invoices*/
-.invoices-wrapper{
+.article-pad{
     padding: 0 15px;
 }
 .invoices-client{
     margin: 12px 0;
+    font-size: 0.8em;
 }
     .invoices-item-wrapper {
         margin: 25px 0 40px 0;
@@ -176,7 +176,7 @@
         text-align: right;
     }
     .inv-icon{
-        padding: 25px 37px;
+        padding: 19px 37px;
         border-radius: 6px 0 0 6px;
     }
     /*icon circle*/
@@ -228,9 +228,149 @@
     background: #d51d1d;
 }
 /*more invoices*/
-    .client-invoices .more-inv b, .client-invoices .more-inv span {
+    .client-dash-main .more-inv b, .client-dash-main .more-inv span {
        color: #b7b7b7;
     }
+/*article overview table*/
+.overview .table{
+    color: #565656;
+    margin: 26px 0 0 47px;
+    text-align: center;
+    font-size: 0.9em;
+    width: 90%;
+    vertical-align: middle;
+}
+    .overview .table th:first-child, .overview .table td:first-child  {
+        padding: 20px 52px 20px 0;
+        text-align: left;
+    }
+    .overview  td:first-child {
+        font-family: MuseoSansBold, sans-serif;
+        color: #6b6b6b;
 
+    }
+    /*active cell in table*/
+    .overview .table .active-tab-text{
+        color: #3bc06d;
+    }
 
+.overview .table th:nth-of-type(2){
+    text-align: right;
+}
+    .overview .table th{
+        color: #b7b7b7;
+        text-align: center;
+        font-weight: normal;
+        border: 1px solid #d0d0d0;
+        border-top: none;
+        border-left: none;
+        vertical-align: middle;
+    }
+
+    .overview .table td {
+        border: 1px solid #d0d0d0;
+        border-top: none;
+        border-left: none;
+    }
+/*faq in dashboard*/
+.faq-wrapper-dash .dote-border{
+    margin: 0;
+}
+.faq-wrapper-dash .answer-item {
+    padding-bottom: 0;
+}
+.faq-wrapper-dash .faq-answer{
+    margin-top: 2%;
+}
+.faq-wrapper-dash .answer-item .answer-par{
+    margin: 2% 0;
+}
+.faq-wrapper-dash .answer-item .answer-hidden {
+    padding-bottom: 1%;
+}
+/*Social Influencer Report*/
+.report-header{
+    background: #3bb6d9;
+    border-radius: 6px 6px 0 0;
+}
+    .header-report-inner{
+        margin-left: 28px;
+        padding: 20px 0 25px 0;
+    }
+        .icon-report{
+            background: url(../img/header-icon-sprite-compr.png) -140px 0;
+            width: 30px;
+            height: 32px;
+            display: inline-block;
+            margin-right: 8px;
+            position: relative;
+            top: 9px;
+        }
+        .report-header h3{
+            margin: 0;
+            color: #fff;
+            display: inline-block;
+            font-size: 1.25em;
+        }
+    .report-inner{
+        margin-top: 6%;
+        padding-bottom: 3%;
+    }
+    .report-inner img{
+        width: 100%;
+    }
+
+        .report-left,.report-right{
+            display: inline-block;
+            float: left;
+            padding: 0 1%;
+        }
+        .report-left{
+            width: 41%;
+        }
+        .report-right{
+           width: 59%;
+            font-size: 1.1em;
+            line-height: 2em;
+        }
+        .report-right p{
+            text-align: justify;
+            padding-top: 24px;
+        }
+    .wrap-button{
+        margin-top: 4%;
+        padding-top: 4%;
+        border-top: 1px solid #c8c8c8;
+        float: right;
+        width: 58%;
+    }
+        .button-report{
+            background-color: #fa8d2c;
+            box-shadow: 0 6px 0 #e17a1f;
+            width: 100%;
+        }
+        .button-report:hover{
+            background: #2ab151;
+            box-shadow: 0 6px 0 #0F9C29;
+        }
+
+/*Chat in client dashboard*/
+.client-dash-main .chat {
+    margin-top: 11%;
+}
+.client-dash-main .chat-header ul li:nth-of-type(2) {
+    float: none;
+    margin-left: 36px;
+}
+.client-dash-main .chat-header ul li:nth-of-type(2) a{
+    font-family: MuseoSansRegular, sans-serif;
+    color: #fff;
+}
+.client-dash-main .chat-header ul li:nth-of-type(2) span{
+    color: #fff;
+}
+.client-dash-main i.icon-country{
+    display: block;
+    position: static;
+}
 
