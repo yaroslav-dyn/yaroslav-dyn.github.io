@@ -274,13 +274,15 @@ header a{
         }
     .type-blog-gallery .thumbnail{
         margin: 0 0 42px 0;
-        -webkit-box-shadow: 0 0 6px rgba(0,0,0,0.3);
-        -moz-box-shadow: 0 0 6px rgba(0,0,0,0.3);
-        box-shadow: 0 0 6px rgba(0,0,0,0.3);
         color: #585858;
         font-size: 1em;
         position: relative;
         padding: 0;
+    }
+    .type-blog-gallery .thumbnail:hover{
+        -webkit-box-shadow: 0 0 6px rgba(0,0,0,0.3);
+        -moz-box-shadow: 0 0 6px rgba(0,0,0,0.3);
+        box-shadow: 0 0 6px rgba(0,0,0,0.3);
     }
     .type-blog-gallery  img{
         min-height: 150px;
@@ -291,8 +293,10 @@ header a{
         padding: 15px 0;
         border-top: 1px solid #ddd;
     }
-    .type-blog-gallery a.thumbnail:hover, a.thumbnail:active, a.thumbnail:focus {
+    .type-blog-gallery a.thumbnail:hover, .type-blog-gallery a.thumbnail:active, .type-blog-gallery a.thumbnail:focus {
         text-decoration: none;
+        outline-color: transparent;
+        border-color: transparent;
     }
     .cat-name-hover{
         background: #3bb6d9;
@@ -912,9 +916,11 @@ header a{
         margin-top: 5%;
     }
 
-    .faq .glyphicon-search{
-        font-size: 1.4em;
-        color: #32474d;
+    .faq-icon-search{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: url(../img/header-icon-sprite-compr.png) -108px -3px;
         position: relative;
         right: -38px;
     }
