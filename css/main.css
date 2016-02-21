@@ -1129,6 +1129,7 @@ header a{
     .chat-body-scroll{
         max-height: 640px;
         overflow-y: scroll;
+        overflow-x: hidden; 
     }
     ul.chat-chatroom{
         padding-top: 40px;
