@@ -76,6 +76,16 @@ $(document).ready( function(){
         $(this).find(".glyphicon-plus").toggleClass("glyphicon-minus  faq-icon-minus");
         $(this).find(".answer-par").css("fontWeight","600");
     });
+/*table overview(hidden)*/
+
+    $(".hidden-table-bg").click(function(){
+        $(".table-status-hidden").toggleClass("hidden");
+        $(this).find(".glyphicon-triangle-bottom").css("color","#fff");
+
+    });
+
+
+
 
     /*jquery Calendar*/
     $( "#datepicker-StartDate" ).datepicker({});

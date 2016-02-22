@@ -1,4 +1,7 @@
 /*Client Dashboard*/
+.drop-mnu{
+    display: block;
+}
 .button-alternate-wrapper{
     float: right;
 }
@@ -76,7 +79,7 @@
         padding: 12px;
     }
     .fc-unthemed th {
-        padding-left: 12px;
+        padding: 0 0 12px 12px;
     }
 /*style for social Influencer in event calendar*/
     .event-fc:before{
@@ -285,6 +288,9 @@
 }
 .faq-wrapper-dash .answer-item .answer-par{
     margin: 2% 0;
+}
+.faq-wrapper-dash .answer-item:last-child{
+   padding-bottom: 2%;
 }
 .faq-wrapper-dash .answer-item .answer-hidden {
     padding-bottom: 1%;
