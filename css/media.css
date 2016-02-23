@@ -302,11 +302,14 @@
     .client-dash-main .chat-talk .chat {
         margin-top: 11%;
     }
+    .send-message {
+        right: 2%;
+    }
 
 }/*End 1680px*/
 
 /*all smartphone*/
-    @media (min-width: 360px)and (max-width: 1120px){
+    @media screen and (min-width: 360px)and (max-width: 1120px){
         /*modify status in respond*/
        article{
             margin-bottom: 4%;
@@ -363,6 +366,7 @@
         }
         .slogan-page h2 {
             border: none;
+            font-size: 1.7em;
         }
         .countries-selected-wrap {
          margin-top: 2%;
@@ -561,8 +565,8 @@
     }
     .top-edge{
         background: #f2f2f2;
+        position: relative;
     }
-
         .table-resp-main tr td, .table-resp-main tr th{
             padding: 14px;
             border: 1px solid #e3e3e3;
@@ -594,7 +598,8 @@
            opacity: 0.95;
            position: absolute;
            width: 93.7%;
-           top: 98px;
+           top: 150px;
+           left: 15px;
        }
        .table-status-hidden .push-edge{
            padding: 8px 0;
@@ -605,8 +610,10 @@
             font-weight: 300;
             color: rgba(255,255,255,0.6);
             vertical-align: middle;
+            border: none;
             border-left: 1px dotted rgba(255,255,255,0.2);
             padding: 18px 0;
+
         }
         .table-status-hidden tr th:first-child, .table-status-hidden tr th:last-child{
             border-left: none;
@@ -617,6 +624,7 @@
         .table-status-hidden tr th:nth-of-type(4){
             text-align: left;
             padding-left: 4%;
+            border-right: none;
         }
         .table-status-hidden tr th span {
             color: #fff;
@@ -642,6 +650,22 @@
         .table-resp-main .glyphicon-triangle-bottom{
             color: #b5b5b5;
             font-size: 10px;
+        }
+        .client-dash-main .more-inv{
+            padding-bottom: 30px ;
+        }
+        .client-dash-main .more-inv b {
+            font-family: ProximaNovaRegular, sans-serif;
+            color: #626262;
+           font-weight: bold;
+        }
+        /*payouts*/
+        .inv-icon {
+            padding: 17px 22px;
+            border-radius: 4px 0 0 4px;
+        }
+        .invoices-item-wrapper .approach-label{
+            margin: 22px 0;
         }
 }/*End 360  */
 

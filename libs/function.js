@@ -80,8 +80,8 @@ $(document).ready( function(){
 
     $(".hidden-table-bg").click(function(){
         $(".table-status-hidden").toggleClass("hidden");
-        $(this).find(".glyphicon-triangle-bottom").css("color","#fff");
 
+        $(this).find(".glyphicon-triangle-bottom").css("color","#fff");
     });
 
 

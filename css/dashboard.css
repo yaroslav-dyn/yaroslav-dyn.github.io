@@ -366,7 +366,7 @@
     position: absolute;
 }
 .chat-talk .chat {
-    margin-top: 12%;
+    margin-top: 11.4%;
 }
 .chat-talk .chat-header ul li:nth-of-type(2) {
     float: none;
@@ -509,10 +509,10 @@
                      z-index: 2;
                  }
                 .messages-item img.photo-in-message{
-                display: inline-block;
-                float: left;
-                width: 50px;
-                height: 50px;
+                    display: inline-block;
+                    float: left;
+                    width: 50px;
+                    height: 50px;
             }
             .mess-item{
                 position: relative;
@@ -535,7 +535,7 @@
         outline: none;
         color: #3d3d3d;
     }
-    .message-textarea div{
+    .message-textarea .reverse-mes{
         direction: rtl;
         width: 90%;
         height: 100%;
@@ -546,10 +546,15 @@
         overflow-x: hidden;
         border-right: 1px solid #bbbbbb;
     }
+         .reverse-mes div{
+             outline: none;
+             direction: ltr!important;
+             height: 100%;
+         }
     .send-message{
         position: absolute;
         top: 39%;
-        right: 6.5%;
+        right: 7%;
         display: inline-block;
         height: 100%;
     }
@@ -559,3 +564,52 @@
         color: #bcbcbc;
         cursor: pointer;
     }
+/*table respond calendar*/
+.calendar-event-respond{
+    width: 100%;
+    vertical-align: middle;
+    border-bottom: 1px solid #d5d5d5;
+    font-size: 1.2em;
+    margin: 0;
+}
+    .calendar-res-caption{
+        width: 100%;
+        background: #4dc179;
+        border-radius: 6px 6px 0 0;
+        color: #fff;
+        padding: 18px 0;
+    }
+        .calendar-res-caption span{
+            color: #fff;
+            font-size: 24px;
+            padding: 0 14px;
+        }
+    caption .calendar-res-caption h6{
+        font-size: 1.2em;
+        font-weight: 300;
+        line-height: 2.2em;
+        padding-top: 9px;
+    }
+    .calendar-event-respond img{
+        width: 50px;
+    }
+    .calendar-event-respond caption{
+        padding: 0;
+    }
+    .calendar-event-respond tr td{
+        border-right: 1px solid #d5d5d5;
+        vertical-align: middle!important;
+    }
+    .calendar-event-respond tr td:nth-of-type(1){
+        border-right: none;
+        color: #c0c0c0;
+        padding-left: 24px;
+        width: 10%;
+    }
+    .calendar-event-respond tr td:nth-of-type(2){
+        width: 10%;
+    }
+    .calendar-event-respond tr td:nth-of-type(3){
+        width: 20%;
+    }
+
