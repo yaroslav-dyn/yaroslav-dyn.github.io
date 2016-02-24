@@ -52,10 +52,7 @@
       vertical-align: middle;
     }
      i{
-      width: 36px;
-      height: 36px;
-      background: #0F9C29;
-      display: inline-block;
+
     }
     p{
       color: #464646;
@@ -70,6 +67,42 @@
       color: #afafaf;
     }
 }
+  //actions-sprite
+
+
+.stitches(@x: 0, @y: 0, @width: 0, @height: 0) {
+  background-position: @x @y;
+  width: @width;
+  height: @height;
+}
+
+.stitches{
+  background-image: url(../img/sprite-action-icon.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 18px;
+
+  &-1 {
+    .stitches(-5px, -5px, 16px, 21px);
+  }
+
+  &-2 {
+    .stitches(-31px, -5px, 20px, 18px);
+  }
+
+  &-3 {
+    .stitches(-61px, -5px, 16px, 16px);
+  }
+
+  &-4 {
+    .stitches(-87px, -5px, 17px, 18px);
+  }
+
+  &-5 {
+    .stitches(-114px, -5px, 18px, 16px);
+  }
+}
+
 
 
 

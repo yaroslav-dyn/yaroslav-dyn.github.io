@@ -41,12 +41,6 @@
   display: inline-block;
   vertical-align: middle;
 }
-.actions-item-inner i {
-  width: 36px;
-  height: 36px;
-  background: #0F9C29;
-  display: inline-block;
-}
 .actions-item-inner p {
   color: #464646;
   padding: 0;
@@ -58,4 +52,35 @@
 }
 .actions-item-inner span {
   color: #afafaf;
+}
+.stitches {
+  background-image: url(../img/sprite-action-icon.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 18px;
+}
+.stitches-1 {
+  background-position: -5px -5px;
+  width: 16px;
+  height: 21px;
+}
+.stitches-2 {
+  background-position: -31px -5px;
+  width: 20px;
+  height: 18px;
+}
+.stitches-3 {
+  background-position: -61px -5px;
+  width: 16px;
+  height: 16px;
+}
+.stitches-4 {
+  background-position: -87px -5px;
+  width: 17px;
+  height: 18px;
+}
+.stitches-5 {
+  background-position: -114px -5px;
+  width: 18px;
+  height: 16px;
 }
