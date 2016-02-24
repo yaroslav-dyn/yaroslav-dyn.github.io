@@ -1,5 +1,6 @@
 @import "fonts.css";
 @import "dashboard.css";
+@import "influenser.css";
 /*Main style*/
 html{
     overflow-x: auto;
@@ -78,7 +79,7 @@ header a{
         .photo-wrap{
             width: 58px;
             height: 58px;
-            border: 4px solid #f5fbfd;
+            border: 3px solid #f5fbfd;
             border-radius: 50%;
         }
         .photo-wrap img{
@@ -199,7 +200,7 @@ header a{
         }
         i.speaker-plus{
             background-position: 0;
-            width: 23px;
+            width: 25px;
         }
         i.speaker{
             background-position: 0;
@@ -214,8 +215,8 @@ header a{
             background-position: -46px 0;
         }
         i.shut{
-            width: 28px;
-            background-position: -72px 0;
+            width: 30px;
+            background-position: -74px 0;
         }
 /*global style for section exterior*/
 .section-exterior{
@@ -925,7 +926,7 @@ header a{
 
     .faq-icon-search{
         display: inline-block;
-        width: 20px;
+        width: 22px;
         height: 20px;
         background: url(../img/header-icon-sprite-compr.png) -108px -3px;
         position: relative;

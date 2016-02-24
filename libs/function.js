@@ -3,6 +3,10 @@ $(document).ready( function(){
         $("#button-drop").click(function(){
             $(".prof-slide-fun").fadeIn(300).toggleClass("hidden");
         });
+        $(".button-alternate").click(function(){
+            $(".prof-slide-fun").fadeIn(300).toggleClass("hidden");
+        });
+
 
 
     $("#check-social-item-1").click(function(){
