@@ -222,9 +222,9 @@ header a{
 .section-exterior{
     background: #fff;
     border-radius: 6px;
-    -webkit-box-shadow: inset 0 0 1px #cbcbcb, 0 0 10px rgba(0,1,1,0.1);
-    -moz-box-shadow: inset 0 0 1px #cbcbcb, 0 0 10px rgba(0,1,1,0.1);
-    box-shadow: inset 0 0 1px #cbcbcb, 0 0 10px rgba(0,1,1,0.1);
+    -webkit-box-shadow: inset 0 0 1px #cbcbcb, 0 0 8px rgba(0,1,1,0.1);
+    -moz-box-shadow: inset 0 0 1px #cbcbcb, 0 0 8px rgba(0,1,1,0.1);
+    box-shadow: inset 0 0 1px #cbcbcb, 0 0 8px rgba(0,1,1,0.1);
 }
 /*Section create company*/
 
@@ -476,7 +476,7 @@ header a{
         background-position: -533px -46px;
     }
         .google-plus-active{
-            background-position: -543px 4px;
+            background-position: -533px 4px;
         }
 
     .instagram{
