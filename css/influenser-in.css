@@ -1,3 +1,11 @@
+.right-status-head .bord-s:before {
+  content: "";
+  height: 32px;
+  border-left: 1px solid #fff;
+  position: absolute;
+  top: 6px;
+  left: -23px;
+}
 .dash-influenser .text-status {
   position: static;
 }
@@ -7,7 +15,7 @@
 .dash-influenser .header-middle {
   margin-top: 10px;
 }
-.dash-influenser .name-acc {
+.dash-influenser .dash-influenser .name-acc {
   color: #fff;
 }
 .dash-influenser i.speaker-plus {
@@ -17,14 +25,17 @@
   margin-left: 8px;
   padding: 5px 7px;
 }
-.actions-item-wrapper {
-  margin-top: 48px;
+.dash-influenser .actions-item-wrapper {
+  margin-top: 24px;
 }
 .dash-influenser .dote-border {
   width: 100%;
   height: 2px;
   position: static;
   margin: 0;
+}
+.actions-item-inner {
+  padding: 25px 0;
 }
 .actions-item-inner > * {
   display: inline-block;
