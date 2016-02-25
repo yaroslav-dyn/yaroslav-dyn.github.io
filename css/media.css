@@ -310,7 +310,21 @@
 
 /*all smartphone*/
     @media screen and (min-width: 360px)and (max-width: 1120px){
+        .navbar-toggle {
+            display: block;
+        }
+        .navbar-collapse {
+            padding-right: 15px;
+            padding-left: 15px;
+            overflow-x: visible;
+            -webkit-overflow-scrolling: touch;
+        }
+        .right-status-head  .bord-s:before{
+            border-left: none;
+        }
+
         /*modify status in respond*/
+
        article{
             margin-bottom: 4%;
         }
@@ -363,6 +377,7 @@
         /*NAV*/
         .header-right {
             float: none;
+            width: 100%;
         }
         .slogan-page h2 {
             border: none;

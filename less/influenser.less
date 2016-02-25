@@ -43,7 +43,12 @@
       position: static;
       margin: 0;
     }
+  //"More" aka lazy load in .dash-influenser
+    .more-inv b {
+      color: #b7b7b7;
+    }
 }
+
 //actions block
 .actions-item-inner{
     padding: 25px 0;
@@ -58,18 +63,17 @@
       color: #464646;
       padding:0;
       margin: 0;
-      b{
+      a{
         font-family: MuseoSansBold, sans-serif;
         color: #2fa0c0;
+        text-decoration: none;
       }
     }
     span{
       color: #afafaf;
     }
 }
-  //actions-sprite
-
-
+  //actions-sprite-icon
 .stitches(@x: 0, @y: 0, @width: 0, @height: 0) {
   background-position: @x @y;
   width: @width;
@@ -102,6 +106,79 @@
     .stitches(-114px, -5px, 18px, 16px);
   }
 }
+@conver-a: #40aecd;
+//Conversations
+.conversions-wrap{
+  margin-top:  44px;
+  position: relative;
+  .dote-border{
+    padding: 16px 0;
+  }
+    .messages-item{
+      color: #3d3d3d;
+      margin: 20px 11px 13px 17px;
+      .mess-one a{
+        font: 1em MuseoSansBold,sans-serif;
+        color: @conver-a;
+      }
+       .photo-in-message {
+         margin-top: 14px;
+        }
+        .company-label{
+          width: 24px;
+          height: 24px;
+          display: inline-block;
+          border: 1px solid #b1b1b1;
+          border-radius: 50%;
+          background-color: #f4f4f4;
+          position: absolute;
+          top: 50px;
+          left: 27px;
+            img{
+              width: 15px;
+              height: 15px;
+              text-align: center;
+              display: inline-block;
+              margin: 15%;
+            }
+      }
+      .mess-one{
+        padding: 15px 5px 10px 24px;
+        width: 78%;
+        &:after{
+          content: "+";
+          color: #a1a1a1;
+          font-weight: 100;
+          font-size: 22px;
+          cursor: pointer;
+          position: absolute;
+          top: 28%;
+          right: 21px;
+          transform: rotate(45deg);
+        }
+      }
+      .time-ago{
+        text-align: right;
+        font-size: 0.78125em;
+        color: #818181;
+        margin-right: 10%;
+      }
+      .question {
+        .triangle-first {
+          top: 27px;
+          left: 51px;
+        }
+        .triangle-second {
+          top: 30px;
+          left: 54px;
+        }
+      }
+  }
+  .more-inv{
+    padding-top: 40px;
+  }
+}//End conversions-wrap
+
 
 
 
