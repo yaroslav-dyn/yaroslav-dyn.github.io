@@ -58,8 +58,7 @@
   color: #afafaf;
 }
 .stitches {
-  background-image: url(../img/sprite-action-icon.png);
-  background-repeat: no-repeat;
+  background: url(../img/sprite-action-icon.png) no-repeat;
   display: inline-block;
   margin-right: 18px;
 }
@@ -157,4 +156,180 @@
 }
 .conversions-wrap .more-inv {
   padding-top: 40px;
+}
+.dote-vertical:before {
+  content: "";
+  background: url(../img/dote-border-verical.png) repeat-y;
+  display: inline-block;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 6%;
+  left: 0;
+}
+.offers .offers-wrap {
+  padding-bottom: 45px;
+}
+.offers .offers-wrap-info {
+  margin: 46px 46px;
+}
+.offers .offers-wrap-info > div {
+  display: inline-block;
+}
+.offers .offers-wrap-info:after {
+  content: "";
+  border: 1px solid #dcdcdc;
+  display: block;
+  margin-top: 32px;
+  height: 0;
+}
+.offers .offers-wrap .img-brand-cont {
+  background: #f2f2f2;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  padding: 45px 5px;
+  vertical-align: top;
+}
+.offers .offers-wrap .offers-info-text {
+  max-width: 78%;
+  padding: 0 35px;
+}
+.offers .offers-wrap .offers-info-text h4 {
+  font-size: 1.17em;
+  font-family: MuseoSansBold, sans-serif;
+  color: #32474d;
+  margin-top: 2px;
+}
+.offers .offers-wrap .offers-info-text p {
+  text-align: justify;
+  color: #535353;
+}
+.offers .rect-button {
+  display: inline-block;
+  color: #fff;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  font: bold 1em ProximaNovaRegular, sans-serif;
+}
+.offers .rect-button:hover {
+  background: #fa8d2c !important;
+  color: #fff;
+}
+.offers .rect-button.accept {
+  background: #4dc179;
+  margin-right: 10px;
+}
+.offers .rect-button.decline {
+  background: #bf2929;
+}
+.offers .offers-more-info {
+  margin-left: 58px;
+}
+.offers .offers-more-info > div {
+  display: inline-block;
+}
+.offers .offers-more-info-left {
+  max-width: 29%;
+  margin-right: 40px;
+}
+.offers .offers-more-info-left ul li {
+  padding-bottom: 14px;
+}
+.offers .offers-more-info-right {
+  max-width: 69%;
+  position: relative;
+  padding-left: 45px;
+  vertical-align: top;
+  padding-bottom: 20px;
+}
+.offers .offers-more-info-right .mess-item img {
+  margin-right: 25px;
+}
+.offers .offers-more-info-right .mess-item a {
+  color: #40aecd;
+  font-family: MuseoSansBold, sans-serif;
+}
+.offers .offers-more-info .price-offer {
+  color: #43af6b;
+  font-family: ProximaNovaRegular, sans-serif;
+  font-size: 1.2em;
+}
+.offers .offers-more-info .price-offer i {
+  background: url(../img/portmone-icon.png);
+  width: 22px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.offers .offers-more-info .offers-soc-icon {
+  display: inline-block;
+  border-radius: 50%;
+  width: 27px;
+  height: 27px;
+  position: relative;
+  cursor: pointer;
+}
+.offers .offers-more-info .offers-soc-icon:after {
+  background: url(../img/calendar-icon-sprite.png) no-repeat;
+}
+.offers .offers-more-info .event-offers-badoo {
+  background: #f48401;
+}
+.offers .offers-more-info .event-offers-badoo:after {
+  content: "";
+  background-position: -86px 0;
+  width: 14px;
+  height: 15px;
+  top: 5px;
+  left: 7px;
+  position: absolute;
+}
+.offers .offers-more-info .event-offers-facebook {
+  background: #065293;
+}
+.offers .offers-more-info .event-offers-facebook:after {
+  content: "";
+  background-position: -70px 0;
+  width: 15px;
+  height: 17px;
+  top: 5px;
+  left: 9px;
+  position: absolute;
+}
+.offers .offers-more-info .event-offers-twitter {
+  background: #62c3de;
+}
+.offers .offers-more-info .event-offers-twitter:after {
+  content: "";
+  background-position: -34px 0;
+  width: 19px;
+  height: 14px;
+  top: 7px;
+  left: 7px;
+  position: absolute;
+}
+.offers .offers-more-info .event-offers-youtube {
+  background: #d61818;
+}
+.offers .offers-more-info .event-offers-youtube:after {
+  content: "";
+  background-position: 0 0;
+  width: 17px;
+  height: 11px;
+  top: 8px;
+  left: 7px;
+  position: absolute;
+}
+.offers .offers-more-info .event-offers-pinterest {
+  background: #bf2929;
+}
+.offers .offers-more-info .event-offers-pinterest:after {
+  content: "";
+  background-position: -53px 0;
+  width: 17px;
+  height: 18px;
+  top: 6px;
+  left: 7px;
+  position: absolute;
 }
