@@ -677,8 +677,8 @@ header a{
             line-height: 4em;
         }
 /*customize slider budget*/
-.budget-slider-wrap{
-
+.budget-slider-wrap .slider-budget-ui{
+    position: relative;
 }
     .budget-slider-wrap:after{
         content: "";

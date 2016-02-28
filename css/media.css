@@ -13,7 +13,8 @@
     }
 }
 
-@media (max-width: 1680px) {
+
+@media (min-width: 1121px) and (max-width: 1680px) {
     .text-status {
         top: 18px;
         padding-right: 24px;
@@ -42,8 +43,11 @@
         max-width: 95%;
         margin: 0 7% 33% 0;
     }
+    .countries {
+        padding-right: 0;
+    }
     .country-gallery {
-        width: 106%;
+        width: 100%;
     }
     .label-audience {
         height: 22px;
@@ -293,11 +297,18 @@
         left: 39%;
     }
 /*dashboard client*/
+    .client-dash-main .button-alternate {
+        margin-left: 16px; 
+    }
+
     .client-dash-main .log-status{
-        font-size: 1.4em;
+        font-size: 1.35em;
     }
     .client-dash-main .right-status-head a {
-        font-size: 1.4em;
+        font-size: 1.35em;
+    }
+    .client-dash-main .fc-title {
+        font-size: 0.6em;
     }
     .client-dash-main .chat-talk .chat {
         margin-top: 11%;
@@ -305,14 +316,14 @@
     .send-message {
         right: 2%;
     }
+     .client-dash-main .prof-slide-fun {
+        min-height: 160px
+     }
 
 }/*End 1680px*/
 
 /*all smartphone*/
     @media screen and (min-width: 360px)and (max-width: 1120px){
-        .navbar-toggle {
-            display: block;
-        }
         .navbar-collapse {
             padding-right: 15px;
             padding-left: 15px;
@@ -320,6 +331,7 @@
             -webkit-overflow-scrolling: touch;
         }
         .right-status-head  .bord-s:before{
+            content: "";
             border-left: none;
         }
 
@@ -327,9 +339,6 @@
 
        article{
             margin-bottom: 4%;
-        }
-        .client-dash-main .right-status-head a {
-            font-size: 1.8em;
         }
         .log-status-xs{
             text-align: center;
@@ -391,7 +400,7 @@
             background: url(../img/dotted-underline.png) repeat-x bottom center;
         }
         .right-status-head a {
-            font-size: 2.4em;
+            font-size: 2.2em;
             margin-right: 20px;
             display: block;
             margin-bottom: 4%;
@@ -526,7 +535,7 @@
         .ranges:last-of-type{
             position: absolute;
             top: 5px;
-            right: 0;
+            right: -16px;
         }
         .ranges-text-val {
             font-size: 0.6em;
@@ -540,6 +549,9 @@
         }
         .social-inner{
             left: 4%;
+        }
+        .country-gallery {
+            width: 100%!important;
         }
 /*page client dashboard*/
     .wrap-button {
