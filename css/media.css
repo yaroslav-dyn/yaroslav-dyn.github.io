@@ -15,6 +15,10 @@
 
 
 @media (min-width: 1121px) and (max-width: 1680px) {
+    .right-status-head .bord-s:before {
+        content: "";
+        left: -12px;
+    }
     .text-status {
         top: 18px;
         padding-right: 24px;
@@ -297,14 +301,14 @@
         left: 39%;
     }
 /*dashboard client*/
-    .client-dash-main .button-alternate {
+    .button-alternate {
         margin-left: 16px; 
     }
 
-    .client-dash-main .log-status{
+     .log-status {
         font-size: 1.35em;
     }
-    .client-dash-main .right-status-head a {
+    .right-status-head a {
         font-size: 1.35em;
     }
     .client-dash-main .fc-title {
@@ -319,6 +323,10 @@
      .client-dash-main .prof-slide-fun {
         min-height: 160px
      }
+     /*dashboard influenser*/
+    .offers .offers-wrap .offers-info-text {
+        max-width: 74%;
+    }
 
 }/*End 1680px*/
 
@@ -549,6 +557,11 @@
         }
         .social-inner{
             left: 4%;
+        }
+        .country-wrap {
+            position: relative;
+            max-width: 90%;
+            margin-bottom:34%;
         }
         .country-gallery {
             width: 100%!important;

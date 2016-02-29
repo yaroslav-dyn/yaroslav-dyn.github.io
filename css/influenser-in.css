@@ -256,9 +256,9 @@
   font-size: 1.2em;
 }
 .offers .offers-more-info .price-offer i {
-  background: url(../img/portmone-icon.png);
-  width: 22px;
-  height: 20px;
+  background: url(../img/other-ui-sprite.png);
+  width: 27px;
+  height: 21px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -332,4 +332,72 @@
   top: 6px;
   left: 7px;
   position: absolute;
+}
+.hourglass-icon {
+  display: inline-block;
+  background: url(../img/other-ui-sprite.png) -33px 0;
+  width: 23px;
+  height: 21px;
+}
+.mcdonalds-icon {
+  background: url(../img/brand-macDonalds.png);
+  display: inline-block;
+  width: 30px;
+  height: 27px;
+}
+.dash-influenser .table-overview {
+  margin-top: 27px;
+}
+.dash-influenser .table-overview tr td,
+.dash-influenser .table-overview tr th {
+  border-right: 1px solid #ddd;
+  padding: 24px 0;
+}
+.dash-influenser .table-overview tr td:first-child,
+.dash-influenser .table-overview tr th:first-child {
+  text-align: center;
+}
+.dash-influenser .table-overview tr td:nth-of-type(2),
+.dash-influenser .table-overview tr th:nth-of-type(2) {
+  padding-left: 25px;
+}
+.dash-influenser .table-overview tr td:last-child,
+.dash-influenser .table-overview tr th:last-child {
+  text-align: right;
+  border-right: none;
+  padding-right: 25px;
+}
+.dash-influenser .table-overview tr td:nth-of-type(n+3),
+.dash-influenser .table-overview tr th:nth-of-type(n+3) {
+  text-align: center;
+}
+.dash-influenser .table-overview tr td:last-child,
+.dash-influenser .table-overview tr th:last-child {
+  text-align: right;
+}
+.dash-influenser .table-overview tr td .glyphicon-ok,
+.dash-influenser .table-overview tr th .glyphicon-ok {
+  color: #43b56e;
+}
+.dash-influenser .table-overview .table tr th {
+  font-family: MuseoSansBold, sans-serif;
+  color: #b1b1b1;
+}
+.dash-influenser .table-overview .table tr td {
+  color: #5e5e5e;
+}
+.dash-influenser .table-overview .table tr td:last-child {
+  color: #595959;
+  font-family: MuseoSansBold, sans-serif;
+}
+.dash-influenser .table-overview .status-cell {
+  position: relative;
+}
+.status-describe {
+  background: #3bb6d9;
+  box-shadow: 1px 0 3px #33a4c4;
+  font-family: ProximaNovaRegular, sans-serif;
+  color: #fff;
+  border-radius: 6px;
+  padding: 8px 0;
 }

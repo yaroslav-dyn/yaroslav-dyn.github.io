@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28a767fe-d02c-447d-a1d9-7dfa2cc79ac6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/dashboard.css" afterPath="$PROJECT_DIR$/css/dashboard.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/influenser-in.css" afterPath="$PROJECT_DIR$/css/influenser-in.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/media.css" afterPath="$PROJECT_DIR$/css/media.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard-influenser.html" afterPath="$PROJECT_DIR$/dashboard-influenser.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/influenser.less" afterPath="$PROJECT_DIR$/less/influenser.less" />
     </list>
     <ignored path="social-4-2-16.iws" />
@@ -31,8 +33,8 @@
       <file leaf-file-name="dashboard-influenser.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard-influenser.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.983333">
-              <caret line="326" column="63" selection-start-line="326" selection-start-column="63" selection-end-line="326" selection-end-column="68" />
+            <state vertical-scroll-proportion="-16.580645">
+              <caret line="388" column="76" selection-start-line="388" selection-start-column="76" selection-end-line="388" selection-end-column="76" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -43,18 +45,8 @@
       <file leaf-file-name="influenser.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/less/influenser.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5038932">
-              <caret line="274" column="29" selection-start-line="274" selection-start-column="29" selection-end-line="274" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/dashboard.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.1833334">
-              <caret line="142" column="29" selection-start-line="142" selection-start-column="29" selection-end-line="142" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.73922414">
+              <caret line="429" column="17" selection-start-line="429" selection-start-column="17" selection-end-line="429" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -63,13 +55,10 @@
       <file leaf-file-name="influenser-in.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/influenser-in.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.6774194">
-              <caret line="316" column="1" selection-start-line="316" selection-start-column="1" selection-end-line="316" selection-end-column="1" />
+            <state vertical-scroll-proportion="-25.67742">
+              <caret line="401" column="14" selection-start-line="401" selection-start-column="14" selection-end-line="401" selection-end-column="14" />
               <folding>
-                <marker date="1456504002172" expanded="true" signature="1396:1465" placeholder="{...}" />
-                <marker date="1456504002172" expanded="true" signature="1478:1547" placeholder="{...}" />
-                <marker date="1456504002172" expanded="true" signature="1560:1630" placeholder="{...}" />
-                <marker date="1456504002172" expanded="true" signature="3357:3360" placeholder="{...}" />
+                <marker date="1456762920221" expanded="true" signature="3357:3360" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -102,12 +91,12 @@
         <option value="$PROJECT_DIR$/libs/fullCalendar-project.js" />
         <option value="$PROJECT_DIR$/css/influenser.css" />
         <option value="$PROJECT_DIR$/libs/function.js" />
-        <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/client-dashbord.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/dashboard.css" />
+        <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/css/media.css" />
         <option value="$PROJECT_DIR$/css/influenser-in.css" />
-        <option value="$PROJECT_DIR$/css/dashboard.css" />
         <option value="$PROJECT_DIR$/dashboard-influenser.html" />
         <option value="$PROJECT_DIR$/less/influenser.less" />
       </list>
@@ -149,34 +138,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="GrowSocial">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="GrowSocial">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="css">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -221,6 +182,48 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="GrowSocial">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="GrowSocial">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="less">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="GrowSocial">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="css">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -344,10 +347,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
           <folding>
-            <marker date="1456504002172" expanded="true" signature="1396:1465" placeholder="{...}" />
-            <marker date="1456504002172" expanded="true" signature="1478:1547" placeholder="{...}" />
-            <marker date="1456504002172" expanded="true" signature="1560:1630" placeholder="{...}" />
-            <marker date="1456504002172" expanded="true" signature="3357:3360" placeholder="{...}" />
+            <marker date="1456762920221" expanded="true" signature="3357:3360" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -385,10 +385,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
           <folding>
-            <marker date="1456504002172" expanded="true" signature="1396:1465" placeholder="{...}" />
-            <marker date="1456504002172" expanded="true" signature="1478:1547" placeholder="{...}" />
-            <marker date="1456504002172" expanded="true" signature="1560:1630" placeholder="{...}" />
-            <marker date="1456504002172" expanded="true" signature="3357:3360" placeholder="{...}" />
+            <marker date="1456762920221" expanded="true" signature="3357:3360" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -416,10 +413,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
           <folding>
-            <marker date="1456504002172" expanded="true" signature="1396:1465" placeholder="{...}" />
-            <marker date="1456504002172" expanded="true" signature="1478:1547" placeholder="{...}" />
-            <marker date="1456504002172" expanded="true" signature="1560:1630" placeholder="{...}" />
-            <marker date="1456504002172" expanded="true" signature="3357:3360" placeholder="{...}" />
+            <marker date="1456762920221" expanded="true" signature="3357:3360" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -662,31 +656,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.903226">
-          <caret line="57" column="41" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/influenser.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="9.806452">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/media.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.096774">
-          <caret line="320" column="9" selection-start-line="320" selection-start-column="9" selection-end-line="320" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -698,41 +671,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/influenser-in.css">
+    <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6774194">
-          <caret line="316" column="1" selection-start-line="316" selection-start-column="1" selection-end-line="316" selection-end-column="1" />
-          <folding>
-            <marker date="1456504002172" expanded="true" signature="1396:1465" placeholder="{...}" />
-            <marker date="1456504002172" expanded="true" signature="1478:1547" placeholder="{...}" />
-            <marker date="1456504002172" expanded="true" signature="1560:1630" placeholder="{...}" />
-            <marker date="1456504002172" expanded="true" signature="3357:3360" placeholder="{...}" />
-          </folding>
+        <state vertical-scroll-proportion="-10.645162">
+          <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.887931">
+          <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/dashboard.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.2580647">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/media.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="247.54839">
+          <caret line="327" column="23" selection-start-line="327" selection-start-column="23" selection-end-line="327" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard-influenser.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.983333">
-          <caret line="326" column="63" selection-start-line="326" selection-start-column="63" selection-end-line="326" selection-end-column="68" />
+        <state vertical-scroll-proportion="-16.580645">
+          <caret line="388" column="76" selection-start-line="388" selection-start-column="76" selection-end-line="388" selection-end-column="76" />
           <folding>
             <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/dashboard.css">
+    <entry file="file://$PROJECT_DIR$/css/influenser-in.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1833334">
-          <caret line="142" column="29" selection-start-line="142" selection-start-column="29" selection-end-line="142" selection-end-column="29" />
-          <folding />
+        <state vertical-scroll-proportion="-25.67742">
+          <caret line="401" column="14" selection-start-line="401" selection-start-column="14" selection-end-line="401" selection-end-column="14" />
+          <folding>
+            <marker date="1456762920221" expanded="true" signature="3357:3360" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/less/influenser.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5038932">
-          <caret line="274" column="29" selection-start-line="274" selection-start-column="29" selection-end-line="274" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.73922414">
+          <caret line="429" column="17" selection-start-line="429" selection-start-column="17" selection-end-line="429" selection-end-column="17" />
           <folding />
         </state>
       </provider>

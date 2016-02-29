@@ -46,6 +46,17 @@ header a{
     font-family: ProximaNovaRegular, sans-serif;
     color: #fff;
 }
+.button-alternate{
+    display: inline-block;
+    background: rgba(255,255,255,0.3);
+    border-radius: 5px;
+    text-align: center;
+    font: 0.84em "MuseoSansBold", sans-serif;
+    text-transform: uppercase;
+    padding: 10px 19px;
+    margin-left: 25px;
+    cursor: pointer;
+}
 .head-wrapper{
     padding-bottom: 14px;
 }
@@ -844,6 +855,8 @@ header a{
         border-radius: 50%;
         border: none;
         color: #fff;
+        width: 70%;
+        margin-left: 5px;
     }
     .date-start-comp .ui-state-active{
         background: #e0e0e0;

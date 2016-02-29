@@ -3,6 +3,9 @@
   @accent-color: #fa8d2c;
   @main-border-radius: 6px;
   @border-color: #dcdcdc;
+//badge waite status
+@badge-wait-bg: #3bb6d9;
+@badge-wait-shadow-color:#33a4c4;
 //header
 .right-status-head {
   .bord-s{
@@ -290,9 +293,9 @@
         font-family: ProximaNovaRegular, sans-serif;
         font-size: 1.2em;
         i{
-          background: url(../img/portmone-icon.png);
-          width: 22px;
-          height: 20px;
+          background: url(../img/other-ui-sprite.png);
+          width: 27px;
+          height: 21px;
           display: inline-block;
           vertical-align: middle;
         }
@@ -358,6 +361,74 @@
 
   }
 }//END offers
+//campaign Overview
+.hourglass-icon{
+  display: inline-block;
+  background: url(../img/other-ui-sprite.png) -33px 0;
+  width: 23px;
+  height: 21px;
+}
+
+.mcdonalds-icon{
+  background: url(../img/brand-macDonalds.png);
+  display: inline-block;
+  width: 30px;
+  height: 27px;
+
+}
+.dash-influenser{
+  .table-overview {
+    margin-top: 27px;
+    tr td, tr th {
+      border-right: 1px solid #ddd;
+      padding: 24px 0;
+      &:first-child {
+        text-align: center;
+      }
+      &:nth-of-type(2){
+        padding-left: 25px;
+      }
+      &:last-child {
+        text-align: right;
+        border-right: none;
+        padding-right: 25px;
+      }
+      &:nth-of-type(n+3) {
+        text-align: center;
+      }
+      &:last-child {
+        text-align: right;
+      }
+      .glyphicon-ok {
+        color: #43b56e;
+      }
+    }
+    .table {
+      tr th {
+        font-family: MuseoSansBold, sans-serif;
+        color: #b1b1b1;
+      }
+      tr td {
+        color: #5e5e5e;
+        &:last-child{
+          color: #595959;
+          font-family: MuseoSansBold, sans-serif;
+        }
+      }
+    }
+    .status-cell{
+      position: relative;
+    }
+  }
+}
+.status-describe{
+  background: @badge-wait-bg;
+  box-shadow: 1px 0 3px @badge-wait-shadow-color;
+  font-family: ProximaNovaRegular, sans-serif;
+  color: #fff;
+  border-radius: 6px;
+  padding: 8px 0;
+}
 
 
 
