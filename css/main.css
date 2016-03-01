@@ -250,7 +250,7 @@ header a{
         border-bottom: 1px solid #eeefef;
     }
         .slogan-page h2{
-            font: 1.25em/2.6em MuseoSansRegular, sans-serif;
+            font: 1.3em/2.6em MuseoSansRegular, sans-serif;
             color: #32474d;
             display: inline-block;
             border-bottom: 1px solid #3c5056;
@@ -849,6 +849,8 @@ header a{
         background: transparent;
         text-align: center;
         color: #686868;
+         width: 70%;
+        margin-left: 5px;
     }
      .date-start-comp .ui-widget-content .ui-state-highlight {
         background: #3bb6d9;

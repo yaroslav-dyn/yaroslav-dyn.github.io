@@ -276,6 +276,7 @@
 }
 .faq-wrapper-dash .answer-item .answer-par{
     margin: 2% 0;
+    cursor: pointer;
 }
 .faq-wrapper-dash .answer-item:last-child{
    padding-bottom: 2%;
