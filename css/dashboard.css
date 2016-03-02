@@ -144,7 +144,7 @@
             }
 /*Article client invoices*/
 .article-pad{
-    padding: 0 15px;
+    padding: 0 30px;
 }
 .invoices-client{
     margin: 12px 0;
@@ -355,7 +355,7 @@
     position: absolute;
 }
 .chat-talk .chat {
-    margin-top: 11.4%;
+    margin-top: 6.9%;
 }
 .chat-talk .chat-header ul li:nth-of-type(2) {
     float: none;

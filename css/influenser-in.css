@@ -6,6 +6,18 @@
   top: 6px;
   left: -23px;
 }
+.dash-influenser .col-md-8 {
+  width: 73.4%;
+}
+.dash-influenser .invoices-client {
+  margin: 18px 0;
+}
+.dash-influenser .invoices-client h2 {
+  font-size: 1.8em;
+}
+.dash-influenser .chat-wrapper {
+  left: 15px;
+}
 .dash-influenser .text-status {
   position: static;
 }
@@ -350,15 +362,11 @@
 .dash-influenser .table-overview tr td,
 .dash-influenser .table-overview tr th {
   border-right: 1px solid #ddd;
-  padding: 24px 20px;
+  padding: 20px 22px;
 }
 .dash-influenser .table-overview tr td:first-child,
 .dash-influenser .table-overview tr th:first-child {
   text-align: center;
-}
-.dash-influenser .table-overview tr td:nth-of-type(2),
-.dash-influenser .table-overview tr th:nth-of-type(2) {
-  padding-left: 25px;
 }
 .dash-influenser .table-overview tr td:last-child,
 .dash-influenser .table-overview tr th:last-child {
@@ -404,42 +412,44 @@
   font-family: ProximaNovaRegular, sans-serif;
   font-size: 0.6em;
   color: #fff;
-  border-radius: 4px;
-  padding: 4px 6px;
+  border-radius: 3px;
+  padding: 4px 11px;
   position: absolute;
   bottom: -4px;
-  left: 6px;
+  left: 7px;
   z-index: 100;
 }
 .status-describe .triangle {
   border-color: transparent transparent #3bb6d9 transparent;
   top: -4px;
-  left: 33px;
   z-index: -1;
 }
 .request-form-class label {
   display: block;
-  padding-bottom: 20px;
+  padding-bottom: 14px;
   color: #535353;
+  font-size: 1.1em;
 }
 .request-form-class fieldset {
-  padding-bottom: 38px;
+  padding-bottom: 34px;
+}
+.request-form-class input,
+.request-form-class textarea {
+  width: 92%;
 }
 .request-form-class input[type="text"],
 .request-form-class textarea {
   border: 1px solid #c4c4c4;
   border-radius: 6px;
-  width: 100%;
   height: 48px;
   color: #a1a1a1;
   outline: none;
   padding: 10px;
 }
 .request-form-class textarea {
-  height: 180px;
+  height: 194px;
 }
 .request-form-class input[type="submit"] {
-  width: 100%;
   background: #4dc179;
 }
 .request-form-class input[type="submit"]:hover {
@@ -468,10 +478,10 @@
   margin-left: 18px;
 }
 .request-wrapper {
-  padding: 45px 0;
+  padding: 37px 0;
 }
 .form-request-wrapper-r {
-  padding: 0 20px;
+  padding-left: 6%;
 }
 .form-request-wrapper-r p {
   color: #636363;
@@ -494,12 +504,115 @@
   top: -42px;
   margin: 0 auto;
   display: block;
-  padding: 0 55px;
+  padding: 0 58px;
 }
 .form-request-wrapper-r .learn-more-premium:hover {
   background: #fa8d2c;
 }
+.request-special-pad {
+  padding: 5px  55px 36px 55px;
+}
+.requested-wrapper {
+  padding-right: 4%;
+}
+.requested-wrapper .border-left {
+  border-color: #cbcbcb;
+}
 .requested-wrapper .slogan-page h2 {
+  margin: 9px;
   border-bottom: none;
-  font-size: 1.2em;
+  font-size: 1.3em;
+}
+.requested-wrapper .table {
+  border: none;
+}
+.requested-wrapper .table tr th,
+.requested-wrapper .table tr td {
+  padding: 0 32px 0 36px;
+  vertical-align: middle!important;
+  line-height: 3.2em;
+  border: none;
+}
+.requested-wrapper .table tr th {
+  color: #b9b9b9;
+}
+.requested-wrapper .table tr th:nth-of-type(2) {
+  padding-left: 85px;
+}
+.requested-wrapper .table tr td:first-child {
+  font-family: MuseoSansBold, sans-serif;
+}
+.requested-wrapper .table tr td:nth-of-type(2) {
+  padding-left: 85px;
+  min-width: 200px;
+}
+.status-req-selector-pend {
+  color: #41bce0;
+}
+.status-req-selector-compl {
+  color: #4dc179;
+}
+.status-req-selector-failed {
+  color: #cb1919;
+}
+.payouts-wrapper {
+  padding: 0 34px;
+}
+.payouts-wrapper .pdf-icon-white {
+  background-position: -103px 0;
+  height: 28px;
+  margin-top: 4px;
+}
+.payouts-wrapper .mark-invoices > li {
+  padding-left: 27px;
+  max-height: 70px;
+}
+.payouts-wrapper .mark-invoices > li:nth-of-type(2) {
+  margin: 0;
+}
+.payouts-wrapper .mark-invoices > li:nth-of-type(3) {
+  position: static;
+  font-size: 1.28em;
+  color: #626262;
+  margin-left: 2%;
+  border-left: 1px solid #dedede;
+  box-shadow: -1px 0 0 1px #f2f2f2;
+  line-height: 3em;
+}
+.payouts-wrapper .mark-invoices > li:nth-of-type(4) {
+  text-align: right;
+  position: absolute;
+  right: 26%;
+  top: 0;
+  bottom: 0;
+  line-height: 6em;
+  height: 100%;
+}
+.payouts-wrapper .mark-invoices > li b {
+  font-size: 1.3em;
+}
+.payouts-wrapper .inv-icon {
+  padding: 15px 32px;
+  border-radius: 4px;
+  height: 100%;
+}
+.payouts-wrapper .status-payouts {
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 0 4px 4px 0;
+  line-height: 6em;
+  width: 22%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  padding: 0 45px;
+}
+.payouts-wrapper .pending-status {
+  background: #eee;
+  color: #b0b0b0;
+  border-left: 1px solid #dbdbdb;
+}
+.payouts-wrapper .payout-status {
+  background: #58ba7c;
+  color: #fff;
 }

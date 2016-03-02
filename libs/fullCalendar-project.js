@@ -37,6 +37,38 @@ $('#calender-full').fullCalendar({
             title: 'Influencer Surname',
             start: '2016-02-25',
             className: "event-fc event-facebook"
+        },
+
+        {
+            title: 'GlossyBox',
+            start: '2016-03-16',
+            className: "event-fc event-youtube"
+        },
+        {
+            title: 'GlossyBox',
+            start: '2016-03-16',
+            className: "event-fc event-instagram"
+        },
+        {
+            title: 'mcDonalds',
+            start: '2016-03-16',
+            className: "event-fc event-twitter"
+        },
+
+        {
+            title: 'MayBeatuy',
+            start: '2016-03-25',
+            className: "event-fc event-badoo"
+        },
+        {
+            title: 'MayBeatuy',
+            start: '2016-03-25',
+            className: "event-fc event-pinterest"
+        },
+        {
+            title: 'GlossyBox',
+            start: '2016-03-25',
+            className: "event-fc event-facebook"
         }
 
 

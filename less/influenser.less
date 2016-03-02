@@ -15,6 +15,7 @@
 	border-radius: @bord-rad;
 }
 
+
 //header
 .right-status-head {
 	.bord-s{
@@ -29,6 +30,19 @@
 	}
 }
 .dash-influenser{
+	.col-md-8 {
+		width: 73.4%;
+	}
+	.invoices-client {
+		margin: 18px 0;
+		h2{
+			font-size: 1.8em;
+		}
+
+	}
+	.chat-wrapper {
+		left: 15px;
+	}
 		.text-status {
 			position: static;
 		}
@@ -389,15 +403,14 @@
 }
 .dash-influenser{
 	.table-overview {
-	 
 		tr td, tr th {
 			border-right: 1px solid #ddd;
-			padding: 24px 20px;
+			padding: 20px 22px;
 			&:first-child {
 				text-align: center;
 			}
 			&:nth-of-type(2){
-				padding-left: 25px;
+
 			}
 			&:last-child {
 				text-align: right;
@@ -436,51 +449,52 @@
 		}
 	}
 }
-.status-describe{
-	background: @badge-wait-bg;
-	box-shadow: 0 3px 0 @badge-wait-shadow-color;
+ .status-describe{
+	background: #3bb6d9;
+	box-shadow: 0 3px 0 #33a4c4;
 	font-family: ProximaNovaRegular, sans-serif;
 	font-size: 0.6em;
 	color: #fff;
-	border-radius: 4px;
-	padding: 4px 6px;
+	border-radius: 3px;
+	padding: 4px 11px;
 	position: absolute;
 	bottom: -4px;
-	left: 6px;
+	left: 7px;
 	z-index: 100;
 	.triangle{
 		border-color: transparent transparent @badge-wait-bg transparent;
-			top: -4px;
-	left: 33px;
-	z-index: -1;
+		top: -4px;
+		z-index: -1;
 	}
-}
+ }
 
 //article request prefered companies
 .request-form-class{ 
 		label{
 			display: block;
-			padding-bottom: 20px;
+			padding-bottom: 14px;
 			color: #535353;
+			font-size: 1.1em;
 
 		}
 		fieldset{
-			padding-bottom: 38px;
+			padding-bottom: 34px;
+		}
+		input, textarea{
+			width: 92%;
 		}
 		input[type="text"],textarea{
 			.border-solid(1px,#c4c4c4);
 			.border-radius();
-			width:100%;
 			height: 48px;		
 			color: #a1a1a1;
 			outline: none;
 			padding: 10px;
 		}
 		textarea{
-			height: 180px;
+			height: 194px;
 		}
 		input[type="submit"]{
-			width: 100%;
 			background: #4dc179;
 			&:hover{
 				background: #3bb6d9;
@@ -512,11 +526,11 @@
 	}
 }	
 .request-wrapper{
-	padding: 45px 0;
+	padding: 37px 0;
 }	
 .form-request-wrapper {
 	&-r {
-		padding: 0 20px;
+		padding-left: 6%;
 		p {
 			color: #636363;
 			padding: 28px 25px;
@@ -538,22 +552,131 @@
 			top: -42px;
 			margin: 0 auto;
 			display: block;
-			padding: 0 55px;
+			padding: 0 58px;
 			&:hover {
 				background: #fa8d2c;
 			}
 		}
 	}
 }
-//requested
+//requested table companies
+.request-special-pad{
+	padding: 5px  55px 36px 55px;
+}
 .requested-wrapper{
+	padding-right: 4%;
+	.border-left{
+		border-color: #cbcbcb;
+	}
 	.slogan-page h2{
+		margin: 9px;
 		border-bottom: none;
-		font-size: 1.2em;
+		font-size: 1.3em;
+	}
+	.table{
+		border: none;
+		tr th, tr td{
+			padding: 0 32px 0 36px;
+			vertical-align: middle!important;
+			line-height: 3.2em;
+		  	border: none;
+		}
+		tr th{
+			color: #b9b9b9;
+			&:nth-of-type(2){
+				padding-left: 85px;
+			}
+		}
+		tr td{
+			&:first-child{
+				font-family: MuseoSansBold, sans-serif;
+			}
+			&:nth-of-type(2){
+				padding-left: 85px;
+				min-width: 200px;
+			}
+		}	
 	}
 }
+@req-status-color-pend: #41bce0;
+@req-status-color-compl: #4dc179;
+@req-status-color-failed: #cb1919;
+
+.status-req-selector-pend{
+	color: @req-status-color-pend;
+}
+.status-req-selector-compl{
+	color: @req-status-color-compl;
+}
+.status-req-selector-failed{
+	color: @req-status-color-failed;
+}
+
+//Article Payouts
+	//ul has classes: new-invoice(blue bg), paid-invoice(green bg)
+.payouts-wrapper{
+  padding: 0 34px;
+  //icon upload in this page
+  .pdf-icon-white {
+	background-position: -103px 0;
+	height: 28px;
+	margin-top: 4px;
+  }
+  .mark-invoices
+  	>li{
+	  	padding-left: 27px;
+		max-height: 70px;
+	&:nth-of-type(2){
+	  margin: 0
+	}
+	&:nth-of-type(3){
+	  position: static;
+	  font-size: 1.28em;
+	  color: #626262;
+	  margin-left: 2%;
+	  border-left: 1px solid #dedede;
+	  box-shadow: -1px 0 0 1px #f2f2f2;
+	  line-height: 3em;
+	}
+	&:nth-of-type(4){
+	  text-align: right;
+	  position: absolute;
+	  right: 26%;
+	  top:0;
+	  bottom:0;
+	  line-height: 6em;
+	  height: 100%;
+	}
+	b{
+	  font-size: 1.3em;
+	}
+  }
+  .inv-icon {
+	padding: 15px 32px;
+	border-radius: 4px;
+	height: 100%
+  }
+  .status-payouts{
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 0 4px 4px 0;
+	line-height: 6em;
+	width: 22%;
+	height: 100%;
+	position: absolute;
+	right:0;
+	padding: 0 45px;
+  }
+  .pending-status{
+	background: #eee;
+	color: #b0b0b0;
+	border-left: 1px solid #dbdbdb;
+  }
+  .payout-status{
+	background: #58ba7c;
+	color: #fff;
+  }
 
 
 
-
-   
+}//End payouts-wrapper
