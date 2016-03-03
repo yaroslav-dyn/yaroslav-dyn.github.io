@@ -117,7 +117,7 @@ $(document).ready( function(){
             max : 100000,
             step: 10,
             create: function( event, ui ) {
-                val = $( "#slider-budget" ).slider("value");
+                var val = $( "#slider-budget" ).slider("value");
                 $( "#amount-budget" ).html( val );
             },
             slide: function( event, ui ) {
@@ -126,7 +126,10 @@ $(document).ready( function(){
         });
     });
 
-
+//corousel in dashboard influenser page
+//    $(".carousel").carousel({
+//        interval: 3000
+//    })
 
 });//END READY
 

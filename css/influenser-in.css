@@ -15,8 +15,27 @@
 .dash-influenser .invoices-client h2 {
   font-size: 1.8em;
 }
+.dash-influenser .prof-slide-fun {
+  z-index: 10;
+}
 .dash-influenser .chat-wrapper {
   left: 15px;
+}
+.dash-influenser .chat-wrapper .old-lazy-load a {
+  color: #bcbcbc;
+}
+.dash-influenser .chat-wrapper .select-more i.icon-brand {
+  width: 37px;
+  height: 37px;
+  display: inline-block;
+  position: static;
+  background: url(../img/label-glossy.png) 0 0;
+  float: left;
+}
+.dash-influenser .chat-wrapper .select-more span {
+  position: relative;
+  top: 3px;
+  margin-left: 18px;
 }
 .dash-influenser .text-status {
   position: static;
@@ -199,7 +218,7 @@
   background: #f2f2f2;
   border: 1px solid #dcdcdc;
   border-radius: 6px;
-  padding: 45px 5px;
+  padding: 35px 5px;
   vertical-align: top;
 }
 .offers .offers-wrap .offers-info-text {
@@ -215,6 +234,25 @@
 .offers .offers-wrap .offers-info-text p {
   text-align: justify;
   color: #535353;
+}
+.offers .offers-wrap .carousel-inner {
+  padding-left: 15px;
+  display: inline-block;
+}
+.offers .offers-wrap .carousel-control {
+  background: none;
+  top: 47%;
+}
+.offers .offers-wrap .carousel-control .glyphicon {
+  color: #626262;
+  font-size: 34px;
+  text-shadow: none;
+}
+.offers .offers-wrap .left {
+  left: -68px;
+}
+.offers .offers-wrap .right {
+  right: -68px;
 }
 .offers .rect-button {
   display: inline-block;
@@ -248,7 +286,14 @@
   margin-right: 40px;
 }
 .offers .offers-more-info-left ul li {
+  font-family: ProximaNovaRegular, sans-serif;
   padding-bottom: 14px;
+}
+.offers .offers-more-info-left ul li:nth-of-type(2) {
+  color: #b3b3b3;
+}
+.offers .offers-more-info-left ul li:nth-of-type(2) b {
+  color: #454545;
 }
 .offers .offers-more-info-right {
   max-width: 69%;
@@ -266,15 +311,15 @@
 }
 .offers .offers-more-info .price-offer {
   color: #43af6b;
-  font-family: ProximaNovaRegular, sans-serif;
   font-size: 1.2em;
+  vertical-align: middle;
 }
 .offers .offers-more-info .price-offer i {
   background: url(../img/other-ui-sprite.png);
   width: 27px;
   height: 21px;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: sub;
 }
 .offers .offers-more-info .offers-soc-icon {
   display: inline-block;
@@ -555,8 +600,14 @@
 .status-req-selector-failed {
   color: #cb1919;
 }
+.payouts-article .more-inv {
+  margin-top: 4%;
+}
 .payouts-wrapper {
-  padding: 0 34px;
+  padding: 18px 36px 0 33px;
+}
+.payouts-wrapper .invoices-client {
+  margin: 24px 0;
 }
 .payouts-wrapper .pdf-icon-white {
   background-position: -103px 0;
@@ -566,9 +617,10 @@
 .payouts-wrapper .mark-invoices > li {
   padding-left: 27px;
   max-height: 70px;
+  font-size: 1.1em;
 }
 .payouts-wrapper .mark-invoices > li:nth-of-type(2) {
-  margin: 0;
+  margin: 0 0 0 6px;
 }
 .payouts-wrapper .mark-invoices > li:nth-of-type(3) {
   position: static;
@@ -580,15 +632,11 @@
   line-height: 3em;
 }
 .payouts-wrapper .mark-invoices > li:nth-of-type(4) {
-  text-align: right;
-  position: absolute;
-  right: 26%;
-  top: 0;
-  bottom: 0;
-  line-height: 6em;
   height: 100%;
+  margin-left: 21%;
 }
-.payouts-wrapper .mark-invoices > li b {
+.payouts-wrapper .mark-invoices > li:nth-of-type(4) b {
+  line-height: 4em;
   font-size: 1.3em;
 }
 .payouts-wrapper .inv-icon {
@@ -600,8 +648,8 @@
   text-align: center;
   text-transform: uppercase;
   border-radius: 0 4px 4px 0;
-  line-height: 6em;
-  width: 22%;
+  line-height: 5em;
+  width: 24%;
   height: 100%;
   position: absolute;
   right: 0;

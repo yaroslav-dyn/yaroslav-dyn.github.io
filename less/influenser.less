@@ -38,10 +38,35 @@
 		h2{
 			font-size: 1.8em;
 		}
-
 	}
+  .prof-slide-fun{
+	z-index: 10;
+  }
+  //chat
 	.chat-wrapper {
 		left: 15px;
+	  .old-lazy-load{
+		a{
+		  color: #bcbcbc;
+		}
+	  }
+
+	  .select-more{
+		i.icon-brand {
+		  width: 37px;
+		  height: 37px;
+		  display: inline-block;
+		  position: static;
+		  background: url(../img/label-glossy.png) 0 0;
+		  float: left;
+		}
+		span{
+		  position: relative;
+		  top: 3px;
+		  margin-left: 18px;
+		}
+	  }
+
 	}
 		.text-status {
 			position: static;
@@ -239,7 +264,7 @@
 			background: #f2f2f2;
 			border: 1px solid @border-color;
 			border-radius: 6px;
-			padding: 45px 5px;
+			padding: 35px 5px;
 			vertical-align: top;
 		}
 
@@ -257,33 +282,53 @@
 				color: #535353;
 			}
 		}
+	  //carousel
+	  .carousel-inner{
+		padding-left: 15px;
+		display: inline-block;
+	  }
+	  .carousel-control{
+		background: none;
+		top: 47%;
+		.glyphicon{
+		  color: #626262;
+		  font-size: 34px;
+		  text-shadow: none;
+		}
+	  }
+	  .left{
+		left: -68px;
+	  }
+	  .right{
+		right: -68px;
+	  }
 	}
 
-			//var for buttons BG
-			@rect-color-accept: #4dc179;
-			@rect-color-decline: #bf2929;
-			.rect-button {
-				display: inline-block;
-				color: #fff;
-				padding: 20px 40px;
-				text-transform: uppercase;
-				.border-radius();
-				font: bold 1em ProximaNovaRegular, sans-serif;
-				text-align: center;
-				&:hover {
-					background: @accent-color !important;
-					color: #fff;
-				}
+  //var for buttons BG
+  @rect-color-accept: #4dc179;
+  @rect-color-decline: #bf2929;
+  .rect-button {
+	  display: inline-block;
+	  color: #fff;
+	  padding: 20px 40px;
+	  text-transform: uppercase;
+	  .border-radius();
+	  font: bold 1em ProximaNovaRegular, sans-serif;
+	  text-align: center;
+	  &:hover {
+		  background: @accent-color !important;
+		  color: #fff;
+	  }
 
-				&.accept {
-					background: @rect-color-accept;
-					margin-right: 10px;
-				}
-				&.decline {
-					background: @rect-color-decline;
-					min-width: 150px;
-				}
-			}
+	  &.accept {
+		  background: @rect-color-accept;
+		  margin-right: 10px;
+	  }
+	  &.decline {
+		  background: @rect-color-decline;
+		  min-width: 150px;
+	  }
+  }
 	.offers-more-info {
 			>div{
 				display: inline-block;
@@ -292,7 +337,14 @@
 				max-width: 29%;
 				margin-right: 40px;
 				ul li{
-					padding-bottom: 14px;
+				  font-family: ProximaNovaRegular, sans-serif;
+				  padding-bottom: 14px;
+				  &:nth-of-type(2){
+					color: #b3b3b3;
+					b{
+					  color: #454545;
+					}
+				  }
 				}
 			}
 			&-right{
@@ -315,14 +367,14 @@
 		margin-left: 58px;
 			.price-offer{
 				color: #43af6b;
-				font-family: ProximaNovaRegular, sans-serif;
 				font-size: 1.2em;
+			  	vertical-align: middle;
 				i{
 					background: url(../img/other-ui-sprite.png);
 					width: 27px;
 					height: 21px;
 					display: inline-block;
-					vertical-align: middle;
+					vertical-align: sub;
 				}
 			}
 			.offers-soc-icon {
@@ -614,8 +666,18 @@
 
 //Article Payouts
 	//ul has classes: new-invoice(blue bg), paid-invoice(green bg)
+.payouts-article{
+  .more-inv{
+	margin-top: 4%;
+  }
+
+}
 .payouts-wrapper{
-  padding: 0 34px;
+  padding: 18px 36px 0 33px;
+  .invoices-client {
+	margin: 24px 0;
+  }
+
   //icon upload in this page
   .pdf-icon-white {
 	background-position: -103px 0;
@@ -626,8 +688,9 @@
   	>li{
 	  	padding-left: 27px;
 		max-height: 70px;
+	font-size: 1.1em;
 	&:nth-of-type(2){
-	  margin: 0
+	  margin: 0 0 0 6px;
 	}
 	&:nth-of-type(3){
 	  position: static;
@@ -639,16 +702,12 @@
 	  line-height: 3em;
 	}
 	&:nth-of-type(4){
-	  text-align: right;
-	  position: absolute;
-	  right: 26%;
-	  top:0;
-	  bottom:0;
-	  line-height: 6em;
 	  height: 100%;
-	}
-	b{
-	  font-size: 1.3em;
+	  margin-left: 21%;
+	  b{
+		line-height: 4em;
+		font-size: 1.3em;
+	  }
 	}
   }
   .inv-icon {
@@ -660,8 +719,8 @@
 	text-align: center;
 	text-transform: uppercase;
 	border-radius: 0 4px 4px 0;
-	line-height: 6em;
-	width: 22%;
+	line-height: 5em;
+	width: 24%;
 	height: 100%;
 	position: absolute;
 	right:0;
@@ -676,7 +735,4 @@
 	background: #58ba7c;
 	color: #fff;
   }
-
-
-
 }//End payouts-wrapper

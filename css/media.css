@@ -327,6 +327,35 @@
     .offers .offers-wrap .offers-info-text {
         max-width: 74%;
     }
+    .dash-influenser .mess-one{
+      font-size: 0.73em;
+    }
+    .dash-influenser .table-overview .table{
+      font-size: 0.8em;
+    }
+    .status-describe {
+        padding: 4px 5px;
+      }
+    .status-describe .triangle {
+      left: 26px;
+    }
+    .form-request-wrapper-l .main-button{
+      font-size: 0.7em;
+    }
+    .form-request-wrapper-r .learn-more-premium{
+        font-size: 0.7em;
+        top: -32px;
+        padding: 0 53px;
+    }
+    .requested-wrapper .table{
+      font-size: 0.7em;
+    }
+    .offers .offers-wrap  .left{
+        left: -50px;
+      }
+    .offers .offers-wrap .right{
+        right: -50px;
+      }
 
 }/*End 1680px*/
 
@@ -347,7 +376,7 @@
 
        article{
             margin-bottom: 4%;
-        }
+       }
         .log-status-xs{
             text-align: center;
             padding: 6% 0;
@@ -707,6 +736,33 @@
         .invoices-item-wrapper .approach-label{
             margin: 22px 0;
         }
+        /*page dashboard influenser*/
+      .dash-influenser .col-md-8{
+        width: 100%;
+      }
+      .dash-influenser .invoices-client h2 {
+        font-size: 2.1em;
+      }
+      .dash-influenser .text-status{
+        position: relative;
+      }
+      /*actions*/
+      .actions-item-inner p{
+        max-width: 73%;
+        font-size: 1.1em;
+      }
+      .actions-item-inner i{
+       vertical-align: super;
+      }
+      .dash-influenser .create-comp {
+           margin: 12% 6%;
+      }
+
+      .dash-influenser .client-invoices{
+        margin-top: 0;
+      }
+
+
 }/*End 360  */
 
 
