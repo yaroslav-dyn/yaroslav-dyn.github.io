@@ -350,10 +350,10 @@
     .requested-wrapper .table{
       font-size: 0.7em;
     }
-    .offers .offers-wrap  .left{
+     .offers  .left .glyphicon{
         left: -50px;
       }
-    .offers .offers-wrap .right{
+     .offers  .right .glyphicon{
         right: -50px;
       }
 
@@ -728,7 +728,7 @@
             color: #626262;
            font-weight: bold;
         }
-        /*payouts*/
+/*payouts*/
         .inv-icon {
             padding: 17px 22px;
             border-radius: 4px 0 0 4px;
@@ -736,7 +736,7 @@
         .invoices-item-wrapper .approach-label{
             margin: 22px 0;
         }
-        /*page dashboard influenser*/
+/*page dashboard influenser*/
       .dash-influenser .col-md-8{
         width: 100%;
       }
@@ -755,14 +755,85 @@
        vertical-align: super;
       }
       .dash-influenser .create-comp {
-           margin: 12% 6%;
+           margin: 12% 1%;
       }
 
       .dash-influenser .client-invoices{
         margin-top: 0;
       }
+/* article new offers*/
+      .offers .container-fluid{
+        padding: 0;
+      }
+      .offers .offers-wrap{
+        padding: 0;
+      }
+      .offers .offers-wrap-info {
+        margin: 0;
+      }
+      .offers .offers-wrap .offers-info-text{
+        width: 100%;
+        padding: 0;
+      }
+      .offers .offers-more-info{
+        margin-left: 0;
+      }
+      .offers .offers-more-info-left {
+        max-width: 100%;
+        margin-right:0;
+      }
+      .offers .offers-more-info-left ul li {
+       display: inline-block;
+        padding-bottom: 0;
+      }
+      .offers .offers-wrap-info:after {
+        border: none;
+      }
+      /*li social in respond*/
+      .offers .offers-more-info-left .li-social-block{
+        display: block;
+        padding: 12px 0 6px 0;
+      }
+      .offers .offers-more-info-right{
+        max-width: 100%;
+        padding: 0;
 
+      }
+      .offers .offers-wrap .img-brand-cont {
+        padding: 40px 5px;
+      }
+      .offers .offers-more-info-left ul li:nth-of-type(2) {
+        margin-left: 10px;
+      }
+      /*icons*/
+      .offers .offers-more-info .offers-soc-icon{
+        margin-right: 2px;
+      }
+      .time-ago{
+        color: #b3b3b3;
+        font-size: 0.8em;
+      }
+      .button-reactions{
+        margin: 40px auto ;
+      }
+      .rect-button{
+        width: 40%;
+      }
+      .offers .rect-button.accept {
+        margin-right: 15px;
+      }
 
-}/*End 360  */
+/*calendar respond dash-influenser*/
+      .dash-influenser .table tr td{
+        padding: 30px 8px;
+      }
+/*Campaign Overview dash-influenser*/
+        .dash-influenser .table-status-hidden {
+            width: 93.7%;
+            top: 192px;
+            left: 31px;
+        }
+
+ }/*End 360  */
 
 

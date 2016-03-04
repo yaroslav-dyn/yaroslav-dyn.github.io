@@ -589,6 +589,7 @@
     .calendar-event-respond tr td{
         border-right: 1px solid #d5d5d5;
         vertical-align: middle!important;
+        padding: 35px 8px;
     }
     .calendar-event-respond tr td:nth-of-type(1){
         border-right: none;

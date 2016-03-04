@@ -235,29 +235,29 @@
   text-align: justify;
   color: #535353;
 }
-.offers .offers-wrap .carousel-inner {
+.offers .carousel-inner {
   padding-left: 15px;
   display: inline-block;
 }
-.offers .offers-wrap .carousel-control {
+.offers .carousel-control {
   background: none;
-  top: 47%;
 }
-.offers .offers-wrap .carousel-control .glyphicon {
+.offers .carousel-control .glyphicon {
   color: #626262;
   font-size: 34px;
   text-shadow: none;
+  margin-top: 178px;
 }
-.offers .offers-wrap .left {
+.offers .left .glyphicon {
   left: -68px;
 }
-.offers .offers-wrap .right {
+.offers .right .glyphicon {
   right: -68px;
 }
 .offers .rect-button {
   display: inline-block;
   color: #fff;
-  padding: 20px 40px;
+  padding: 25px 40px;
   text-transform: uppercase;
   border-radius: 6px;
   font: bold 1em ProximaNovaRegular, sans-serif;

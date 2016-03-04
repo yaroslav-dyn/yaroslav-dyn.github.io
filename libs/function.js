@@ -127,9 +127,9 @@ $(document).ready( function(){
     });
 
 //corousel in dashboard influenser page
-//    $(".carousel").carousel({
-//        interval: 3000
-//    })
+    $(".carousel").carousel({
+        interval: false
+    })
 
 });//END READY
 
