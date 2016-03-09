@@ -1085,7 +1085,9 @@ header a{
         font-weight: 100;
     }
 
-
+.hidden-table{
+    cursor: pointer;
+}
 /*Mini-chat*/
 .chat{
     margin-top: 7%;
@@ -1146,7 +1148,7 @@ header a{
     .chat-body-scroll{
         max-height: 640px;
         overflow-y: scroll;
-        overflow-x: hidden; 
+        overflow-x: hidden;
     }
     ul.chat-chatroom{
         padding-top: 40px;

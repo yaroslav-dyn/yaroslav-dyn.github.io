@@ -633,8 +633,7 @@
         padding: 15px;
     }
     .top-edge{
-        background: #f2f2f2;
-        position: relative;
+
     }
         .table-resp-main tr td, .table-resp-main tr th{
             padding: 14px;
@@ -675,14 +674,12 @@
            border: none;
        }
         .table-status-hidden tr th{
-            text-align: center;
             font-weight: 300;
             color: rgba(255,255,255,0.6);
             vertical-align: middle;
-            border: none;
+            border-right: none!important;
             border-left: 1px dotted rgba(255,255,255,0.2);
             padding: 18px 0;
-
         }
         .table-status-hidden tr th:first-child, .table-status-hidden tr th:last-child{
             border-left: none;
@@ -705,9 +702,9 @@
             padding-bottom: 18px;
 
         }
-        .table-status-hidden tr .table-see-all{
+        .table-status-hidden  .table-see-all{
             font-weight: bold;
-            text-align: center;
+            text-align: left;
             text-transform: uppercase;
             font-family: ProximaNovaRegular, sans-serif;
         }
@@ -761,7 +758,7 @@
       .dash-influenser .client-invoices{
         margin-top: 0;
       }
-/* article new offers*/
+    /* article new offers*/
       .offers .container-fluid{
         padding: 0;
       }
@@ -830,10 +827,48 @@
 /*Campaign Overview dash-influenser*/
         .dash-influenser .table-status-hidden {
             width: 93.7%;
-            top: 192px;
-            left: 31px;
+            top: 194px;
+            left: 27px;
         }
+        /*Payouts dash-influenser*/
 
- }/*End 360  */
+        .payouts-article li b {
+            display: block;
+        }
+        .dash-influenser  .mark-invoices > li:nth-of-type(4) {
+            margin-left: 0;
+        }
+/*request responsive*/
+    .request-form-class input[type="text"], .request-wrapper textarea {
+        height: 67px;
+        width: 100%;
+    }
+    .request-form-class input[type="submit"]{
+        width: 100%;
+    }
+    .form-request-wrapper-l{
+        margin-bottom: 9.7%;
+    }
+     .form-request-wrapper-l .main-button{
+         font-size: 1.3em;
+     }
+    .form-request-wrapper-r {
+        padding-left: 0;
+        margin-top: 10%;
+    }
+    .premium-account-badge{
+        text-align: center;
+        padding: 20px 0 20px 0;
+    }
+    .premium-account-badge span{
+        font-size: 1.24em;
+    }
+    .request-wrapper .border-left{
+        background: none;
+    }
+    .request-wrapper .learn-more-premium{
+        font-size: 0.8em;
+    }
+ }/*End 360*/
 
 

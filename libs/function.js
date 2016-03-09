@@ -82,20 +82,23 @@ $(document).ready( function(){
     });
 /*table overview(hidden)*/
 
-    $(".hidden-table-bg").click(function(){
+    $(".hidden-table").click(function(){
         $(".table-status-hidden").toggleClass("hidden");
-
-        $(this).find(".glyphicon-triangle-bottom").css("color","#fff");
+        $(this).toggleClass("hidden-table-bg");
+        if($(this).hasClass("hidden-table-bg")){
+            $(this).find(".glyphicon-triangle-bottom").css("color","#fff");
+            $(".top-edge").css({background:"#f2f2f2",position: "relative"});
+        }
+        else{
+            $(this).find(".glyphicon-triangle-bottom").css("color","#b5b5b5");
+            $(".top-edge").css("background","#fff");
+        }
     });
 
-
-
-
     /*jquery Calendar*/
-    $( "#datepicker-StartDate" ).datepicker({});
+    $( "#datepicker-StartDate" ).datepicker();
 
-
-    /*Slider age  audience JS*/
+    /*Slider age audience JS*/
     $(function() {
         $( "#slider-range" ).slider({
             range: true,
