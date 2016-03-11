@@ -912,7 +912,8 @@ header a{
         cursor: pointer;
         text-transform: uppercase;
         font-family: MuseoSansBold, sans-serif;
-       line-height: 4em;
+        line-height: 4em;
+        transition: all 0.4s ease;
     }
     .main-submit{
         width: 65%;

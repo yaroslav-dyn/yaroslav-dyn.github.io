@@ -83,7 +83,7 @@ $(document).ready( function(){
 /*table overview(hidden)*/
 
     $(".hidden-table").click(function(){
-        $(".table-status-hidden").toggleClass("hidden");
+        $(".row-hidden").toggleClass("hidden");
         $(this).toggleClass("hidden-table-bg");
         if($(this).hasClass("hidden-table-bg")){
             $(this).find(".glyphicon-triangle-bottom").css("color","#fff");

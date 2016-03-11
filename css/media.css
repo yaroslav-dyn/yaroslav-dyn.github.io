@@ -356,7 +356,10 @@
      .offers  .right .glyphicon{
         right: -50px;
       }
-
+    .payouts-wrapper .mark-invoices .status-payouts{
+        font-size: 0.85em;
+        line-height: 6em;
+    }
 }/*End 1680px*/
 
 /*all smartphone*/
@@ -824,13 +827,7 @@
       .dash-influenser .table tr td{
         padding: 30px 8px;
       }
-/*Campaign Overview dash-influenser*/
-        .dash-influenser .table-status-hidden {
-            width: 93.7%;
-            top: 194px;
-            left: 27px;
-        }
-        /*Payouts dash-influenser*/
+/*Payouts dash-influenser*/
 
         .payouts-article li b {
             display: block;
@@ -868,6 +865,15 @@
     }
     .request-wrapper .learn-more-premium{
         font-size: 0.8em;
+    }
+    .dash-influenser .row-rev {
+        margin-top: -6%;
+    }
+    .dash-influenser .row-rev .create-comp{
+        margin: 6% 1%;
+    }
+    .dash-influenser .table-status-hidden .table-see-all{
+        text-align: left!important;
     }
  }/*End 360*/
 

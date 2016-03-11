@@ -315,6 +315,7 @@
 	  .border-radius();
 	  font: bold 1em ProximaNovaRegular, sans-serif;
 	  text-align: center;
+		transition: all 0.4s ease;
 	  &:hover {
 		  background: @accent-color !important;
 		  color: #fff;
@@ -501,7 +502,42 @@
 			margin-top: 2%;
 		}
 	}
-}
+	//Overview hidden
+	.table-overview {
+		 tr td.row-hidden {
+			 text-align: left;
+			 background: #43b56e;
+			 .border-radius(6px 0 6px 6px);
+			 position: relative;
+			 top: -1px;
+		}
+		ul.status-hidden {
+			li {
+				color: rgba(255,255,255,0.6);
+				display: inline-block;
+				text-align: left;
+				height: 100%;
+				font-size: 0.9em;
+				padding: 20px 10px;
+				border-left: 1px dotted rgba(255,255,255,0.6);
+				&:first-child, &:last-child{
+					border: none;
+					font-size: 18px;
+				}
+				&:last-child{
+
+				}
+				span{
+					color: rgba(255,255,255,1);
+					font-size: 1em;
+				}
+			}
+			.table-see-all{
+				font: bold 0.9em ProximaNovaRegular, sans-serif;
+			}
+		}
+	}
+}//End dash-influenser
  .status-describe{
 	background: #3bb6d9;
 	box-shadow: 0 3px 0 #33a4c4;
@@ -520,6 +556,9 @@
 		z-index: -1;
 	}
  }
+
+
+
 
 //article request prefered companies
 .request-form-class{ 

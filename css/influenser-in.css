@@ -262,6 +262,8 @@
   border-radius: 6px;
   font: bold 1em ProximaNovaRegular, sans-serif;
   text-align: center;
+  -webkit-transition: all 0.4s ease;
+          transition: all 0.4s ease;
 }
 .offers .rect-button:hover {
   background: #fa8d2c !important;
@@ -450,6 +452,34 @@
 }
 .dash-influenser .table-overview .more-inv {
   margin-top: 2%;
+}
+.dash-influenser .table-overview tr td.row-hidden {
+  text-align: left;
+  background: #43b56e;
+  border-radius: 6px 0 6px 6px;
+  position: relative;
+  top: -1px;
+}
+.dash-influenser .table-overview ul.status-hidden li {
+  color: rgba(255, 255, 255, 0.6);
+  display: inline-block;
+  text-align: left;
+  height: 100%;
+  font-size: 0.9em;
+  padding: 20px 10px;
+  border-left: 1px dotted rgba(255, 255, 255, 0.6);
+}
+.dash-influenser .table-overview ul.status-hidden li:first-child,
+.dash-influenser .table-overview ul.status-hidden li:last-child {
+  border: none;
+  font-size: 18px;
+}
+.dash-influenser .table-overview ul.status-hidden li span {
+  color: #ffffff;
+  font-size: 1em;
+}
+.dash-influenser .table-overview ul.status-hidden .table-see-all {
+  font: bold 0.9em ProximaNovaRegular, sans-serif;
 }
 .status-describe {
   background: #3bb6d9;
