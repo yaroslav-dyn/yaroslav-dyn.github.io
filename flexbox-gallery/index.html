@@ -11,13 +11,13 @@
     	<div class="wrapper" id="wrapper">
           <section ng-controller="deployImage as depImg">
             <div class="container-flex"><!-- flexbox -->
-
               <div class="item"  ng-repeat = "item in depImg.imgItem">
                 <div class="img-wrap">
                   <img ng-src="{{item.itemImgSrc}}" draggable="false">   
                 </div>
                 <h6><a href="">{{item.itemHeadline}}</a></h6>
                   <p>{{item.itemDescription}}</p>
+                  <div class="advance-rule"></div>
               </div>          
             </div><!--End container-flex-->
           </section>
@@ -29,7 +29,7 @@
             <span class="close-button">X</span>
           </div>
           <div class="modal-content">
-            <img src="/">
+            <img src="/" draggable="false">
           </div>
         </div>
     <script type="text/javascript" src="libs/jquery.min.js"></script>

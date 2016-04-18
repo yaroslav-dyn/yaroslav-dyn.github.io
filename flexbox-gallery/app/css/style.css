@@ -9,6 +9,63 @@ body {
 .hidden {
   display: none;
 }
+.advance-rule {
+  text-align: center;
+}
+.a-btn-all {
+  background: transparent;
+  border: 1px solid #c6c6c6;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1em;
+  font-weight: normal;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.a-btn-all:hover {
+  background: #ebebeb;
+}
+.a-btn-block {
+  display: block;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-radius: 0 0 6px 6px;
+}
+.button-fg .a-btn {
+  background: transparent;
+  border: 1px solid #c6c6c6;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1em;
+  font-weight: normal;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.button-fg .a-btn:hover {
+  background: #ebebeb;
+}
+.button-fg-block .a-btn {
+  background: transparent;
+  border: 1px solid #c6c6c6;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1em;
+  font-weight: normal;
+  border-radius: 6px;
+  cursor: pointer;
+  display: block;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-radius: 0 0 6px 6px;
+}
+.button-fg-block .a-btn:hover {
+  background: #ebebeb;
+}
 .container-flex {
   display: flex;
   flex-wrap: wrap;
@@ -19,9 +76,9 @@ body {
 }
 .item {
   width: 22%;
-  margin: 1%;
+  margin: 14px;
   border: 1px solid #c6c6c6;
-  background: #F3F3F3;
+  background: #f3f3f3;
   border-radius: 4px;
 }
 .item h6 {
@@ -52,11 +109,11 @@ body {
   -ms-transition: all 0.7s ease;
   -o-transition: all 0.7s ease;
   transition: all 0.7s ease;
-  -moz-transform: translateY(190px);
-  -webkit-transform: translateY(190px);
-  -o-transform: translateY(190px);
-  -ms-transform: translateY(190px);
-  transform: translateY(190px);
+  -moz-transform: translateY(250px);
+  -webkit-transform: translateY(250px);
+  -o-transform: translateY(250px);
+  -ms-transform: translateY(250px);
+  transform: translateY(250px);
 }
 .item .img-wrap:after {
   content: "";
@@ -93,14 +150,13 @@ body {
   z-index: 1000;
   border: 1px solid #c8c8c8;
 }
-.modal-backrel {
-  position: absolute;
+.modal-backrel-view {
+  position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-}
-.modal-backrel-view {
+  min-height: 100%;
   background: rgba(0, 0, 0, 0.4);
   -webkit-filter: blur(3px);
   -moz-filter: blur(3px);
@@ -144,6 +200,6 @@ body {
     background: transparent;
   }
   .modal {
-    display: none;
+    display: none!important;
   }
 }
