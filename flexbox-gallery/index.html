@@ -1,5 +1,5 @@
  <!DOCTYPE html>
-<html lang="en" ng-app="galleryApp">
+<html lang="en" >
   <head>
   	<meta charset="UTF-8">
   	<title>Gallery on Flexbox</title>
@@ -7,10 +7,10 @@
   	<link rel="stylesheet" type="text/css" href="app/css/style.css">
   </head>
   <body>
-    <div class="modal-backrel">
-    	<div class="wrapper" id="wrapper">
+
+    	<div class="wrapper" id="wrapper" ng-app="galleryApp">
           <section ng-controller="deployImage as depImg">
-            <div class="container-flex"><!-- flexbox -->
+            <div class="container-gallery container-flex"><!-- flexbox -->
               <div class="item"  ng-repeat = "item in depImg.imgItem">
                 <div class="img-wrap">
                   <img ng-src="{{item.itemImgSrc}}" draggable="false">   
@@ -22,7 +22,7 @@
             </div><!--End container-flex-->
           </section>
       </div><!-- end wrapper -->
-    </div><!-- modal-backrel-view -->
+
       <!--hidden elements-->  
         <div class="modal hidden">
           <div class="modal-button">
@@ -34,7 +34,8 @@
         </div>
     <script type="text/javascript" src="libs/jquery.min.js"></script>
     <script type="text/javascript" src="libs/angular.min.js"></script>
+    <script type="text/javascript" src="libs/jquery.equalheights.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
-    <script type="text/javascript" src="mvc.js"></script>
+    <script type="text/javascript" src="function.js"></script>
   </body>
 </html>

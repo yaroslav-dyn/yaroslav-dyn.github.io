@@ -6,7 +6,6 @@ var app = angular.module('galleryApp', []);
 		this.imgItem = imgGems;
 	});
 
-
 	var imgGems = [
 		{
 			"itemHeadline": "Item 1",

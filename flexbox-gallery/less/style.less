@@ -14,6 +14,7 @@ body{
 //colors
 @main-bord-color: #c6c6c6;
 @main-item-bg: #f3f3f3;
+@main-shadow-color: rgba(0,0,0,0.6);
 //mixins
 .mainTrans(@time){
 	-webkit-transition: all @time ease;
@@ -36,12 +37,15 @@ body{
 	-ms-filter: blur(@blur);
 	filter: blur(@blur);
 }
+.boxShadow(@x,@y,@blur, @color){
+	box-shadow: @x @y @blur @color;
+}
 
 //plugin style
 .advance-rule{
 	text-align: center;
 }
-//button add cutomize 
+//button add customize
 .a-btn-all{
 		background: transparent;
 		border: 1px solid @main-bord-color;
@@ -66,24 +70,42 @@ body{
 
 .button-fg{
 	.a-btn{
-		.a-btn-all;
+	  	.a-btn-all;
 	}
 }
 .button-fg-block{
 	.a-btn{
 		.a-btn-all;
-		.a-btn-block;	
+		.a-btn-block;
 	}	
 }
 //flexbox
 .container-flex{
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
 	max-width: 1140px;
 	margin: 0 auto;
+  &-fluid{
+	&:extend(.container-flex);
+	max-width: 100%;
+  }
+  &-nowrap{
+	&:extend(.container-flex);
+	flex-wrap: nowrap;
+  }
+  &-left{
+	justify-content: flex-start;
+  }
+  &-center{
+	justify-content: center;
+  }
+  &-right{
+	justify-content: flex-end;
+  }
 }
+
 .item {
 	width: 22%;
 	margin: 14px; 
@@ -115,7 +137,7 @@ body{
 		&:hover{
 			&:after{
 				.mainTrans(0.7s);
-				.transformTraslateY(250px);	
+				.transformTraslateY(250px);
 			}
 		}
 		&:after{
@@ -151,19 +173,31 @@ body{
 	padding: 1%;
 	z-index: 1000;
 	border: 1px solid #c8c8c8;
+	.boxShadow(0,0,4px,@main-shadow-color);
+	&:after{
+	  content: "";
+	  background: url("/img/preloader.gif") no-repeat center;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  display: block;
+	  width: 64px;
+	  height: 64px;
+	  margin-left: -32px;
+	  margin-top: -32px;
+	  z-index: -1;
+	}
 }
-.modal-backrel{
-   
-}
+
 .modal-backrel-view{
-	position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
 	 min-height: 100%;
-	 background: rgba(0,0,0,0.4);
-	 .blurMix(3px);	
+	 background: rgba(0,0,0,.4);
+}
+.modal-backrel-view .wrapper {
+	.blurMix(3px);
+	-webkit-transition: -webkit-filter 100ms linear;
+	-moz-transition: -webkit-filter 100ms linear;
+	transition: -webkit-filter 100ms linear;
 }
 .modal .modal-button{
 	text-align: right;
@@ -191,7 +225,9 @@ body{
 		width: 97%;
 	}
 	.modal-backrel-view{
-		.blurMix(0);
+		.wrapper{
+	  		.blurMix(0);
+		}
 		background: transparent;
 	}
 	.modal{
