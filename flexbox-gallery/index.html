@@ -1,41 +1,47 @@
  <!DOCTYPE html>
-<html lang="en" >
+<html lang="en" ng-app="galleryApp">
   <head>
   	<meta charset="UTF-8">
   	<title>Gallery on Flexbox</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   	<link rel="stylesheet" type="text/css" href="app/css/style.css">
   </head>
-  <body>
-
-    	<div class="wrapper" id="wrapper" ng-app="galleryApp">
-          <section ng-controller="deployImage as depImg">
+  <body ng-controller="deployImage as depImg">
+    	<div class="wrapper" id="wrapper" >
+          <section >
             <div class="container-gallery container-flex"><!-- flexbox -->
-              <div class="item"  ng-repeat = "item in depImg.imgItem">
+              <div class="item"  ng-repeat = "item in imgItem">
                 <div class="img-wrap">
-                  <img ng-src="{{item.itemImgSrc}}" draggable="false">   
+                  <img ng-src="{{item.itemImgSrc}}" ng-click="showPhoto($index);" draggable="false">   
                 </div>
-                <h6><a href="">{{item.itemHeadline}}</a></h6>
-                  <p>{{item.itemDescription}}</p>
-                  <div class="advance-rule"></div>
+                <h6>
+                  <a href="">{{item.itemHeadline}}</a>
+                </h6>
+                <p>{{item.itemDescription}}</p>
+                <div class="advance-rule">
+                  <a href="{{item.urlReadMore}}" class="a-btn">{{item.readMoreHeadline}}</a>
+                </div>
               </div>          
             </div><!--End container-flex-->
           </section>
       </div><!-- end wrapper -->
 
       <!--hidden elements-->  
-        <div class="modal hidden">
-          <div class="modal-button">
-            <span class="close-button">X</span>
-          </div>
-          <div class="modal-content">
-            <img src="/" draggable="false">
-          </div>
+      <div class="modal hidden">
+        <div class="modal-button">
+          <a class="close-button">X</a>
+          <a class="navi prev-button hidden" ng-click="showPrev();"></a>
+          <a class="navi next-button hidden" ng-click="showNext();"></a>
         </div>
+        <div class="modal-content" ng-repeat = "item in imgItem">
+          <img  draggable="false"  ng-show="isActive($index)" ng-src="{{item.itemImgSrc}}">
+        </div>
+      </div>
     <script type="text/javascript" src="libs/jquery.min.js"></script>
     <script type="text/javascript" src="libs/angular.min.js"></script>
-    <script type="text/javascript" src="libs/jquery.equalheights.min.js"></script>
-    <script type="text/javascript" src="app.js"></script>
-    <script type="text/javascript" src="function.js"></script>
+    <script type="text/javascript" src="libs/jquery.equalheights.min.js"></script> 
+ 
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="app/js/flexbox-gallery.min.js"></script>
   </body>
 </html>
