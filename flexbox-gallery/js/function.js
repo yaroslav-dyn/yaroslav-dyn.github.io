@@ -46,10 +46,6 @@ $(document).ready(function(){
 
 })(jQuery);//end plugin init
 	//script Modal
-	$('.img-wrap img').each(function(i){
-
-		$(this).attr('index-el', i);
-	});
 	function goModal(){
 			$('.img-wrap img, .close-button').on('click', function(){
 			getBg();
