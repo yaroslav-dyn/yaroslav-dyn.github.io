@@ -7,6 +7,7 @@ $(document).ready(function(){
   	var settings = $.extend({
   		buttonOpen: false,
   		classButton: 'block',//inline, block (button-fg, button-fg-block)
+  		theme: 'default', //default, grey, indigo, lime
   		addModal: true,
   		slideImg: true,		
 		wrap: true,
@@ -40,6 +41,9 @@ $(document).ready(function(){
 
 		var setAlign = settings.alignItem;	
 		$('.container-gallery').addClass('container-flex-' + setAlign);
+
+		var setTheme = settings.theme;
+		$('.item, .modal').addClass('theme-class-' + setTheme);
   	});
     
   };
@@ -71,7 +75,8 @@ $(document).ready(function(){
 		wrap: true,
 		flexContainer: false,
 		alignItem: 'center',
-		slideImg: true
+		slideImg: true,
+		theme: 'grey'
 	});
 
 //Equalheights for item if a need

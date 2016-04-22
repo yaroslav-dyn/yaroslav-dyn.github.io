@@ -13,7 +13,7 @@ body{
 }
 //colors
 @main-bord-color: #c6c6c6;
-@main-item-bg: #f3f3f3;
+@main-item-bg: #fff;
 @main-shadow-color: rgba(0,0,0,0.6);
 //mixins
 .mainTrans(@time){
@@ -60,6 +60,7 @@ body{
 	color: #6d6d6d;
 	&:hover{
 		background: darken(@main-item-bg, 3%);
+		color: lighten(#6d6d6d,20%)!important;
 	}
 }
 .a-btn-block{
@@ -109,6 +110,41 @@ body{
   }
 }
 
+//item color THEME
+
+@color-indigo: #CDF2F3;
+@color-grey: #f3f3f3;
+@color-lime: #CDF3CE; 
+
+.theme-selector(@color){
+	background: @color!important;
+	.button-fg-block a, .button-fg-inline a{
+		&:hover{
+			background: darken(@color, 3%)!important;
+		}
+	}
+	.modal-button{
+		.navi{
+			&:hover{
+				background: @color!important;
+			}
+		}
+	}	
+}
+.theme-class{
+	&-default{
+		.theme-selector(@main-item-bg);
+	}
+	&-indigo{
+		.theme-selector(@color-indigo);
+	}	
+	&-grey{
+		.theme-selector(@color-grey);
+	}
+	&-lime{
+		.theme-selector(@color-lime);
+	}
+}
 .item {
 	width: 22%;
 	margin: 14px; 
@@ -171,25 +207,25 @@ body{
 	top: 10%;
 	left: 50%;
 	margin-left: -25%;
-	background: #f3f3f3;
+	background: @main-item-bg;
 	padding: 1%;
 	z-index: 1000;
 	border: 1px solid #c8c8c8;
 	.boxShadow(0,0,2px,@main-shadow-color);
-	border-radius: 6px;
-	&:after{
-	  content: "";
-	  background: url("/img/preloader.gif") no-repeat center;
-	  position: absolute;
-	  top: 50%;
-	  left: 50%;
-	  display: block;
-	  width: 64px;
-	  height: 64px;
-	  margin-left: -32px;
-	  margin-top: -32px;
-	  z-index: -1;
-	}
+		border-radius: 6px;
+		&:after{
+		  content: "";
+		  background: url("../img/preloader.gif") no-repeat center;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  display: block;
+		  width: 64px;
+		  height: 64px;
+		  margin-left: -32px;
+		  margin-top: -32px;
+		  z-index: -1;
+		}
 }
 
 .modal-backrel-view{
@@ -221,7 +257,7 @@ body{
 		margin-top: -17px;
 		display: block;
 		&:hover{
-			background: darken(#f8f8f8, 10%);
+			background: lighten(@main-bord-color, 6%);
 		}
 	}
 	.arows-all{
@@ -233,15 +269,14 @@ body{
 		&:after{
 		content: "";			
 			.arows-all;	
-			background: url(../../img/arrows-sprite.png) no-repeat 5px 0; 
-			
+			background: url(../img/arrows-sprite.png) no-repeat 5px 0; 			
 		}
 	}
 	.next-button{
 		right: -7%;
 		&:after{
 			content: "";
-			background: url(../../img/arrows-sprite.png) no-repeat -38px 1px;
+			background: url(../img/arrows-sprite.png) no-repeat -38px 1px;
 			.arows-all;
 		}
 	}	
