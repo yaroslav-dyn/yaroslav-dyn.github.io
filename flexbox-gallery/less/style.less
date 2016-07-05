@@ -6,6 +6,7 @@ body{
 }
 .wrapper{
 	margin: 4em auto;
+	padding: 0 1em;
 }
 
 .hidden{
@@ -92,11 +93,9 @@ body{
 	max-width: 1140px;
 	margin: 0 auto;
   &-fluid{
-	&:extend(.container-flex);
 	max-width: 100%;
   }
   &-nowrap{
-	&:extend(.container-flex);
 	flex-wrap: nowrap;
   }
   &-left{
@@ -110,12 +109,12 @@ body{
   }
 }
 
-//item color THEME
-
+//Colors for THEMES
 @color-indigo: #CDF2F3;
 @color-grey: #f3f3f3;
 @color-lime: #CDF3CE; 
 
+//Mixin for differents theme
 .theme-selector(@color){
 	background: @color!important;
 	.button-fg-block a, .button-fg-inline a{
@@ -202,31 +201,55 @@ body{
 
 }//END item		
 /*Modal*/
-.modal{
+.modal{	
+	border: 1px solid #c8c8c8;
+	max-height:100%;
+	.boxShadow(0,0,2px,@main-shadow-color);
+	border-radius: 6px;
 	position: fixed;
 	top: 10%;
 	left: 50%;
-	margin-left: -25%;
+	margin-left: -23%;
 	background: @main-item-bg;
 	padding: 1%;
 	z-index: 1000;
-	border: 1px solid #c8c8c8;
-	.boxShadow(0,0,2px,@main-shadow-color);
-		border-radius: 6px;
-		&:after{
-		  content: "";
-		  background: url("../img/preloader.gif") no-repeat center;
-		  position: absolute;
-		  top: 50%;
-		  left: 50%;
-		  display: block;
-		  width: 64px;
-		  height: 64px;
-		  margin-left: -32px;
-		  margin-top: -32px;
-		  z-index: -1;
+	&:after{
+	  content: "";
+	  background: url("../img/preloader.gif") no-repeat center;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  display: block;
+	  width: 64px;
+	  height: 64px;
+	  margin-left: -32px;
+	  margin-top: -32px;
+	  z-index: -1;
+	}
+	&-preview{
+	    position: absolute;
+	    bottom: 3%;
+	    display: flex;
+	    flex-wrap: nowrap;
+	    align-items: flex-start;
+	    justify-content: center;
+	    max-width: 94.5%;
+		&-img{
+			margin: 0 1%; 
+			&:first-child, &:last-child{
+				margin: 0;
+			}
+			img{
+				width: 100%;
+				height: auto;
+				display: block;
+			}
 		}
-}
+		.active{
+			outline: 2px solid @color-lime;
+		}
+	}	
+}//END MODAl
 
 .modal-backrel-view{
 	 min-height: 100%;
@@ -282,9 +305,9 @@ body{
 	}	
 }
 
-@media (min-width: 570px) and (max-width: 1120px){
+@media (min-width: 769px) and (max-width: 1120px){
 	.item{
-		width: 47%;
+		width: 46%;
 	}
 	.modal-backrel-view{
 		.blurMix(0);
@@ -294,9 +317,9 @@ body{
 		margin-left: -40%;
 	}
 }
-@media (max-width: 569px){
+@media (max-width: 768px){
 	.item{
-		width: 97%;
+		width: 90%;
 	}
 	.modal-backrel-view{
 		.wrapper{

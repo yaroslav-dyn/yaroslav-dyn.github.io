@@ -76,11 +76,19 @@ $(document).ready(function(){
 		flexContainer: false,
 		alignItem: 'center',
 		slideImg: true,
-		theme: 'grey'
+		theme: 'grey'	
 	});
 
 //Equalheights for item if a need
 	//$('.item').equalHeights();
+
+
+
+
+// var stop = false, age = 16;
+
+// age >= 18 ? alert('Welcome' + " "+ age) : alert('Dont access' + " "+ age);
+
 });//end ready
 
 

@@ -3,7 +3,6 @@
 var app = angular.module('galleryApp', []);
 	
 	app.controller('deployImage',function($scope){
-		console.log($scope);
 		$scope.imgItem = photos;
 		 // initial image index
     $scope._Index = 0;
@@ -26,7 +25,7 @@ var app = angular.module('galleryApp', []);
 	    // show a certain image
 	    $scope.showPhoto = function (index) {
 	        $scope._Index = index;
-	    };
+	   	};
 
 	});
 
@@ -170,11 +169,19 @@ $(document).ready(function(){
 		flexContainer: false,
 		alignItem: 'center',
 		slideImg: true,
-		theme: 'grey'
+		theme: 'grey'	
 	});
 
 //Equalheights for item if a need
 	//$('.item').equalHeights();
+
+
+
+
+// var stop = false, age = 16;
+
+// age >= 18 ? alert('Welcome' + " "+ age) : alert('Dont access' + " "+ age);
+
 });//end ready
 
 
