@@ -42,7 +42,7 @@ $('#upload-input').on('change',function(){
 
 
 
-d3.json("../csv/data.json", function(data) {
+d3.json("csv/data.json", function(data) {
 
 
 	var
