@@ -1,87 +1,44 @@
 $(document).ready( function(){
     //Drop block profilers on header
-        $("#button-drop").click(function(){
-            $(".prof-slide-fun").fadeIn(300).toggleClass("hidden");
-        });
-        $(".button-alternate").click(function(){
-            $(".prof-slide-fun").fadeIn(300).toggleClass("hidden");
-        });
+    $("#button-drop").click(function(){
+        $(".prof-slide-fun").fadeIn(300).toggleClass("hidden");
+    });
+    $(".button-alternate").click(function(){
+        $(".prof-slide-fun").fadeIn(300).toggleClass("hidden");
+    });
 
 
+  $(".checkbox-audience").click(function(){
+        var currentId = $(this).attr("id");
+        var ourParent = $(this).parent();
+        if(ourParent.attr("class") === "item-social" + " " +  currentId){
+            ourParent.addClass( "item-social" + " " + currentId + "-active")
+        }
+        else{
+            ourParent.removeClass(currentId + "-active" );
+        }   
+    });
 
-    $("#check-social-item-1").click(function(){
-       if ( $("#check-social-item-1:checked")) {
-           $(".facebook").toggleClass("facebook-active");
-       }
-    });
-    $("#check-social-item-2").click(function(){
-        if ( $("#check-social-item-2:checked")) {
-            $(".google-plus").toggleClass("google-plus-active");
-        }
-    });
-    $("#check-social-item-3").click(function(){
-        if ( $("#check-social-item-3:checked")) {
-            $(".instagram").toggleClass("instagram-active");
-        }
-    });
-    $("#check-social-item-4").click(function(){
-        if ( $("#check-social-item-4:checked")) {
-            $(".pinterest").toggleClass("pinterest-active");
-        }
-    });
-    $("#check-social-item-5").click(function(){
-        if ( $("#check-social-item-5:checked")) {
-            $(".linkid").toggleClass("linkid-active");
-        }
-    });
-    $("#check-social-item-6").click(function(){
-        if ( $("#check-social-item-6:checked")) {
-            $(".tumblr").toggleClass("tumblr-active");
-        }
-    });
-    $("#check-social-item-7").click(function(){
-        if ( $("#check-social-item-7:checked")) {
-            $(".twitter").toggleClass("twitter-active");
-        }
-    });
-    $("#check-social-item-8").click(function(){
-        if ( $("#check-social-item-8:checked")) {
-            $(".vine").toggleClass("vine-active");
-        }
-    });
-    $("#check-social-item-9").click(function(){
-        if ( $("#check-social-item-9:checked")) {
-            $(".youtube").toggleClass("youtube-active");
-        }
-    });
+
     /*active button in business & seo special class*/
-    $("#check-business-1 + label").click(function(){
-        $(".seo-comp-1").toggleClass("seo-comp-1-active");
-    });
-    $("#check-business-2 + label").click(function(){
-        $(".seo-comp-2").toggleClass("seo-comp-2-active");
-    });
-    $("#check-business-3 + label").click(function(){
-        $(".seo-comp-3").toggleClass("seo-comp-3-active");
+    $(".label-business").click(function(){
+         var dataEl = $(this).attr("data-number");
+        $(".seo-comp-" + dataEl).toggleClass("seo-comp-" + dataEl + "-active");
     });
 
     $(".approach-label").click(function(){
-
-        if($(this).find(".rounded-icon").hasClass("rounded-icon-active")){
-            $(this).remove("rounded-icon-active");
-        }
-        else{
-            $(this).find(".rounded-icon").toggleClass("rounded-icon-active");
-        }
-
+        console.log("action");
+        $(".approach-label i").removeClass("rounded-icon-active");
+        $(this).find(".rounded-icon").addClass("rounded-icon-active");
+       
     });
     $(".answer-item").click(function(){
         $(this).find(".answer-hidden").fadeIn(300).toggleClass("hidden");
         $(this).find(".glyphicon-plus").toggleClass("glyphicon-minus  faq-icon-minus");
         $(this).find(".answer-par").css("fontWeight","600");
     });
-/*table overview(hidden)*/
 
+/*table overview(hidden)*/
     $(".hidden-table").click(function(){
         $(".row-hidden").toggleClass("hidden");
         $(this).toggleClass("hidden-table-bg");
@@ -133,6 +90,10 @@ $(document).ready( function(){
     $(".carousel").carousel({
         interval: false
     })
+
+
+
+
 
 });//END READY
 

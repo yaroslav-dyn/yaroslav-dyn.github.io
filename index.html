@@ -1,693 +1,693 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Create Campaign</title>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="libs/bootstrap-3.3.6-dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="libs/jquery-ui-1.11.4.custom/jquery-ui.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/media.css">
-    </head>
+		<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>Create Campaign</title>
+				<link rel="stylesheet" href="css/normalize.css">
+				<link rel="stylesheet" href="libs/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+				<link rel="stylesheet" href="libs/jquery-ui-1.11.4.custom/jquery-ui.min.css">
+				<link rel="stylesheet" href="css/main.css">
+				<link rel="stylesheet" type="text/css" href="css/media.css">
+		</head>
 <body class="create-comp-main">
 <div class="wrapper">
-    <header>
-        <div class="container-fluid">
-            <div class="row">
-            <div class="col-md-12 ">
-                <div class="head-wrapper">
-                    <div class="header-left">
-                        <div class="logo">
-                            <a href="index.html"><img src="img/logo.png" alt="grow social"></a>
-                        </div>
-                    </div>
-                    <!--Collapse button-->
-                        <span class="bell-respon glyphicon glyphicon-bell" style="display: none"></span>
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    <nav class="collapse navbar-collapse" id="myNavbar">
-                        <div class="header-middle">
-                            <div class="log-status hidden-xs hidden-sm">
-                                <div class="photo-wrap">
-                                    <img src="img/photo-profile.png" alt="photo profile">
-                                </div>
-                                <div class="text-status">
-                                    <p class="name-acc">Teresa <span id="button-drop" class="glyphicon glyphicon-triangle-bottom"></span></p>
-                                    <p class="type-acc">Glossybox</p>
-                                    <div class="prof-slide-fun hidden">
-                                        <div class="triangle"></div>
-                                        <ul>
-                                            <li><a href="#"><span class="glyphicon glyphicon-briefcase"></span>Invoices</a></li>
-                                            <li><a href="#"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span>Statistics</a></li>
-                                            <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Profile</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="text-status activity-status">
-                                    <p class="type-acc">Spent September: <b>$14,400</b></p>
-                                    <p class="type-acc">Active Campaigns: <b>7</b></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="header-right">
-                            <div class="right-status-head">
-                                <a href="client-dashboard.html" target="_blank"><i class="icon speaker-plus"></i>Create New Campaign</a>
-                                <a href="dashboard-influenser.html" target="_blank"><i class="icon speaker"></i>Campaigns</a>
-                                <a href="#"><i class="icon new-action"></i>New Actions <span>3</span></a>
-                                <a href="#" class="bord-h"><div class="border hidden-xs"></div><i class="icon search"></i></a>
-                                <a href="#" class="bord-h"><div class="border hidden-xs"></div><i class="icon shut"></i></a>
-                            </div>
-                        </div>
-                        <div class="clear"></div>
-                    </nav>
+		<header>
+				<div class="container-fluid">
+						<div class="row">
+						<div class="col-md-12 ">
+								<div class="head-wrapper">
+										<div class="header-left">
+												<div class="logo">
+														<a href="index.html"><img src="img/logo.png" alt="grow social"></a>
+												</div>
+										</div>
+										<!--Collapse button-->
+												<span class="bell-respon glyphicon glyphicon-bell" style="display: none"></span>
+												<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+														<span class="icon-bar"></span>
+														<span class="icon-bar"></span>
+														<span class="icon-bar"></span>
+												</button>
+										<nav class="collapse navbar-collapse" id="myNavbar">
+												<div class="header-middle">
+														<div class="log-status hidden-xs hidden-sm">
+																<div class="photo-wrap">
+																		<img src="img/photo-profile.png" alt="photo profile">
+																</div>
+																<div class="text-status">
+																		<p class="name-acc">Teresa <span id="button-drop" class="glyphicon glyphicon-triangle-bottom"></span></p>
+																		<p class="type-acc">Glossybox</p>
+																		<div class="prof-slide-fun hidden">
+																				<div class="triangle"></div>
+																				<ul>
+																						<li><a href="#"><span class="glyphicon glyphicon-briefcase"></span>Invoices</a></li>
+																						<li><a href="#"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span>Statistics</a></li>
+																						<li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Profile</a></li>
+																				</ul>
+																		</div>
+																</div>
+																<div class="text-status activity-status">
+																		<p class="type-acc">Spent September: <b>$14,400</b></p>
+																		<p class="type-acc">Active Campaigns: <b>7</b></p>
+																</div>
+														</div>
+												</div>
+												<div class="header-right">
+														<div class="right-status-head">
+																<a href="client-dashboard.html" target="_blank"><i class="icon speaker-plus"></i>Create New Campaign</a>
+																<a href="dashboard-influenser.html" target="_blank"><i class="icon speaker"></i>Campaigns</a>
+																<a href="#"><i class="icon new-action"></i>New Actions <span>3</span></a>
+																<a href="#" class="bord-h"><div class="border hidden-xs"></div><i class="icon search"></i></a>
+																<a href="#" class="bord-h"><div class="border hidden-xs"></div><i class="icon shut"></i></a>
+														</div>
+												</div>
+												<div class="clear"></div>
+										</nav>
 
-                </div><!--head-wrapper-->
-            </div>
-        </div><!--End row-->
-     </div><!---End container -->
-    </header>
-    <div class="log-status-xs hidden-md hidden-lg">
-        <div class="log-status">
-            <div class="photo-wrap">
-                <img src="img/photo-profile.png" alt="photo profile">
-            </div>
-            <div class="text-status">
-                <p class="name-acc-xs">Welcome, <b>Carolina</b></p>
-                <p class="type-acc-xs">Active Campaigns: <b>7</b></p>
-            </div>
-        </div>
-    </div>
-    <section>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-8">
-                    <article class="create-comp section-exterior">
-                        <div class="create-comp-inner">
-                            <div class="slogan-page">
-                                <h2>Create Campaign</h2>
-                            </div>
-                            <div class="dote-border">
-                                <h3>
-                                    Let us create a campaign for you. Please enter your specifications for the best
-                                    result
-                                </h3>
-                            </div>
-                            <div class="types-create">
-                                <h6>Select types of blogs that you want to reach. For mass
-                                    consumer products we recommend toselect all. </h6>
-                                <p>(Select one or more categories)</p>
-                            </div>
-                            <form action="#" id="create-comp-form">
-                                <div class="type-blog-gallery">
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <!--Item gallery-->
-                                            <div class="col-lg-3 col-md-3 col-xs-4">
-                                                <a class="thumbnail" >
-                                                    <input type="checkbox" id="check-1" class="hidden"><label for="check-1"><span class="glyphicon glyphicon-ok"></span></label>
-                                                    <img class="img-responsive" src="img/gallery-cat-all.png" alt="Category blog">
-                                                    <div class="cat-name">All Categories</div>
-                                                </a>
-                                            </div>
-                                            <!--Item gallery-->
-                                            <div class="col-lg-3 col-md-3 col-xs-4 ">
-                                                <a class="thumbnail">
-                                                    <input type="checkbox" id="check-2"  class="hidden"><label for="check-2"><span class="glyphicon glyphicon-ok"></span></label>
-                                                    <img class="img-responsive" src="img/cat-gallery-1.png" alt="Category blog">
-                                                    <div class="cat-name">Food</div>
-                                                </a>
-                                            </div>
-                                            <!--Item gallery-->
-                                            <div class="col-lg-3 col-md-3 col-xs-4">
-                                                <a class="thumbnail" >
-                                                    <input type="checkbox" id="check-3" class="hidden"><label for="check-3"><span class="glyphicon glyphicon-ok"></span></label>
-                                                    <img class="img-responsive" src="img/cat-gallery-2.jpg" alt="Category blog">
-                                                    <div class="cat-name">Fitness</div>
-                                                </a>
-                                            </div>
-                                            <!--Item gallery-->
-                                            <div class="col-lg-3 col-md-3 col-xs-4">
-                                                <a class="thumbnail" >
-                                                    <input type="checkbox" id="check-4" class="hidden"><label for="check-4"><span class="glyphicon glyphicon-ok"></span></label>
-                                                    <img class="img-responsive" src="img/cat-gallery-3.jpg" alt="Category blog">
-                                                    <div class="cat-name">Horses</div>
-                                                </a>
-                                            </div>
-                                            <!--Item gallery-->
-                                            <div class="col-lg-3 col-md-3 col-xs-4">
-                                                <a class="thumbnail">
-                                                    <input type="checkbox" id="check-5" class="hidden"><label for="check-5"><span class="glyphicon glyphicon-ok"></span></label>
-                                                    <img class="img-responsive" src="img/cat-gallery-4.jpg" alt="Category blog">
-                                                    <div class="cat-name">Lifestyle</div>
-                                                </a>
-                                            </div>
-                                            <!--Item gallery-->
-                                            <div class="col-lg-3 col-md-3 col-xs-4 hidden-xs">
-                                                <a class="thumbnail" >
-                                                    <input type="checkbox" id="check-6" class="hidden"><label for="check-6"><span class="glyphicon glyphicon-ok"></span></label>
-                                                    <img class="img-responsive" src="img/cat-gallery-5.jpg" alt="Category blog">
-                                                    <div class="cat-name">Fashion</div>
-                                                </a>
-                                            </div>
-                                            <!--Item gallery-->
-                                            <div class="col-lg-3 col-md-3 col-xs-4">
-                                                <a class="thumbnail" >
-                                                    <input type="checkbox" id="check-7"class="hidden"><label for="check-7"><span class="glyphicon glyphicon-ok"></span></label>
-                                                    <img class="img-responsive" src="img/cat-gallery-6.jpg" alt="Category blog">
-                                                    <div class="cat-name">Beaty</div>
-                                                </a>
-                                            </div>
-                                            <!--Item gallery-->
-                                            <div class="col-lg-3 col-md-3 col-xs-4">
-                                                <a class="thumbnail">
-                                                    <input type="checkbox" id="check-8" class="hidden"><label for="check-8"><span class="glyphicon glyphicon-ok"></span></label>
-                                                    <img class="img-responsive" src="img/cat-gallery-7.jpg" alt="Category blog">
-                                                    <div class="cat-name">DIY & Crafts</div>
-                                                </a>
-                                            </div>
-                                            <!--Item gallery-->
-                                            <div class="col-lg-3 col-md-3 col-xs-4">
-                                                <a class="thumbnail" >
-                                                    <input type="checkbox" id="check-9" class="hidden"><label for="check-9"><span class="glyphicon glyphicon-ok"></span></label>
-                                                    <img class="img-responsive" src="img/cat-gallery-8.jpg" alt="Category blog">
-                                                    <div class="cat-name">Home Decor</div>
-                                                </a>
-                                            </div>
-                                            <!--Item gallery-->
-                                            <div class="col-lg-3 col-md-3 col-xs-4">
-                                                <a class="thumbnail" href="#">
-                                                    <input type="checkbox" id="check-10" class="hidden"><label for="check-10"><span class="glyphicon glyphicon-ok"></span></label>
-                                                    <img class="img-responsive" src="img/cat-gallery-9.jpg" alt="Category blog">
-                                                    <div class="cat-name">Family/Parents</div>
-                                                </a>
-                                            </div>
-                                            <!--Item gallery-->
-                                            <div class="col-lg-3 col-md-3 col-xs-4">
-                                                <a class="thumbnail" href="#">
-                                                    <input type="checkbox" id="check-11" class="hidden"><label for="check-11"><span class="glyphicon glyphicon-ok"></span></label>
-                                                    <img class="img-responsive" src="img/cat-gallery-10.jpg" alt="Category blog">
-                                                    <div class="cat-name">Travel</div>
-                                                </a>
-                                            </div>
-                                            <!--Item gallery-->
-                                            <div class="col-lg-3 col-md-3 col-xs-4">
-                                                <a class="thumbnail" href="#">
-                                                    <input type="checkbox" id="check-12" class="hidden"><label for="check-12"><span class="glyphicon glyphicon-ok"></span></label>
-                                                    <img class="img-responsive" src="img/cat-gallery-11.jpg" alt="Category blog">
-                                                    <div class="cat-name">Men</div>
-                                                </a>
-                                            </div>
-                                            <!--Item gallery-->
-                                            <div class="col-lg-3 col-md-3 col-xs-4">
-                                                <a class="thumbnail" href="#">
-                                                    <input type="checkbox" id="check-13" class="hidden"><label for="check-13"><span class="glyphicon glyphicon-ok"></span></label>
-                                                    <img class="img-responsive" src="img/gallery-special.png" alt="Category blog">
-                                                    <div class="cat-name">Other</div>
-                                                </a>
-                                            </div>
-                                        </div><!--End Row-->
-                                    </div><!---End container -->
-                                    <div class="current-cat dote-border">
-                                        <h6>You have selected: <span>* scripts </span></h6>
-                                    </div>
-                                </div><!--end type blog gallery-->
-                                <div class="container-fluid dote-border pad-bottom">
+								</div><!--head-wrapper-->
+						</div>
+				</div><!--End row-->
+		 </div><!---End container -->
+		</header>
+		<div class="log-status-xs hidden-md hidden-lg">
+				<div class="log-status">
+						<div class="photo-wrap">
+								<img src="img/photo-profile.png" alt="photo profile">
+						</div>
+						<div class="text-status">
+								<p class="name-acc-xs">Welcome, <b>Carolina</b></p>
+								<p class="type-acc-xs">Active Campaigns: <b>7</b></p>
+						</div>
+				</div>
+		</div>
+		<section>
+				<div class="container-fluid">
+						<div class="row">
+								<div class="col-md-8">
+										<article class="create-comp section-exterior">
+												<div class="create-comp-inner">
+														<div class="slogan-page">
+																<h2>Create Campaign</h2>
+														</div>
+														<div class="dote-border">
+																<h3>
+																		Let us create a campaign for you. Please enter your specifications for the best
+																		result
+																</h3>
+														</div>
+														<div class="types-create">
+																<h6>Select types of blogs that you want to reach. For mass
+																		consumer products we recommend toselect all. </h6>
+																<p>(Select one or more categories)</p>
+														</div>
+														<form action="#" id="create-comp-form">
+																<div class="type-blog-gallery">
+																		<div class="container-fluid">
+																				<div class="row">
+																						<!--Item gallery-->
+																						<div class="col-lg-3 col-md-3 col-xs-4">
+																								<a class="thumbnail" >
+																										<input type="checkbox" id="check-1" class="hidden"><label for="check-1"><span class="glyphicon glyphicon-ok"></span></label>
+																										<img class="img-responsive" src="img/gallery-cat-all.png" alt="Category blog">
+																										<div class="cat-name">All Categories</div>
+																								</a>
+																						</div>
+																						<!--Item gallery-->
+																						<div class="col-lg-3 col-md-3 col-xs-4 ">
+																								<a class="thumbnail">
+																										<input type="checkbox" id="check-2"  class="hidden"><label for="check-2"><span class="glyphicon glyphicon-ok"></span></label>
+																										<img class="img-responsive" src="img/cat-gallery-1.png" alt="Category blog">
+																										<div class="cat-name">Food</div>
+																								</a>
+																						</div>
+																						<!--Item gallery-->
+																						<div class="col-lg-3 col-md-3 col-xs-4">
+																								<a class="thumbnail" >
+																										<input type="checkbox" id="check-3" class="hidden"><label for="check-3"><span class="glyphicon glyphicon-ok"></span></label>
+																										<img class="img-responsive" src="img/cat-gallery-2.jpg" alt="Category blog">
+																										<div class="cat-name">Fitness</div>
+																								</a>
+																						</div>
+																						<!--Item gallery-->
+																						<div class="col-lg-3 col-md-3 col-xs-4">
+																								<a class="thumbnail" >
+																										<input type="checkbox" id="check-4" class="hidden"><label for="check-4"><span class="glyphicon glyphicon-ok"></span></label>
+																										<img class="img-responsive" src="img/cat-gallery-3.jpg" alt="Category blog">
+																										<div class="cat-name">Horses</div>
+																								</a>
+																						</div>
+																						<!--Item gallery-->
+																						<div class="col-lg-3 col-md-3 col-xs-4">
+																								<a class="thumbnail">
+																										<input type="checkbox" id="check-5" class="hidden"><label for="check-5"><span class="glyphicon glyphicon-ok"></span></label>
+																										<img class="img-responsive" src="img/cat-gallery-4.jpg" alt="Category blog">
+																										<div class="cat-name">Lifestyle</div>
+																								</a>
+																						</div>
+																						<!--Item gallery-->
+																						<div class="col-lg-3 col-md-3 col-xs-4 hidden-xs">
+																								<a class="thumbnail" >
+																										<input type="checkbox" id="check-6" class="hidden"><label for="check-6"><span class="glyphicon glyphicon-ok"></span></label>
+																										<img class="img-responsive" src="img/cat-gallery-5.jpg" alt="Category blog">
+																										<div class="cat-name">Fashion</div>
+																								</a>
+																						</div>
+																						<!--Item gallery-->
+																						<div class="col-lg-3 col-md-3 col-xs-4">
+																								<a class="thumbnail" >
+																										<input type="checkbox" id="check-7"class="hidden"><label for="check-7"><span class="glyphicon glyphicon-ok"></span></label>
+																										<img class="img-responsive" src="img/cat-gallery-6.jpg" alt="Category blog">
+																										<div class="cat-name">Beaty</div>
+																								</a>
+																						</div>
+																						<!--Item gallery-->
+																						<div class="col-lg-3 col-md-3 col-xs-4">
+																								<a class="thumbnail">
+																										<input type="checkbox" id="check-8" class="hidden"><label for="check-8"><span class="glyphicon glyphicon-ok"></span></label>
+																										<img class="img-responsive" src="img/cat-gallery-7.jpg" alt="Category blog">
+																										<div class="cat-name">DIY & Crafts</div>
+																								</a>
+																						</div>
+																						<!--Item gallery-->
+																						<div class="col-lg-3 col-md-3 col-xs-4">
+																								<a class="thumbnail" >
+																										<input type="checkbox" id="check-9" class="hidden"><label for="check-9"><span class="glyphicon glyphicon-ok"></span></label>
+																										<img class="img-responsive" src="img/cat-gallery-8.jpg" alt="Category blog">
+																										<div class="cat-name">Home Decor</div>
+																								</a>
+																						</div>
+																						<!--Item gallery-->
+																						<div class="col-lg-3 col-md-3 col-xs-4">
+																								<a class="thumbnail" href="#">
+																										<input type="checkbox" id="check-10" class="hidden"><label for="check-10"><span class="glyphicon glyphicon-ok"></span></label>
+																										<img class="img-responsive" src="img/cat-gallery-9.jpg" alt="Category blog">
+																										<div class="cat-name">Family/Parents</div>
+																								</a>
+																						</div>
+																						<!--Item gallery-->
+																						<div class="col-lg-3 col-md-3 col-xs-4">
+																								<a class="thumbnail" href="#">
+																										<input type="checkbox" id="check-11" class="hidden"><label for="check-11"><span class="glyphicon glyphicon-ok"></span></label>
+																										<img class="img-responsive" src="img/cat-gallery-10.jpg" alt="Category blog">
+																										<div class="cat-name">Travel</div>
+																								</a>
+																						</div>
+																						<!--Item gallery-->
+																						<div class="col-lg-3 col-md-3 col-xs-4">
+																								<a class="thumbnail" href="#">
+																										<input type="checkbox" id="check-12" class="hidden"><label for="check-12"><span class="glyphicon glyphicon-ok"></span></label>
+																										<img class="img-responsive" src="img/cat-gallery-11.jpg" alt="Category blog">
+																										<div class="cat-name">Men</div>
+																								</a>
+																						</div>
+																						<!--Item gallery-->
+																						<div class="col-lg-3 col-md-3 col-xs-4">
+																								<a class="thumbnail" href="#">
+																										<input type="checkbox" id="check-13" class="hidden"><label for="check-13"><span class="glyphicon glyphicon-ok"></span></label>
+																										<img class="img-responsive" src="img/gallery-special.png" alt="Category blog">
+																										<div class="cat-name">Other</div>
+																								</a>
+																						</div>
+																				</div><!--End Row-->
+																		</div><!---End container -->
+																		<div class="current-cat dote-border">
+																				<h6>You have selected: <span>* scripts </span></h6>
+																		</div>
+																</div><!--end type blog gallery-->
+																<div class="container-fluid dote-border pad-bottom">
 
 
 
-                                    <div class="col-md-6 border-left col-md-push-6">
+																		<div class="col-md-6 border-left col-md-push-6">
 
-                                        <div class="create-more dote-border"><!--Age slider-->
-                                            <div class="audience">
-                                                <h6>Please select <span>age</span> for your target audience.</h6>
-                                            </div>
-                                            <div class="create-more-ui">
-                                                <div id="slider-range"></div>
-                                                <div class="in-age-wr range-modal">
-                                                    <div class="triangle"></div>
-                                                    <input type="text" id="amount" readonly><label></label>
-                                                </div>
-                                            </div><!--END create more Ui-->
-                                        </div><!--end age slider-->
+																				<div class="create-more dote-border"><!--Age slider-->
+																						<div class="audience">
+																								<h6>Please select <span>age</span> for your target audience.</h6>
+																						</div>
+																						<div class="create-more-ui">
+																								<div id="slider-range"></div>
+																								<div class="in-age-wr range-modal">
+																										<div class="triangle"></div>
+																										<input type="text" id="amount" readonly><label></label>
+																								</div>
+																						</div><!--END create more Ui-->
+																				</div><!--end age slider-->
 
-                                        <div class="countries">
-                                            <div class="audience">
-                                                <h6>Please select <span>countries</span>  for your target audience.</h6>
-                                            </div>
-                                            <div class="country-gallery">
-                                                <div class="container-fluid">
-                                                    <div class="row">
-                                                        <div class="col-md-4 col-xs-4">
-                                                            <div class="country-wrap">
-                                                                <i class = "icon-country sprite-flag-1"></i><span>Sweden</span><input type="checkbox" id="country-1" class="checkbox-audience hidden">
-                                                                <label for="country-1" class="label-audience"><span class="glyphicon glyphicon-ok"></span></label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4 col-xs-4">
-                                                            <div class="country-wrap" >
-                                                                <i class = "icon-country sprite-flag-2"></i><span>Norway</span><input type="checkbox" id="country-2" class="checkbox-audience hidden">
-                                                                <label for="country-2" class="label-audience"><span class="glyphicon glyphicon-ok"></span></label>
-                                                                <div class="claer"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4 col-xs-4">
-                                                            <div class="country-wrap" >
-                                                                <i class = "icon-country sprite-flag-3"></i><span>Finland</span><input type="checkbox" id="country-3" class="checkbox-audience hidden">
-                                                                <label for="country-3" class="label-audience"><span class="glyphicon glyphicon-ok"></span></label>
-                                                                <div class="claer"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-md-4 col-xs-4">
-                                                            <div class="country-wrap" >
-                                                                <i class = "icon-country sprite-flag-4"></i><span>Denmark</span><input type="checkbox" id="country-4" class="checkbox-audience hidden">
-                                                                <label for="country-4" class="label-audience"><span class="glyphicon glyphicon-ok"></span></label>
-                                                                <div class="claer"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4 col-xs-4">
-                                                            <div class="country-wrap" >
-                                                                <i class = "icon-country sprite-flag-5"></i><span>Uk</span><input type="checkbox" id="country-5" class="checkbox-audience hidden">
-                                                                <label for="country-5" class="label-audience"><span class="glyphicon glyphicon-ok"></span></label>
-                                                                <div class="claer"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4 col-xs-4">
-                                                            <div class="country-wrap" >
-                                                                <i class = "icon-country sprite-flag-6"></i><span>Holland</span><input type="checkbox" id="country-6" class="checkbox-audience hidden">
-                                                                <label for="country-6" class="label-audience"><span class="glyphicon glyphicon-ok"></span></label>
-                                                                <div class="claer"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="countries-selected-wrap">
-                                                            <div class="countries-selected-text">
-                                                                <h6>Countries selected: <span>*scripts Sweeden</span></h6>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+																				<div class="countries">
+																						<div class="audience">
+																								<h6>Please select <span>countries</span>  for your target audience.</h6>
+																						</div>
+																						<div class="country-gallery">
+																								<div class="container-fluid">
+																										<div class="row">
+																												<div class="col-md-4 col-xs-4">
+																														<div class="country-wrap">
+																																<i class = "icon-country sprite-flag-1"></i><span>Sweden</span><input type="checkbox" id="country-1" class="checkbox-audience hidden">
+																																<label for="country-1" class="label-audience"><span class="glyphicon glyphicon-ok"></span></label>
+																														</div>
+																												</div>
+																												<div class="col-md-4 col-xs-4">
+																														<div class="country-wrap" >
+																																<i class = "icon-country sprite-flag-2"></i><span>Norway</span><input type="checkbox" id="country-2" class="checkbox-audience hidden">
+																																<label for="country-2" class="label-audience"><span class="glyphicon glyphicon-ok"></span></label>
+																																<div class="claer"></div>
+																														</div>
+																												</div>
+																												<div class="col-md-4 col-xs-4">
+																														<div class="country-wrap" >
+																																<i class = "icon-country sprite-flag-3"></i><span>Finland</span><input type="checkbox" id="country-3" class="checkbox-audience hidden">
+																																<label for="country-3" class="label-audience"><span class="glyphicon glyphicon-ok"></span></label>
+																																<div class="claer"></div>
+																														</div>
+																												</div>
+																										</div>
+																										<div class="row">
+																												<div class="col-md-4 col-xs-4">
+																														<div class="country-wrap" >
+																																<i class = "icon-country sprite-flag-4"></i><span>Denmark</span><input type="checkbox" id="country-4" class="checkbox-audience hidden">
+																																<label for="country-4" class="label-audience"><span class="glyphicon glyphicon-ok"></span></label>
+																																<div class="claer"></div>
+																														</div>
+																												</div>
+																												<div class="col-md-4 col-xs-4">
+																														<div class="country-wrap" >
+																																<i class = "icon-country sprite-flag-5"></i><span>Uk</span><input type="checkbox" id="country-5" class="checkbox-audience hidden">
+																																<label for="country-5" class="label-audience"><span class="glyphicon glyphicon-ok"></span></label>
+																																<div class="claer"></div>
+																														</div>
+																												</div>
+																												<div class="col-md-4 col-xs-4">
+																														<div class="country-wrap" >
+																																<i class = "icon-country sprite-flag-6"></i><span>Holland</span><input type="checkbox" id="country-6" class="checkbox-audience hidden">
+																																<label for="country-6" class="label-audience"><span class="glyphicon glyphicon-ok"></span></label>
+																																<div class="claer"></div>
+																														</div>
+																												</div>
+																												<div class="countries-selected-wrap">
+																														<div class="countries-selected-text">
+																																<h6>Countries selected: <span>*scripts Sweeden</span></h6>
+																														</div>
+																												</div>
+																										</div>
 
-                                                </div>
-                                            </div>
-                                        </div><!--End Countries-->
+																								</div>
+																						</div>
+																				</div><!--End Countries-->
 
-                                    </div><!--countries-->
-                                    <div class="col-md-6 col-md-pull-6">
-                                        <div class="social-wrap">
-                                            <div class="audience">
-                                                <h6> Please select: <span>channels</span> for your campaign.</h6>
-                                            </div>
-                                            <div class="social-choose">
-                                                <input type="checkbox" class="checkbox-audience hidden" id="check-social">
-                                                <label class="label-audience" for="check-social">
-                                                    <span class="glyphicon glyphicon-ok"></span></label>
-                                                <p>As many as possible</p>
-                                            </div>
-                                            <div class="container-fluid">
-                                                <div class="social-inner">
-                                                    <div class="row">
-                                                        <div class="col-md-4 col-xs-4 ">
-                                                            <div class="item-social facebook">
-                                                                <input type="checkbox" class="checkbox-audience hidden" id="check-social-item-1">
-                                                                <label class="label-audience" for="check-social-item-1">
-                                                                    <span class="glyphicon glyphicon-ok"></span>
-                                                                </label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4 col-xs-4">
-                                                            <div class="item-social google-plus">
-                                                                <input type="checkbox" class="checkbox-audience hidden" id="check-social-item-2">
-                                                                <label class="label-audience" for="check-social-item-2">
-                                                                    <span class="glyphicon glyphicon-ok"></span>
-                                                                </label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4 col-xs-4">
-                                                            <div class="item-social instagram">
-                                                                <input type="checkbox" class="checkbox-audience hidden"
-                                                                       id="check-social-item-3">
-                                                                <label class="label-audience" for="check-social-item-3">
-                                                                    <span class="glyphicon glyphicon-ok"></span>
-                                                                </label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-md-4 col-xs-4">
-                                                            <div class="item-social pinterest">
-                                                                <input type="checkbox" class="checkbox-audience hidden"
-                                                                       id="check-social-item-4">
-                                                                <label class="label-audience" for="check-social-item-4">
-                                                                    <span class="glyphicon glyphicon-ok"></span>
-                                                                </label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4 col-xs-4">
-                                                            <div class="item-social linkid">
-                                                                <input type="checkbox" class="checkbox-audience hidden"
-                                                                       id="check-social-item-5">
-                                                                <label class="label-audience" for="check-social-item-5">
-                                                                    <span class="glyphicon glyphicon-ok"></span>
-                                                                </label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4 col-xs-4">
-                                                            <div class="item-social tumblr">
-                                                                <input type="checkbox" class="checkbox-audience hidden"
-                                                                       id="check-social-item-6">
-                                                                <label class="label-audience" for="check-social-item-6">
-                                                                    <span class="glyphicon glyphicon-ok"></span>
-                                                                </label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-md-4 col-xs-4">
-                                                            <div class="item-social twitter">
-                                                                <input type="checkbox" class="checkbox-audience hidden"
-                                                                       id="check-social-item-7">
-                                                                <label class="label-audience" for="check-social-item-7">
-                                                                    <span class="glyphicon glyphicon-ok"></span>
-                                                                </label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4 col-xs-4">
-                                                            <div class="item-social vine">
-                                                                <input type="checkbox" class="checkbox-audience hidden"
-                                                                       id="check-social-item-8">
-                                                                <label class="label-audience" for="check-social-item-8">
-                                                                    <span class="glyphicon glyphicon-ok"></span>
-                                                                </label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4 col-xs-4 ">
-                                                            <div class="item-social youtube">
-                                                                <input type="checkbox" class="checkbox-audience hidden" id="check-social-item-9">
-                                                                <label class="label-audience" for="check-social-item-9">
-                                                                    <span class="glyphicon glyphicon-ok"></span>
-                                                                </label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="dote-border"></div>
-                                <div class="current-cat">
-                                    <h6>What is your <span>Focus </span>? Please select one or more categories.</h6>
-                                </div>
-                                <div class="business-seo-wrap">
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col-md-4 col-lg-4 col-xs-12">
-                                                <input type="checkbox" id="check-business-1" class="hidden">
-                                                <label for="check-business-1" class="label-business"><i class="icon-bd seo-comp-1"></i><span>Increase Sales</span></label>
-                                            </div>
-                                            <div class="col-md-4 col-lg-4 col-xs-12">
-                                                <input type="checkbox" id="check-business-2" class="hidden">
-                                                <label for="check-business-2" class="label-business"><i class="icon-bd seo-comp-2"></i><span>Social Engagement</span></label>
-                                            </div>
-                                            <div class="col-md-4 col-lg-4 col-xs-12">
-                                                <input type="checkbox" id="check-business-3" class="hidden">
-                                                <label for="check-business-3" class="label-business"><i class="icon-bd seo-comp-3"></i><span>Brand Awareness</span></label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><!--end business-->
-                                <div class="current-cat">
-                                    <h6>Select <span> Campaign.</span></h6>
-                                </div>
-                                <div class="campaign-container">
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col-md-3 col-lg-3 col-xs-6">
-                                                <input type="checkbox" id="check-camp-1" class="check-camp hidden"><label for="check-camp-1" class="label-business campaign"><span>Product Review</span></label>
-                                            </div>
-                                            <div class="col-md-3 col-lg-3 col-xs-6">
-                                                <input type="checkbox" id="check-camp-2" class="check-camp hidden"><label for="check-camp-2" class="label-business campaign"><span>Product/Brand story</span></label>
-                                            </div>
+																		</div><!--countries-->
+																		<div class="col-md-6 col-md-pull-6">
+																				<div class="social-wrap">
+																						<div class="audience">
+																								<h6> Please select: <span>channels</span> for your campaign.</h6>
+																						</div>
+																						<div class="social-choose">
+																								<input type="checkbox" class="checkbox-audience hidden" id="check-social">
+																								<label class="label-audience" for="check-social">
+																										<span class="glyphicon glyphicon-ok"></span></label>
+																								<p>As many as possible</p>
+																						</div>
+																						<div class="container-fluid">
+																								<div class="social-inner">
+																										<div class="row">
+																												<div class="col-md-4 col-xs-4 ">
+																														<div class="item-social facebook">
+																																<input type="checkbox" class="checkbox-audience hidden" id="facebook">
+																																<label class="label-audience" for="facebook">
+																																		<span class="glyphicon glyphicon-ok"></span>
+																																</label>
+																														</div>
+																												</div>
+																												<div class="col-md-4 col-xs-4">
+																														<div class="item-social google-plus">
+																																<input type="checkbox" class="checkbox-audience hidden" id="google-plus">
+																																<label class="label-audience" for="google-plus">
+																																		<span class="glyphicon glyphicon-ok"></span>
+																																</label>
+																														</div>
+																												</div>
+																												<div class="col-md-4 col-xs-4">
+																														<div class="item-social instagram">
+																																<input type="checkbox" class="checkbox-audience hidden"
+																																			 id="instagram">
+																																<label class="label-audience" for="instagram">
+																																		<span class="glyphicon glyphicon-ok"></span>
+																																</label>
+																														</div>
+																												</div>
+																										</div>
+																										<div class="row">
+																												<div class="col-md-4 col-xs-4">
+																														<div class="item-social pinterest">
+																																<input type="checkbox" class="checkbox-audience hidden"
+																																			 id="pinterest">
+																																<label class="label-audience" for="pinterest">
+																																		<span class="glyphicon glyphicon-ok"></span>
+																																</label>
+																														</div>
+																												</div>
+																												<div class="col-md-4 col-xs-4">
+																														<div class="item-social linkid">
+																																<input type="checkbox" class="checkbox-audience hidden"
+																																			 id="linkid">
+																																<label class="label-audience" for="linkid">
+																																		<span class="glyphicon glyphicon-ok"></span>
+																																</label>
+																														</div>
+																												</div>
+																												<div class="col-md-4 col-xs-4">
+																														<div class="item-social tumblr">
+																																<input type="checkbox" class="checkbox-audience hidden"
+																																			 id="tumblr">
+																																<label class="label-audience" for="tumblr">
+																																		<span class="glyphicon glyphicon-ok"></span>
+																																</label>
+																														</div>
+																												</div>
+																										</div>
+																										<div class="row">
+																												<div class="col-md-4 col-xs-4">
+																														<div class="item-social twitter">
+																																<input type="checkbox" class="checkbox-audience hidden"
+																																			 id="twitter">
+																																<label class="label-audience" for="twitter">
+																																		<span class="glyphicon glyphicon-ok"></span>
+																																</label>
+																														</div>
+																												</div>
+																												<div class="col-md-4 col-xs-4">
+																														<div class="item-social vine">
+																																<input type="checkbox" class="checkbox-audience hidden"
+																																			 id="vine">
+																																<label class="label-audience" for="vine">
+																																		<span class="glyphicon glyphicon-ok"></span>
+																																</label>
+																														</div>
+																												</div>
+																												<div class="col-md-4 col-xs-4 ">
+																														<div class="item-social youtube">
+																																<input type="checkbox" class="checkbox-audience hidden" id="youtube">
+																																<label class="label-audience" for="youtube">
+																																		<span class="glyphicon glyphicon-ok"></span>
+																																</label>
+																														</div>
+																												</div>
+																										</div>
+																								</div>
+																						</div>
+																				</div>
+																		</div>
+																</div>
+																<div class="dote-border"></div>
+																<div class="current-cat">
+																		<h6>What is your <span>Focus </span>? Please select one or more categories.</h6>
+																</div>
+																<div class="business-seo-wrap">
+																		<div class="container-fluid">
+																				<div class="row">
+																						<div class="col-md-4 col-lg-4 col-xs-12">
+																								<input type="checkbox" id="check-business-1" class="hidden">
+																								<label for="check-business-1" class="label-business" data-number="1"><i class="icon-bd seo-comp-1"></i><span>Increase Sales</span></label>
+																						</div>
+																						<div class="col-md-4 col-lg-4 col-xs-12">
+																								<input type="checkbox" id="check-business-2" class="hidden">
+																								<label for="check-business-2" class="label-business" data-number="2"><i class="icon-bd seo-comp-2"></i><span>Social Engagement</span></label>
+																						</div>
+																						<div class="col-md-4 col-lg-4 col-xs-12">
+																								<input type="checkbox" id="check-business-3" class="hidden">
+																								<label for="check-business-3" class="label-business" data-number="3"><i class="icon-bd seo-comp-3"></i><span>Brand Awareness</span></label>
+																						</div>
+																				</div>
+																		</div>
+																</div><!--end business-->
+																<div class="current-cat">
+																		<h6>Select <span> Campaign.</span></h6>
+																</div>
+																<div class="campaign-container">
+																		<div class="container-fluid">
+																				<div class="row">
+																						<div class="col-md-3 col-lg-3 col-xs-6">
+																								<input type="checkbox" id="check-camp-1" class="check-camp hidden"><label for="check-camp-1" class="label-business campaign"><span>Product Review</span></label>
+																						</div>
+																						<div class="col-md-3 col-lg-3 col-xs-6">
+																								<input type="checkbox" id="check-camp-2" class="check-camp hidden"><label for="check-camp-2" class="label-business campaign"><span>Product/Brand story</span></label>
+																						</div>
 
-                                            <div class="col-md-3 col-lg-3 col-xs-6">
-                                                <input type="checkbox" id="check-camp-3" class="check-camp hidden"><label for="check-camp-3" class="label-business campaign"><span>Product Review</span></label>
-                                            </div>
-                                            <div class="col-md-3 col-lg-3 col-xs-6">
-                                                <input type="checkbox" id="check-camp-4" class="check-camp hidden"><label for="check-camp-4" class="label-business campaign"><span>Product/Brand story</span></label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><!--End campaign-->
-                                <div class="current-cat">
-                                    <h6>Your monthly <span>Budget</span></h6>
-                                </div>
-                                <div class="budget-slider-wrap">
-                                    <div class="in-budget-wr range-modal">
-                                        <input type="text" id="amount-budget" readonly value="25.000"><label></label>
-                                        <div class="triangle"></div>
-                                    </div>
-                                    <div class="slider-budget-ui">
-                                        <div class="ranges">5000</div>
-                                        <div id="slider-budget"></div>
-                                        <div class="ranges">100,000</div>
-                                    </div>
-                                    <div class="ranges-text">
-                                        <div class="ranges-text-val breakpoint-1">SOME POSTS</div>
-                                        <div class="ranges-text-val breakpoint-2">SOCIAL BUZZ</div>
-                                        <div class="ranges-text-val breakpoint-3">BIG EXPOSURE</div>
-                                        <div class="ranges-text-val breakpoint-4"> SOCIAL MEDIA DOMINATION</div>
-                                    </div>
-                                </div>
-                                <div class="privilege dote-border">
-                                    <div class="privilege-inner">
-                                        <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-md-4 col-xs-6">
-                                                    <span class="glyphicon glyphicon-ok"></span>&nbsp<span>Decent amount of visitor</span>
-                                                </div>
-                                                <div class="col-md-4 col-xs-6">
-                                                    <span class="glyphicon glyphicon-ok"></span>&nbsp<span>High amount of shares/retweets</span>
-                                                </div>
-                                                <div class="col-md-4 col-xs-6 hidden-xs">
-                                                    <span class="glyphicon glyphicon-ok "></span>&nbsp<span>Decent amount of visitors</span>
-                                                </div>
-                                                <div class="col-md-4 col-xs-6">
-                                                    <span class="glyphicon glyphicon-ok"></span>&nbsp<span>Increase in revenue</span>
-                                                </div>
-                                                <div class="col-md-4 hidden-xs">
-                                                    <span class="glyphicon glyphicon-ok"></span>&nbsp<span>Another feature of Social Buzz</span>
-                                                </div>
-                                                <div class="col-md-4 col-xs-6">
-                                                    <span class="glyphicon glyphicon-ok"></span>&nbsp<span>Increase in revenue</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><!--End privilege-->
-                                <div class="preferable hidden-xs">
-                                    <div class="container-fluid">
-                                        <div class="col-md-6">
-                                            <div class="current-cat">
-                                                <h6>Please select your preferable <span>approach.</span></h6>
-                                            </div>
-                                            <div class="approach-wrap">
-                                                <div class="approach-item">
-                                                    <input type="radio" name="approach-radio" id="check-approach-1" class="check-camp hidden" checked>
-                                                    <label for="check-approach-1" class="approach-label">
-                                                        <i class="rounded-icon rounded-icon-active"></i>
-                                                        <span class="approach-text">
-                                                           <b> Hands off approach (recommended)</b><br>
-                                                            Tell us what you want and we do everything.
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="approach-item">
-                                                    <input type="radio" id="check-approach-2" name="approach-radio" class="check-camp hidden">
-                                                    <label for="check-approach-2" class="approach-label">
-                                                        <i class="rounded-icon "></i>
-                                                        <span class="approach-text">
-                                                            <b> Hands on approach (time-consuming)</b><br>
-                                                            Dig into the details with us.
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 border-left">
-                                            <div class="date-start-comp">
-                                                <div class="current-cat">
-                                                    <h6>Please select start <span> date.</span></h6>
-                                                    <p>A campaign lasts about two months.</p>
-                                                </div>
-                                                <div id="datepicker-StartDate">
-                                                </div>
-                                                <div class="check-start-wrap">
-                                                    <input type="checkbox" id="not-start-date" class="hidden">
-                                                    <label for="not-start-date" class="label-audience">
-                                                        <span class="glyphicon glyphicon-ok"></span>
-                                                    </label>
-                                                    <span class="check-discription">I don’t know start date.</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 col-lg-12 text-center">
-                                            <div class="describe-wrap">
-                                                <p>Please describe what you want to achieve with the campaign</p>
-                                                <textarea name="describe" id="describe" class="describe-area"></textarea>
-                                            </div>
-                                            <div class="main-submit-wrap">
-                                                <input type="submit" class="main-button main-submit" value="SEND CAMPAIGN REQUEST">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><!--ENd preferable-->
-                            </form>
-                        </div><!--Create-comp-inner-->
-                    </article>
-                </div>
-                <div class="col-md-3 hidden-xs">
-                    <div class="chat">
-                        <div class="chat-wrapper">
-                            <div class="chat-header">
-                                <ul>
-                                    <li><a href="#">Chat</a></li>
-                                    <li><a href="#">Select a campaign chatroom <span class="triangle-round glyphicon glyphicon-triangle-bottom"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="select-more"></div>
-                            <div class="chat-body section-exterior">
-                                <div class="chat-body-scroll">
-                                    <ul class="chat-chatroom">
-                                        <li>
-                                            <i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC50lEQVRYR8VXQVYTQRCt6kyeS+MJxBMIJzA8g1vDCQgS18SlRh/JM3FLWAs6nICwlfDAExBvMNwgLn2ZdPt7khl7ZhoyCjPOhke6u/6vql9V3Ux/8TUuOpXSzHnJzCvBMaWqwV/my/m/ypuV/FN3vTPJapaXbdSgjizvkqQ6Ma0u2z8nRmMSNPTF9GAZmRsJhMDwqsXElUzAiU2K1ATRGtxGxErg9bf+qhR0gsV5qO/6ISKsaPvzi/Y4aSpF4NV5vyEUfb0rpu28ZNr+8rztmmsxAnmCh6BJEhGB5tnHKrG4yMPzlE0l1w83PgSVExHYGfU8iO1xEQQUkXdUaz+JCDTP+h1Q2SsCPMJQ1D3caHeCCIDABAQeFklAl+hR7f0j3hl9qjOpkyLBQyxFvAkCPRe530oLhbq+I9zyVFYU0wARembugQfHQvJA/yZF0KziNhR9R+23pmUxcXzZsKVY22CE/9JmHOFphIBBV/TLXpgmHPyB9VhbhiNjkHiqz2D9GjNh1WzDVkc1SWv+FwIxPY4Rta//ETIMQ2DVxPmU0INW3Rz1URXxT4cmGYHSrHwVtWa0VgCsmafiESBMxena0gjoPnBT/YNVC0aOiR5gBMt9gNfjGiB3VhJd/RvW97AepWyeBhpi/Q3RrwnIb2E90EtCR9dWDRRWEVoDO6P+AOx2CwM1gBClA9ajVwm6+h8EWNJa0AmLnAOho7pUIfSVgEARYzgtQN48qr0bGuM43ZByS4vRJyICgRaYdFfMdygp+okWjy751tMOxm5EuZMAOOZD1bwbpu6EeZWlFh2GVz15MU1HII+SVOrUd/yG7Y0QEZi/eox+fx8KhNgwrDvh/c9m0rwTRuP0Ltg61JDWkJUc3gYcYoSNyH4puYlJ4BkqZvEpZjw8ZhPfcbxQ3Vmd4KxNKPRMSHJtL5ysgMl9mIa9Fl63+1YDC09ROsP7BDWxFinARFRqBbkb403oCSm9LPn7V6/Nc78BLJRs8RPvDWgAAAAASUVORK5CYII="/></i>
-                                            <span>General chat</span>
-                                        </li>
-                                        <li><i class="rounded-icon"></i><span>Name Sername</span></li>
-                                        <li><i class="rounded-icon"></i><span>Jon Doi</span><span class="badge">3</span>
-                                        </li>
-                                        <li><i class="rounded-icon"></i><span>FirstName LastName</span></li>
-                                        <li>
-                                            <div class="chat-item-info">
-                                                NO MORE CHATOOMS TO SHOW RIGHT NOW
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!--End row-->
-        </div><!---End container -->
-    </section>
-    <section>
-        <div class="container-fluid hidden-xs">
-            <div class="row">
-                <div class="faq-wrapper">
-                    <div class="col-md-3">
-                        <div class="section-exterior">
-                            <div class="faq">
-                                <h4>Invoices</h4>
-                                <div class="dote-border"></div>
-                                <div class="invoices-wrap">
-                                    <div class="approach-label invoices-tab">
-                                        <a href="#">
-                                            <ul class="mark-invoices">
-                                                <li>
-                                                    <span class="pdf-icon pdf-icon-remove"></span>
-                                                </li>
-                                                <li>
-                                                    <ul class="sub-invoices">
-                                                        <li><span>September 2015</span></li>
-                                                        <li><b>$15,466.00</b></li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <span class="glyphicon glyphicon-remove"></span>
-                                                </li>
-                                            </ul>
-                                        </a>
-                                    </div>
-                                    <div class="approach-label invoices-tab">
-                                        <a href="#">
-                                            <ul class="mark-invoices">
-                                                <li>
-                                                    <span class="pdf-icon pdf-icon-add"></span>
-                                                </li>
-                                                <li>
-                                                    <ul>
-                                                        <li><span>September 2015</span></li>
-                                                        <li><b>$15,466.00</b></li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <span class="glyphicon glyphicon-ok"></span>
-                                                </li>
-                                            </ul>
-                                        </a>
-                                    </div>
-                                </div><!--invoices wrap-->
-                            </div>
-                            <div class="more-inv">
-                                <a href="#">
-                                    <span class="glyphicon glyphicon-plus"></span>
-                                    <b>Load More</b>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="faq section-exterior">
-                            <div class="faq-head">
-                                <h4>FAQs</h4>
-                                <div class="dote-border"></div>
-                                <span class="faq-icon-search"></span>
-                            </div>
-                            <div class="faq-answer">
-                                <div class="answer-item">
-                                    <p  class="answer-par">
-                                        <span class="faq-icon-plus glyphicon glyphicon-plus"></span> How do I do this, how do I do that, how do I do this, how do I do that, how?
-                                        <p class="answer-hidden hidden">Faq answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, aut corporis dolor dolorem eius eligendi incidunt itaque maiores nulla obcaecati optio quae sed tenetur voluptatibus voluptatum. Enim inventore numquam quia!</p>
-                                    </p>
-                                    <div class="dote-border"></div>
-                                </div>
-                                <div class="faq-answer">
-                                    <div class="answer-item">
-                                        <p class="answer-par">
-                                            <span class="faq-icon-plus glyphicon glyphicon-plus"></span> How do I do this, how do I do that, how do I do this, how do I do that, how?
-                                            <p class="answer-hidden hidden">Faq answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, aut corporis dolor dolorem eius eligendi incidunt itaque maiores nulla obcaecati optio quae sed tenetur voluptatibus voluptatum. Enim inventore numquam quia!</p>
-                                        </p>
-                                        <div class="dote-border"></div>
-                                    </div>
-                                </div>
-                                <div class="faq-answer">
-                                    <div class="answer-item">
-                                        <p class="answer-par">
-                                            <span class="faq-icon-plus glyphicon glyphicon-plus"></span> How do I do this, how do I do that, how do I do this, how do I do that, how?
-                                            <p class="answer-hidden hidden">Faq answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, aut corporis dolor dolorem eius eligendi incidunt itaque maiores nulla obcaecati optio quae sed tenetur voluptatibus voluptatum. Enim inventore numquam quia!</p>
-                                        </p>
-                                        <div class="dote-border"></div>
-                                    </div>
-                                </div>
-                                <div class="faq-answer">
-                                    <div class="answer-item">
-                                        <p class="answer-par">
-                                            <span class="faq-icon-plus glyphicon glyphicon-plus"></span> How do I do this, how do I do that, how do I do this, how do I do that, how?
-                                            <p class="answer-hidden hidden">Faq answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, aut corporis dolor dolorem eius eligendi incidunt itaque maiores nulla obcaecati optio quae sed tenetur voluptatibus voluptatum. Enim inventore numquam quia!</p>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+																						<div class="col-md-3 col-lg-3 col-xs-6">
+																								<input type="checkbox" id="check-camp-3" class="check-camp hidden"><label for="check-camp-3" class="label-business campaign"><span>Product Review</span></label>
+																						</div>
+																						<div class="col-md-3 col-lg-3 col-xs-6">
+																								<input type="checkbox" id="check-camp-4" class="check-camp hidden"><label for="check-camp-4" class="label-business campaign"><span>Product/Brand story</span></label>
+																						</div>
+																				</div>
+																		</div>
+																</div><!--End campaign-->
+																<div class="current-cat">
+																		<h6>Your monthly <span>Budget</span></h6>
+																</div>
+																<div class="budget-slider-wrap">
+																		<div class="in-budget-wr range-modal">
+																				<input type="text" id="amount-budget" readonly value="25.000"><label></label>
+																				<div class="triangle"></div>
+																		</div>
+																		<div class="slider-budget-ui">
+																				<div class="ranges">5000</div>
+																				<div id="slider-budget"></div>
+																				<div class="ranges">100,000</div>
+																		</div>
+																		<div class="ranges-text">
+																				<div class="ranges-text-val breakpoint-1">SOME POSTS</div>
+																				<div class="ranges-text-val breakpoint-2">SOCIAL BUZZ</div>
+																				<div class="ranges-text-val breakpoint-3">BIG EXPOSURE</div>
+																				<div class="ranges-text-val breakpoint-4"> SOCIAL MEDIA DOMINATION</div>
+																		</div>
+																</div>
+																<div class="privilege dote-border">
+																		<div class="privilege-inner">
+																				<div class="container-fluid">
+																						<div class="row">
+																								<div class="col-md-4 col-xs-6">
+																										<span class="glyphicon glyphicon-ok"></span>&nbsp<span>Decent amount of visitor</span>
+																								</div>
+																								<div class="col-md-4 col-xs-6">
+																										<span class="glyphicon glyphicon-ok"></span>&nbsp<span>High amount of shares/retweets</span>
+																								</div>
+																								<div class="col-md-4 col-xs-6 hidden-xs">
+																										<span class="glyphicon glyphicon-ok "></span>&nbsp<span>Decent amount of visitors</span>
+																								</div>
+																								<div class="col-md-4 col-xs-6">
+																										<span class="glyphicon glyphicon-ok"></span>&nbsp<span>Increase in revenue</span>
+																								</div>
+																								<div class="col-md-4 hidden-xs">
+																										<span class="glyphicon glyphicon-ok"></span>&nbsp<span>Another feature of Social Buzz</span>
+																								</div>
+																								<div class="col-md-4 col-xs-6">
+																										<span class="glyphicon glyphicon-ok"></span>&nbsp<span>Increase in revenue</span>
+																								</div>
+																						</div>
+																				</div>
+																		</div>
+																</div><!--End privilege-->
+																<div class="preferable hidden-xs">
+																		<div class="container-fluid">
+																				<div class="col-md-6">
+																						<div class="current-cat">
+																								<h6>Please select your preferable <span>approach.</span></h6>
+																						</div>
+																						<div class="approach-wrap">
+																								<div class="approach-item">
+																										<input type="radio" name="approach-radio" id="check-approach-1" class="check-camp hidden" checked>
+																										<label for="check-approach-1" class="approach-label">
+																												<i class="rounded-icon rounded-icon-active"></i>
+																												<span class="approach-text">
+																													 <b> Hands off approach (recommended)</b><br>
+																														Tell us what you want and we do everything.
+																												</span>
+																										</label>
+																								</div>
+																								<div class="approach-item">
+																										<input type="radio" id="check-approach-2" name="approach-radio" class="check-camp hidden">
+																										<label for="check-approach-2" class="approach-label">
+																												<i class="rounded-icon "></i>
+																												<span class="approach-text">
+																														<b> Hands on approach (time-consuming)</b><br>
+																														Dig into the details with us.
+																												</span>
+																										</label>
+																								</div>
+																						</div>
+																				</div>
+																				<div class="col-md-6 border-left">
+																						<div class="date-start-comp">
+																								<div class="current-cat">
+																										<h6>Please select start <span> date.</span></h6>
+																										<p>A campaign lasts about two months.</p>
+																								</div>
+																								<div id="datepicker-StartDate">
+																								</div>
+																								<div class="check-start-wrap">
+																										<input type="checkbox" id="not-start-date" class="hidden">
+																										<label for="not-start-date" class="label-audience">
+																												<span class="glyphicon glyphicon-ok"></span>
+																										</label>
+																										<span class="check-discription">I don’t know start date.</span>
+																								</div>
+																						</div>
+																				</div>
+																				<div class="col-md-12 col-lg-12 text-center">
+																						<div class="describe-wrap">
+																								<p>Please describe what you want to achieve with the campaign</p>
+																								<textarea name="describe" id="describe" class="describe-area"></textarea>
+																						</div>
+																						<div class="main-submit-wrap">
+																								<input type="submit" class="main-button main-submit" value="SEND CAMPAIGN REQUEST">
+																						</div>
+																				</div>
+																		</div>
+																</div><!--ENd preferable-->
+														</form>
+												</div><!--Create-comp-inner-->
+										</article>
+								</div>
+								<div class="col-md-3 hidden-xs">
+										<div class="chat">
+												<div class="chat-wrapper">
+														<div class="chat-header">
+																<ul>
+																		<li><a href="#">Chat</a></li>
+																		<li><a href="#">Select a campaign chatroom <span class="triangle-round glyphicon glyphicon-triangle-bottom"></span></a></li>
+																</ul>
+														</div>
+														<div class="select-more"></div>
+														<div class="chat-body section-exterior">
+																<div class="chat-body-scroll">
+																		<ul class="chat-chatroom">
+																				<li>
+																						<i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC50lEQVRYR8VXQVYTQRCt6kyeS+MJxBMIJzA8g1vDCQgS18SlRh/JM3FLWAs6nICwlfDAExBvMNwgLn2ZdPt7khl7ZhoyCjPOhke6u/6vql9V3Ux/8TUuOpXSzHnJzCvBMaWqwV/my/m/ypuV/FN3vTPJapaXbdSgjizvkqQ6Ma0u2z8nRmMSNPTF9GAZmRsJhMDwqsXElUzAiU2K1ATRGtxGxErg9bf+qhR0gsV5qO/6ISKsaPvzi/Y4aSpF4NV5vyEUfb0rpu28ZNr+8rztmmsxAnmCh6BJEhGB5tnHKrG4yMPzlE0l1w83PgSVExHYGfU8iO1xEQQUkXdUaz+JCDTP+h1Q2SsCPMJQ1D3caHeCCIDABAQeFklAl+hR7f0j3hl9qjOpkyLBQyxFvAkCPRe530oLhbq+I9zyVFYU0wARembugQfHQvJA/yZF0KziNhR9R+23pmUxcXzZsKVY22CE/9JmHOFphIBBV/TLXpgmHPyB9VhbhiNjkHiqz2D9GjNh1WzDVkc1SWv+FwIxPY4Rta//ETIMQ2DVxPmU0INW3Rz1URXxT4cmGYHSrHwVtWa0VgCsmafiESBMxena0gjoPnBT/YNVC0aOiR5gBMt9gNfjGiB3VhJd/RvW97AepWyeBhpi/Q3RrwnIb2E90EtCR9dWDRRWEVoDO6P+AOx2CwM1gBClA9ajVwm6+h8EWNJa0AmLnAOho7pUIfSVgEARYzgtQN48qr0bGuM43ZByS4vRJyICgRaYdFfMdygp+okWjy751tMOxm5EuZMAOOZD1bwbpu6EeZWlFh2GVz15MU1HII+SVOrUd/yG7Y0QEZi/eox+fx8KhNgwrDvh/c9m0rwTRuP0Ltg61JDWkJUc3gYcYoSNyH4puYlJ4BkqZvEpZjw8ZhPfcbxQ3Vmd4KxNKPRMSHJtL5ysgMl9mIa9Fl63+1YDC09ROsP7BDWxFinARFRqBbkb403oCSm9LPn7V6/Nc78BLJRs8RPvDWgAAAAASUVORK5CYII="/></i>
+																						<span>General chat</span>
+																				</li>
+																				<li><i class="rounded-icon"></i><span>Name Sername</span></li>
+																				<li><i class="rounded-icon"></i><span>Jon Doi</span><span class="badge">3</span>
+																				</li>
+																				<li><i class="rounded-icon"></i><span>FirstName LastName</span></li>
+																				<li>
+																						<div class="chat-item-info">
+																								NO MORE CHATOOMS TO SHOW RIGHT NOW
+																						</div>
+																				</li>
+																		</ul>
+																</div>
+														</div>
+												</div>
+										</div>
+								</div>
+						</div><!--End row-->
+				</div><!---End container -->
+		</section>
+		<section>
+				<div class="container-fluid hidden-xs">
+						<div class="row">
+								<div class="faq-wrapper">
+										<div class="col-md-3">
+												<div class="section-exterior">
+														<div class="faq">
+																<h4>Invoices</h4>
+																<div class="dote-border"></div>
+																<div class="invoices-wrap">
+																		<div class="approach-label invoices-tab">
+																				<a href="#">
+																						<ul class="mark-invoices">
+																								<li>
+																										<span class="pdf-icon pdf-icon-remove"></span>
+																								</li>
+																								<li>
+																										<ul class="sub-invoices">
+																												<li><span>September 2015</span></li>
+																												<li><b>$15,466.00</b></li>
+																										</ul>
+																								</li>
+																								<li>
+																										<span class="glyphicon glyphicon-remove"></span>
+																								</li>
+																						</ul>
+																				</a>
+																		</div>
+																		<div class="approach-label invoices-tab">
+																				<a href="#">
+																						<ul class="mark-invoices">
+																								<li>
+																										<span class="pdf-icon pdf-icon-add"></span>
+																								</li>
+																								<li>
+																										<ul>
+																												<li><span>September 2015</span></li>
+																												<li><b>$15,466.00</b></li>
+																										</ul>
+																								</li>
+																								<li>
+																										<span class="glyphicon glyphicon-ok"></span>
+																								</li>
+																						</ul>
+																				</a>
+																		</div>
+																</div><!--invoices wrap-->
+														</div>
+														<div class="more-inv">
+																<a href="#">
+																		<span class="glyphicon glyphicon-plus"></span>
+																		<b>Load More</b>
+																</a>
+														</div>
+												</div>
+										</div>
+										<div class="col-md-5">
+												<div class="faq section-exterior">
+														<div class="faq-head">
+																<h4>FAQs</h4>
+																<div class="dote-border"></div>
+																<span class="faq-icon-search"></span>
+														</div>
+														<div class="faq-answer">
+																<div class="answer-item">
+																		<p  class="answer-par">
+																				<span class="faq-icon-plus glyphicon glyphicon-plus"></span> How do I do this, how do I do that, how do I do this, how do I do that, how?
+																				<p class="answer-hidden hidden">Faq answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, aut corporis dolor dolorem eius eligendi incidunt itaque maiores nulla obcaecati optio quae sed tenetur voluptatibus voluptatum. Enim inventore numquam quia!</p>
+																		</p>
+																		<div class="dote-border"></div>
+																</div>
+																<div class="faq-answer">
+																		<div class="answer-item">
+																				<p class="answer-par">
+																						<span class="faq-icon-plus glyphicon glyphicon-plus"></span> How do I do this, how do I do that, how do I do this, how do I do that, how?
+																						<p class="answer-hidden hidden">Faq answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, aut corporis dolor dolorem eius eligendi incidunt itaque maiores nulla obcaecati optio quae sed tenetur voluptatibus voluptatum. Enim inventore numquam quia!</p>
+																				</p>
+																				<div class="dote-border"></div>
+																		</div>
+																</div>
+																<div class="faq-answer">
+																		<div class="answer-item">
+																				<p class="answer-par">
+																						<span class="faq-icon-plus glyphicon glyphicon-plus"></span> How do I do this, how do I do that, how do I do this, how do I do that, how?
+																						<p class="answer-hidden hidden">Faq answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, aut corporis dolor dolorem eius eligendi incidunt itaque maiores nulla obcaecati optio quae sed tenetur voluptatibus voluptatum. Enim inventore numquam quia!</p>
+																				</p>
+																				<div class="dote-border"></div>
+																		</div>
+																</div>
+																<div class="faq-answer">
+																		<div class="answer-item">
+																				<p class="answer-par">
+																						<span class="faq-icon-plus glyphicon glyphicon-plus"></span> How do I do this, how do I do that, how do I do this, how do I do that, how?
+																						<p class="answer-hidden hidden">Faq answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, aut corporis dolor dolorem eius eligendi incidunt itaque maiores nulla obcaecati optio quae sed tenetur voluptatibus voluptatum. Enim inventore numquam quia!</p>
+																				</p>
+																		</div>
+																</div>
+														</div>
+												</div>
+										</div>
+								</div>
+						</div>
+				</div>
+		</section>
 </div><!--End wrapper-->
 
 <script src="libs/jquery-1.12.0.min.js"></script>

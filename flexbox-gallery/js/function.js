@@ -85,10 +85,6 @@ $(document).ready(function(){
 
 
 
-// var stop = false, age = 16;
-
-// age >= 18 ? alert('Welcome' + " "+ age) : alert('Dont access' + " "+ age);
-
 });//end ready
 
 

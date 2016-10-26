@@ -669,10 +669,10 @@ header a{
                 }
                 /*active button special class*/
                 .seo-comp-1-active{
-                     background-position: -3px -56px !important;
+                    background-position: -3px -56px !important;
                 }
                 .seo-comp-2-active{
-                    background-position: -86px -55px !important;
+                    background-position: -83px -57px !important;
                 }
                 .seo-comp-3-active{
                     background-position: -191px -50px !important;
@@ -821,6 +821,10 @@ header a{
 .date-start-comp{
     margin-left: 8%;
 }
+    .ui-widget-content .ui-state-focus, .ui-widget-content .ui-state-active{
+        border: none;
+        outline: none;
+    }  
     .date-start-comp .current-cat h6{
         padding-bottom: 0;
         margin-bottom: 2%;
