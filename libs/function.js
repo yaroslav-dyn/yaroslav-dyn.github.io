@@ -1,4 +1,4 @@
-$(document).ready( function(){
+$(document).ready( function() {
     //Drop block profilers on header
     $("#button-drop").click(function(){
         $(".prof-slide-fun").fadeIn(300).toggleClass("hidden");
@@ -86,11 +86,43 @@ $(document).ready( function(){
         });
     });
 
-//corousel in dashboard influenser page
+// corousel in dashboard influenser page
     $(".carousel").carousel({
         interval: false
-    })
+    });
 
+
+// selected category in 'types of blogs'
+    var appendFun = function(currentCat,currentCatFilter){
+        $(".current-cat h6").append(" " + "<span class='" + currentCatFilter + "'>" + currentCat + ", "+ "</span>" );
+    };
+
+    $(".gal-label").on("click", function(){
+
+        var currentCat =  $(this).parent().find(".cat-name").text(),
+            currentCatFilter =  $(this).attr("for");
+
+
+        if($(this).hasClass("checked")){
+            $(this).removeClass("checked");
+
+            $("." + currentCatFilter).remove();
+        }
+        else if(currentCatFilter == "all"){
+            $(this).addClass("checked");
+            $(".current-cat h6 span").remove();
+            appendFun(currentCat, currentCatFilter);
+        }
+        else if($(".current-cat h6 span").hasClass("all")){
+            return;
+        }
+        else{
+            $(this).addClass("checked");
+            appendFun(currentCat, currentCatFilter);
+        }
+       
+
+    });
 
 
 
