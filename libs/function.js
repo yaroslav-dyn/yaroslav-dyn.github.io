@@ -95,14 +95,15 @@ $(document).ready( function() {
 
 
 // selected category in 'types of blogs'
-    var appendFun = function(currentCat,currentCatFilter){
-        $(".current-cat h6").append(" " + "<span class='" + currentCatFilter + "'>" + currentCat + ", "+ "</span>" );
+    var appendFun = function(currentCat,currentCatFilter,outputArea){
+        $(outputArea).append(" " + "<span class='" + currentCatFilter + "'>" + currentCat + ", "+ "</span>" );
     };
 
     $(".gal-label").on("click", function(){
 
         var currentCat =  $(this).parent().find(".cat-name").text(),
-            currentCatFilter =  $(this).attr("for");
+            currentCatFilter =  $(this).attr("for"),
+            outputArea = ".blog-cat  h6";
 
 
         if($(this).hasClass("checked")){
@@ -120,7 +121,7 @@ $(document).ready( function() {
         }
         else{
             $(this).addClass("checked");
-            appendFun(currentCat, currentCatFilter);
+            appendFun(currentCat, currentCatFilter, outputArea);
         }
        
 
@@ -129,7 +130,8 @@ $(document).ready( function() {
     $(".countries .label-audience").on("click", function(){
 
         var currentCat =  $(this).parent().find(".country-label").text(),
-            currentCatFilter =  $(this).attr("for");
+            currentCatFilter =  $(this).attr("for"),
+            outputArea = ".countries-selected-text h6";
 
         if($(this).hasClass("checked")){
             $(this).removeClass("checked");
@@ -137,7 +139,7 @@ $(document).ready( function() {
         }
         else{
             $(this).addClass("checked");
-            appendFun(currentCat, currentCatFilter);
+            appendFun(currentCat, currentCatFilter, outputArea);
         }
 
     });
