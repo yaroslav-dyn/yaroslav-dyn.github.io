@@ -27,7 +27,6 @@ $(document).ready( function() {
     });
 
     $(".approach-label").click(function(){
-        console.log("action");
         $(".approach-label i").removeClass("rounded-icon-active");
         $(this).find(".rounded-icon").addClass("rounded-icon-active");
        
@@ -66,7 +65,7 @@ $(document).ready( function() {
                 $( "#amount" ).val( ui.values[ 0 ] +" - "+ ui.values[ 1 ] );
             }
         });
-        $( "#amount" ).val(  $( "#slider-range" ).slider( "values", 0 ) + " - " +$( "#slider-range" ).slider( "values", 1 ) );
+        $( "#amount" ).val(  $( "#slider-range" ).slider( "values", 0 ) + " - " + $( "#slider-range" ).slider( "values", 1 ) );
     });
 
     /*Slider budget JS*/
@@ -77,11 +76,14 @@ $(document).ready( function() {
             max : 100000,
             step: 10,
             create: function( event, ui ) {
-                var val = $( "#slider-budget" ).slider("value");
-                $( "#amount-budget" ).html( val );
+                $( "#amount-budget" ).html( ui.value );
+                $(".budget-slider-wrap .ui-slider-handle").before("<div class='in-budget-wr range-modal'>" +
+                    "<input readonly id='next-val' value='25000'/><div class='triangle'></div></div>");
             },
             slide: function( event, ui ) {
-                $( "#amount-budget" ).val( ui.value );
+                //$( "#amount-budget" ).val( ui.value);
+                $(".in-budget-wr").css('left', ((ui.value - 5000 ) / 1000)  + "%");
+                $("#next-val").val(ui.value);
             }
         });
     });
@@ -121,6 +123,22 @@ $(document).ready( function() {
             appendFun(currentCat, currentCatFilter);
         }
        
+
+    });
+    // selected country
+    $(".countries .label-audience").on("click", function(){
+
+        var currentCat =  $(this).parent().find(".country-label").text(),
+            currentCatFilter =  $(this).attr("for");
+
+        if($(this).hasClass("checked")){
+            $(this).removeClass("checked");
+            $("." + currentCatFilter).remove();
+        }
+        else{
+            $(this).addClass("checked");
+            appendFun(currentCat, currentCatFilter);
+        }
 
     });
 

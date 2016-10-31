@@ -704,8 +704,10 @@ header a{
         background-color: rgb(59, 182, 217);
     }
     .in-budget-wr{
-        padding-bottom: 24px;
-        margin-left: 40%;
+        display: inline-block;
+        left: 20%;
+        top: -78px;
+        margin-left: -33px;
     }
     #slider-budget{
         width: 82%;
@@ -757,6 +759,7 @@ header a{
             .breakpoint-4{
                 left: 76%;
             }
+
 /* privilege usage*/
     .privilege{
         margin-top: 6%;
