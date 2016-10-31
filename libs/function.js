@@ -123,8 +123,7 @@ $(document).ready( function() {
             $(this).addClass("checked");
             appendFun(currentCat, currentCatFilter, outputArea);
         }
-       
-
+        
     });
     // selected country
     $(".countries .label-audience").on("click", function(){
